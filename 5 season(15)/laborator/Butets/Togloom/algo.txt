@@ -1,0 +1,347 @@
+ji=ut2,in=ut1,t2=0,t3=0;
+            if((in-x+1<=0)||(ji-x+1<=0)){
+                if(in<ji){
+                    ji=ji-in;
+                    in=0;
+                }else
+                if(ji<in){
+                    in=in-ji;
+                    ji=0;
+                }else{
+                    in=0;
+                    ji=0;
+                }
+                y=ji;
+                for(i=ji;i<=ji+x+1;i++){
+                    if(a[in][i]==2){
+                        t2++;
+                        cout<<"diagnoli i s t2 "<<i<<" "<<ji+x+1<<" "<<t2<<endl;
+                    }else{
+                        t2=0;
+                    }
+                    if(a[in][i]==3){
+                        t3++;
+                    }else{
+                        t3=0;
+                    }
+                    if(t2==daraalal || t3==daraalal){
+                        win(t2);
+                        cout<<"diognali";
+                        getch();
+                        closegraph();
+                        return 0;
+                    }
+                    in++;
+                }
+                t2=0;t3=0;
+
+                for(i=in;i<=in+x+1;i++){
+                    if(a[i][y]==2){
+                        t2++;
+                        cout<<"ngo diagnoli i s t2 "<<i<<" "<<ji+x+1<<" "<<t2<<endl;
+                    }else{
+                        t2=0;
+                    }
+                    if(a[i][y]==3){
+                        t3++;
+                    }else{
+                        t3=0;
+                    }
+                    if(t2==daraalal || t3==daraalal){
+                        win(t2);
+                        cout<<"diognali";
+                        getch();
+                        closegraph();
+                        return 0;
+                    }
+                    y--;
+                }
+
+            }
+            /*ji=ut2,in=ut1,t2=0,t3=0;
+            if((in-x>=0)&&(ji-x>=0)&&(ji+x+1<=nudT)&&(in+x+1<=nudT)){
+                ji=ut2-x;in=ut1-x;
+                cout<<"shalgalaa";
+                for(i=ji;i<ji+x+1;i++){
+                    if(a[in][i]==2){
+                        t2++;
+                    }else{
+                        t2=0;
+                    }
+                    if(a[in][i]==3){
+                        t3++;
+                    }else{
+                        t3=0;
+                    }
+                    if(t2==daraalal || t3==daraalal){
+                        win(t2);
+                        cout<<"diognali";
+                        getch();
+                        closegraph();
+                        return 0;
+                    }
+                    in++;
+                }
+                ji=ut2-x;in=ut1-x;t2=0;t3=0;
+                for(i=ji;i<ji+x+1;i++){
+                    if(a[in][i]==2){
+                        t2++;
+                        cout<<"diagnoli i s t2 "<<i<<" "<<ji+x+1<<" "<<t2<<endl;
+                    }else{
+                        t2=0;
+                    }
+                    if(a[in][i]==3){
+                        t3++;
+                    }else{
+                        t3=0;
+                    }
+                    if(t2==daraalal || t3==daraalal){
+                        win(t2);
+                        cout<<"diognali";
+                        getch();
+                        closegraph();
+                        return 0;
+                    }
+                    in--;
+                }
+            }
+
+            ji=ut2,in=ut1,t2=0,t3=0;
+            if((ji+x>=nudT)||(in+x>=nudT)){
+                if(in<ji || ji<in){
+                    ji=ji-x+1;
+                    in=in-x+1;
+                }else
+                {
+                    in=in-x;
+                    ji=in-x;
+                }
+                y=in;
+                for(i=ji;i<ji+x+1;i++){
+                    cout<<"orloo "<<a[y][i]<<"\n";
+                    if(a[y][i]==2){
+                        t2++;
+                        cout<<"diagnoli i s t2 "<<i<<" "<<ji+x+1<<" "<<t2<<endl;
+                    }else{
+                        t2=0;
+                    }
+                    if(a[y][i]==3){
+                        t3++;
+                    }else{
+                        t3=0;
+                    }
+                    if(t2==daraalal || t3==daraalal){
+                        win(t2);
+                        cout<<"diognali";
+                        getch();
+                        closegraph();
+                        return 0;
+                    }
+                    y++;
+                }
+                t2=0;t3=0;
+                for(i=ji;i<ji+x+1;i++){
+                    if(a[in][i]==2){
+                        t2++;
+                    }else{
+                        t2=0;
+                    }
+                    if(a[in][i]==3){
+                        t3++;
+                    }else{
+                        t3=0;
+                    }
+                    if(t2==daraalal || t3==daraalal){
+                        win(t2);
+                        cout<<"diognali";
+                        getch();
+                        closegraph();
+                        return 0;
+                    }
+                    in--;
+                }
+            }*/
+
+            //Algoritm 2::::
+
+            // X ba O daraalsan esehiig shalgah heseg
+            /*t2=0;t3=0;
+            for(in=0;in<nudT;in++){
+                for(ji=0;ji<nudT;ji++){
+                    if(a[in][ji]==2){
+                        t2++;
+                    }else{
+                        t2=0;
+                    }
+                    if(a[in][ji]==3){
+                        t3++;
+                    }else{
+                        t3=0;
+                    }
+                    if(t2==daraalal || t3==daraalal){
+                        win(t2);
+                        cout<<"hewtee";
+                        getch();
+                        return 0;
+                    }
+                }
+                t2=0;t3=0;
+
+            }
+            //Bosoo baganiig shalgana
+            t3=0;t2=0;
+            for(in=0;in<nudT;in++){
+                for(ji=0;ji<nudT;ji++){
+                    if(a[ji][in]==2){
+                        t3=0;
+                        t2++;
+                    }else{
+                        t2=0;
+                    }
+                    if(a[ji][in]==3){
+                        t2=0;
+                        t3++;
+                    }else{
+                        t3=0;
+                    }
+                    if(t2==daraalal|| t3==daraalal){
+                        win(t2);
+                        cout<<"bosoo";
+                        getch();
+                        return 0;
+                    }
+                }
+            }
+            //Gol dioganliig shalgana
+            t2=0;t3=0;
+            for(in=0;in<nudT;in++){
+                if(a[in][in]==2){
+                    t3=0;
+                    t2++;
+                }else{
+                    t2=0;
+                }
+                if(a[in][in]==3){
+                    t2=0;
+                    t3++;
+                }else{
+                    t3=0;
+                }
+                if(t2==daraalal || t3==daraalal){
+                    win(t2);
+                    cout<<"diogonali";
+                    getch();
+                    return 0;
+                }
+            }
+            //Hajuu dioganliig shalgana
+            t3=0;t2=0;
+            for(in=0,ji=daraalal;in<nudT;in++,ji--){
+                if(a[in][ji]==2){
+                    t3=0;
+                    t2++;
+                }else{
+                    t2=0;
+                }
+                if(a[in][ji]==3){
+                    t2=0;
+                    t3++;
+                }else{
+                    t3=0;
+                }
+                if(t2==daraalal || t3==daraalal){
+                    win(t2);
+                    cout<<"hajuu diogonali";
+                    getch();
+                    return 0;
+                }
+            }
+            //Tuslah diagonaluudiig shalgana
+            t3=0;t2=0;
+            for(in=1,ji=in-1;in<=daraalal;in++,ji++){
+                if(a[in][ji]==2){
+                    t3=0;
+                    t2++;
+                }else{
+                    t2=0;
+                }
+                if(a[in][ji]==3){
+                    t2=0;
+                    t3++;
+                }else{
+                    t3=0;
+                }
+                if(t2==daraalal || t3==daraalal){
+                    win(t2);
+                    cout<<"tuslah1 diogonali";
+                    getch();
+                    return 0;
+                }
+            }
+            t3=0;t2=0;
+            for(in=0,ji=1;ji<=daraalal;in++,ji++){
+                if(a[in][ji]==2){
+                    t3=0;
+                    t2++;
+                }else{
+                    t2=0;
+                }
+                if(a[in][ji]==3){
+                    t2=0;
+                    t3++;
+                }else{
+                    t3=0;
+                }
+                if(t2==daraalal || t3==daraalal){
+                    win(t2);
+                    cout<<"tuslah2 diogonali";
+                    getch();
+                    return 0;
+                }
+            }
+            t3=0;t2=0;
+            for(in=0,ji=daraalal-1;in<=daraalal-1;in++,ji--){
+                if(a[in][ji]==2){
+                    t3=0;
+                    t2++;
+                }else{
+                    t2=0;
+                }
+                if(a[in][ji]==3){
+                    t2=0;
+                    t3++;
+                }else{
+                    t3=0;
+                }
+                if(t2==daraalal || t3==daraalal){
+                    win(t2);
+                    cout<<"tuslah3 diogonali";
+                    getch();
+                    return 0;
+                }
+            }
+            t2=0;t3=0;
+            for(in=1,ji=daraalal;in<=daraalal;in++,ji--){
+                if(a[in][ji]==2){
+                    t3=0;
+                    t2++;
+                }else{
+                    t2=0;
+                }
+                if(a[in][ji]==3){
+                    t2=0;
+                    t3++;
+                }else{
+                    t3=0;
+                }
+                if(t2==daraalal || t3==daraalal){
+                    win(t2);
+                    cout<<"hajuu4 diogonali";
+                    getch();
+                    return 0;
+                }
+            }
+            if(duuren==nudT*nudT){
+                draw();
+                return 0;
+            }*/

@@ -1,0 +1,21 @@
+.container {
+  margin: auto;
+  max-width: 400px;
+  display: block;
+}
+section {
+  width: 370px;
+  margin: 30px auto;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+img {
+  width: 370px;
+}
+.text {
+  padding: 10px 15px;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+}

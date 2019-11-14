@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1572365051 source:c:\users\ikhbayar\desktop\lesson\5 season(15)\laborator\butets\odwork\header\many.cpp
+	"many.h"
+
+1572365721 c:\users\ikhbayar\desktop\lesson\5 season(15)\laborator\butets\odwork\header\many.h
+
+1572365354 source:c:\users\ikhbayar\desktop\lesson\5 season(15)\laborator\butets\odwork\header\main.cpp
+	<iostream>
+	"many.h"
+

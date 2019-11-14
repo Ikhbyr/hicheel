@@ -1,0 +1,119 @@
+body{
+    background: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section{
+    min-width: 100%;
+    text-align: center;
+}
+#ehlel{
+    background: url('https://wallpapercave.com/wp/wp1912048.jpg');
+    color:white;
+    text-transform: uppercase;
+    height: 100vh;
+    padding-top:30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#title{
+    font-weight: 200;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.LogoTitle{
+    font-size:22px;
+    font-family: 'Verdana, Geneva, Tahoma, sans-serif';
+    margin-bottom: 30px;
+}
+#daraa{
+    height: 100vh;
+    font-weight: 100;
+}
+.medremj{
+    border-right: 1px solid #888888;
+    width: 1px;
+}
+
+.tolgoi {
+    font-size: 22px;
+    margin-top: 10%;
+}
+
+.medremjtext{
+    color: #d4d4d4;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    letter-spacing: 1px;
+    font-weight: 200;
+    font-size: 16px;
+}
+p{
+    color: #888888;
+}
+.back{
+    background: url('http://urgoo.mn/images/new/imax/theatre.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+.back1{
+    background: url('http://urgoo.mn/images/new/imax/camera.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+@media only screen and (min-width: 600px) {
+    .components{
+        display: grid;
+        grid-template-columns: auto 1px auto 1px auto;
+    }
+    #line1{
+        border-bottom: 1px solid white;
+        width: 100px;
+        margin: 10% auto 7% auto;
+    }
+    #line2{
+        border-top: 1px solid white;
+        width: 100px;
+        margin: 7% auto 10% auto;
+    }
+    #daraa span{
+        width: 80%;
+        margin: 6% auto 6% auto;
+    }
+    #title{
+        font-size: 120px;
+        line-height: 100px;
+    }
+    #daraa{
+        font-size: 75px;
+        line-height: 80px;
+    }
+}
+@media only screen and (max-width: 599px) {
+    .components{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #daraa span{
+        width: 100%;
+    }
+    #title{
+        font-size: 65px;
+        line-height: 55px;
+    }
+    #daraa{
+        font-size: 50px;
+        line-height: 50px;
+    }
+}

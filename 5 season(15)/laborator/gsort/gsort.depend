@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1567674843 source:c:\users\ikhbayar\desktop\gsort\main.cpp
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+	"graphics.h"
+
+1455635349 c:\users\ikhbayar\desktop\gsort\graphics.h
+	<windows.h>
+	<limits.h>
+	<sstream>
+
+1567756830 source:c:\users\ikhbayar\desktop\laborator\gsort\main.cpp
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+	"graphics.h"
+
+1455635349 c:\users\ikhbayar\desktop\laborator\gsort\graphics.h
+	<windows.h>
+	<limits.h>
+	<sstream>
+

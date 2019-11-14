@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "movie_name": "Zombieland",
+        "runtime": 100,
+        "trailer_link": "www.youtube.com",
+        "about": "Columbus, Tallahasse, Wichita, and Little Rock move to the American heartland as they face off against evolved zombies, fellow survivors, and the growing pains of the snarky makeshift family.",
+        "genre": "action",
+        "director": "Milson",
+        "casts": "Emma Stone Woody Harrelson Abigail Breslin Jesse Eisenberg Rosario Dawson Zoey Deutch",
+        "age_rating": "R",
+        "showing": "2019/11/01",
+        "rating": 7,
+        "photo_link": "http:\\www.urgoo.mn"
+    }
+]

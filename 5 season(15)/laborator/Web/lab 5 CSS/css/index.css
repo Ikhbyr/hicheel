@@ -1,0 +1,193 @@
+section{
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+.slide{
+    background-image:url(http://urgoo.mn/Images/new/trianglify.svg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.slide h2{
+    margin-top: 0;
+    padding-top: 40px;
+}
+
+.time_schu{
+    margin: -4px 0 0 0;
+    background: #30ade5;
+    height: 40px;
+    width: 100%;
+    display: block;
+    padding-top: 15px;
+    display: inline-block;
+}
+.time_schu:hover{
+    color: black;
+    background-color: rgb(212, 212, 212);
+}
+
+.mask1{
+    width: 100%;
+    background-image: url("http://urgoo.mn/Files/Sliders/1348.jpg");
+    background-attachment: fixed;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mask2{
+    width: 100%;
+    background-image: url("http://urgoo.mn/Files/Sliders/1349.jpg");
+    background-attachment: fixed;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mask3{
+    width: 100%;
+    background-image: url("http://urgoo.mn/Files/Sliders/1347.jpg");
+    background-attachment: fixed;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mask{
+    width: 100%;
+    background-image: url("http://urgoo.mn/Files/Sliders/1352.jpg");
+    background-attachment: fixed;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p{
+    margin: 0;
+}
+.showPhoto img{
+    width: 100%;
+    margin: 0;
+}
+.showPhoto:hover{
+    margin-top:-40px;
+}
+.showPhoto div img:hover{
+    margin-top:-40px;
+}
+.time_schu h3{
+    margin:0;
+}
+.slide h2{
+    font-size: 1.7em;
+    font-family: "Verdana";
+}
+.left{
+    float: left;
+    margin-left:10px;
+}
+.right{
+    float: right;
+    margin-right: 10px;
+}
+.coming{
+    margin: 0 5px 0 5px;
+}
+.showcome h2{
+    margin-top: 0;
+}
+.showcome img{
+    width: 100%;
+}
+.parallax-window{
+    margin: 6px 0 3px 0;
+}
+
+.front{
+    background: rgba(0, 0, 0, 0.13);
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    z-index: -1;
+}
+.showcome{
+    background: #d5d5d5;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.parallax-window a{
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    width: 100%;
+    padding-top:10%;
+}
+
+.parallax-window p{
+    margin-left: 10%;
+    color: white;
+    font-size: 48px;
+    text-align: left;
+    padding-top:5%;
+    margin-bottom: 17vh;
+}
+.coming div{
+    background: #30ade5;
+    margin: -4px 0 0 0;
+    width: 100%;
+    height: 20px;
+    padding-top: 5px; 
+    color: aliceblue;
+}
+@media only screen and (min-width: 600px) {
+    .showPhoto{
+        margin: 20px;
+        width: 390px;
+        background: oldlace;
+        padding: 0;
+        transition: 0.3s;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .parallax-window a{
+        margin-left: -59%;
+    }
+    .Moviename{
+        position: absolute;
+        font-size: 18px;
+        font-family: "Verdana";
+        text-transform: uppercase;
+        font-weight: 450;
+        text-shadow: 2px 2px 8px #000;
+        color: white;
+        margin-top: -40px;
+        margin-left: 20px;
+    }
+    .slide-grid{
+        display: flex;
+        justify-content: center;
+        width: 85%;
+        margin: 0 auto 0 auto;
+        padding: 0;
+    }
+    .slide h2{
+        color:white;
+    }
+}
+@media only screen and (max-width: 599px) {
+    .coming{
+        width: 100%;
+    }
+    .coming div{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .parallax-window a{
+        margin-left: -50%;
+    }
+    .slide h2{
+        color:#30ade5;
+    }
+}

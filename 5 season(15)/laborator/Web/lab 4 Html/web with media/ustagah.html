@@ -1,0 +1,14 @@
+<script>
+var proto = {a:1, b:2, c:3};
+var obj = {a:0};
+obj._proto_=proto;
+console.log(obj.a,obj.b,obj.c);
+proto.a =5;
+proto.b =6;
+proto.c =7;
+console.log(obj.a,obj.b,obj.c);
+obj.a=9;
+obj.b=8;
+console.log(proto.a,proto.b,proto.c);
+console.log(obj.a,obj.b,obj.c);
+</script>

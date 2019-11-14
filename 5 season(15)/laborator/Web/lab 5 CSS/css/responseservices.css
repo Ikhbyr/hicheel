@@ -1,0 +1,55 @@
+.container{
+    margin: 40px auto;
+}
+section{
+    background-color: rgba(0,0,0,0.08);   
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+@media only screen and (min-width: 1170px){
+    .container{
+        max-width: 1170px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    section{
+        width: 360px;
+        margin: 10px 20px;
+    }
+    section img{
+        width: 360px;
+    }
+    article img{
+        width: 360px;
+    }
+    article{
+        height: 520px;
+    }
+    .text{
+        height: 320px;
+        padding: 20px 25px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .container{
+        max-width: 400px;
+        display: block;
+    }
+    section{
+        width: 370px;
+        margin: 30px auto;
+    }
+    section img{
+        width: 370px;
+    }
+    article img{
+        width: 370px;
+    }
+    .text{
+        padding: 10px 15px;
+    }
+}

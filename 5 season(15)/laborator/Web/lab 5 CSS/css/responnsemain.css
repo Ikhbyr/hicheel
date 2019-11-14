@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+#nav1{
+    height: 50px;
+}
+#nav1 li a{
+    color: white;
+}
+#nav2{
+    background: linear-gradient(silver, white);
+    color: #000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+#nav2 li a{
+    color: #000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding-left:15px;
+    padding-right: 50px;
+    text-transform: uppercase;
+}
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#nav1{
+    background-color: #038ed5;
+    color: white;
+}
+#nav2 li a:hover {
+    background-color: #111;
+    color: white;
+} 
+footer{
+    color: white;
+    background: url(https://www.urgoo.mn/Images/new/lowpoly2.jpg);
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+footer h6{
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: solid rgb(255, 255, 255);
+    border-bottom-width:thin ;
+    padding-bottom: 10px;
+    margin-right: 40px;
+    width:200px;
+}
+footer li{
+    margin-top:5px;
+}
+footer section a{
+    color: white;
+}
+@media only screen and (min-width: 1200px) {
+    /* Header begin */
+    nav ul li {
+        float: right;
+        height: 100%;
+    }
+    nav{
+        padding: 0;
+    }
+    nav div{
+        position: absolute;
+        margin-left: 70px;
+        width:160px;
+        height: 100px;
+        background: #000;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    }
+    nav div img{
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        width: 120px;
+    }
+
+    .fa{
+        padding:15px 10px 0 0;
+        width: 20px;
+    }
+    #nav2{
+        height: 40px;
+    }
+    /* Change the link color to #111 (black) on hover */
+    #imax{
+        background: #038ed5;
+        width: 100px;
+        height: 25px;
+        margin-top:-6px;
+        z-index: 2;
+        position: relative;
+    }
+    #imax img{
+        width: 60px;
+        vertical-align: middle;
+        margin-top:5px;
+    }
+    /*section begin*/
+
+    footer{ 
+        display: grid;
+        grid-template-columns: 380px auto auto auto;
+    }
+    footer section{
+        color: rgb(255, 255, 255);
+        text-align: left;
+    }
+    .foot_logo2{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .foot_logo1{
+        margin-left: 40%;
+    }
+    footer img{
+        margin-bottom: 40px;
+    }
+    .copyright{
+        width: 90%;
+        text-align: right;
+        margin-bottom: 30px;
+        margin-top:0;
+    }
+    #Imaxtext{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    nav div img{
+        display: none;
+    }
+    #nav2 li{
+        margin: 2px 3px 2px 3px;
+    }
+    #Imaxtext{
+        text-align: center;
+        width: auto;
+    }
+    #imax img{
+        display: none;
+    }
+    nav{
+        text-align: center;
+    }
+    nav #nav1 li {
+        float: right;
+        height: 100%;
+    }
+    footer{      
+        display: grid;
+        grid-template-columns: auto;
+    }
+}

@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1573623064 source:c:\users\ikhbayar\desktop\lesson\5 season(15)\laborator\object\lab 8\turshilt\src\shape.cpp
+	"shape.h"
+
+1573624559 c:\users\ikhbayar\desktop\lesson\5 season(15)\laborator\object\lab 8\turshilt\include\shape.h
+
+1573623496 source:c:\users\ikhbayar\desktop\lesson\5 season(15)\laborator\object\lab 8\turshilt\src\main.cpp
+	<iostream>
+	"shape.h"
+	"twoD.h"
+
+1573624559 c:\users\ikhbayar\desktop\lesson\5 season(15)\laborator\object\lab 8\turshilt\include\twod.h
+	"shape.h"
+
+1573624526 source:c:\users\ikhbayar\desktop\lesson\5 season(15)\laborator\object\lab 8\turshilt\src\twod.cpp
+	"twoD.h"
+	<iostream>
+
