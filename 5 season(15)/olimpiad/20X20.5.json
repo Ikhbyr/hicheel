@@ -1,0 +1,4535 @@
+{
+    "actions": [
+        {
+            "agentID": 59,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 1
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 1
+        },
+        {
+            "agentID": 61,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 1
+        },
+        {
+            "agentID": 62,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 1
+        },
+        {
+            "agentID": 63,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 1
+        },
+        {
+            "agentID": 64,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 1
+        },
+        {
+            "agentID": 65,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 1
+        },
+        {
+            "agentID": 66,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 1
+        },
+        {
+            "agentID": 67,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 1
+        },
+        {
+            "agentID": 68,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 1
+        },
+        {
+            "agentID": 59,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 2
+        },
+        {
+            "agentID": 60,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 2
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 2
+        },
+        {
+            "agentID": 62,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 2
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 2
+        },
+        {
+            "agentID": 64,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 2
+        },
+        {
+            "agentID": 65,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 2
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 2
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 2
+        },
+        {
+            "agentID": 68,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 2
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 3
+        },
+        {
+            "agentID": 60,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 3
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 3
+        },
+        {
+            "agentID": 62,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 3
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 3
+        },
+        {
+            "agentID": 64,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 3
+        },
+        {
+            "agentID": 65,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 3
+        },
+        {
+            "agentID": 66,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 3
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 3
+        },
+        {
+            "agentID": 68,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 3
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 4
+        },
+        {
+            "agentID": 60,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 4
+        },
+        {
+            "agentID": 61,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 4
+        },
+        {
+            "agentID": 62,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 4
+        },
+        {
+            "agentID": 63,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 4
+        },
+        {
+            "agentID": 64,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 4
+        },
+        {
+            "agentID": 65,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 4
+        },
+        {
+            "agentID": 66,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 4
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 4
+        },
+        {
+            "agentID": 68,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 4
+        },
+        {
+            "agentID": 59,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 5
+        },
+        {
+            "agentID": 60,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 5
+        },
+        {
+            "agentID": 61,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 5
+        },
+        {
+            "agentID": 62,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 5
+        },
+        {
+            "agentID": 63,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 5
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 5
+        },
+        {
+            "agentID": 65,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 5
+        },
+        {
+            "agentID": 66,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 5
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 5
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 5
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 6
+        },
+        {
+            "agentID": 60,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 1,
+            "turn": 6
+        },
+        {
+            "agentID": 61,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 6
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 6
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 6
+        },
+        {
+            "agentID": 64,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 6
+        },
+        {
+            "agentID": 65,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 6
+        },
+        {
+            "agentID": 66,
+            "dx": -1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 6
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 6
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 6
+        },
+        {
+            "agentID": 59,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 7
+        },
+        {
+            "agentID": 60,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 7
+        },
+        {
+            "agentID": 61,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 7
+        },
+        {
+            "agentID": 62,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 7
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 7
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 7
+        },
+        {
+            "agentID": 65,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 7
+        },
+        {
+            "agentID": 66,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 7
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 7
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 7
+        },
+        {
+            "agentID": 59,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 8
+        },
+        {
+            "agentID": 60,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 8
+        },
+        {
+            "agentID": 61,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 8
+        },
+        {
+            "agentID": 62,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 8
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 8
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 8
+        },
+        {
+            "agentID": 65,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 8
+        },
+        {
+            "agentID": 66,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 8
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 8
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 8
+        },
+        {
+            "agentID": 59,
+            "dx": 1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 9
+        },
+        {
+            "agentID": 60,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 9
+        },
+        {
+            "agentID": 61,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 9
+        },
+        {
+            "agentID": 62,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 9
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 9
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 9
+        },
+        {
+            "agentID": 65,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 9
+        },
+        {
+            "agentID": 66,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 9
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 9
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 9
+        },
+        {
+            "agentID": 59,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 10
+        },
+        {
+            "agentID": 60,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 10
+        },
+        {
+            "agentID": 61,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 10
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 10
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 10
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 10
+        },
+        {
+            "agentID": 65,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 10
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 10
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 10
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 10
+        },
+        {
+            "agentID": 59,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 11
+        },
+        {
+            "agentID": 60,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 11
+        },
+        {
+            "agentID": 61,
+            "dx": 1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 11
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 11
+        },
+        {
+            "agentID": 63,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 11
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 11
+        },
+        {
+            "agentID": 65,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 11
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 11
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 11
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 11
+        },
+        {
+            "agentID": 59,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 12
+        },
+        {
+            "agentID": 60,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 12
+        },
+        {
+            "agentID": 61,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 12
+        },
+        {
+            "agentID": 62,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 12
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 12
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 12
+        },
+        {
+            "agentID": 65,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 12
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 12
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 12
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 12
+        },
+        {
+            "agentID": 59,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 13
+        },
+        {
+            "agentID": 60,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 13
+        },
+        {
+            "agentID": 61,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 13
+        },
+        {
+            "agentID": 62,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 13
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 13
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 13
+        },
+        {
+            "agentID": 65,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 13
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 13
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 13
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 13
+        },
+        {
+            "agentID": 59,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 14
+        },
+        {
+            "agentID": 60,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 14
+        },
+        {
+            "agentID": 61,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 14
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 14
+        },
+        {
+            "agentID": 63,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 14
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 14
+        },
+        {
+            "agentID": 65,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 14
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 14
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 14
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 14
+        },
+        {
+            "agentID": 59,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 15
+        },
+        {
+            "agentID": 60,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 15
+        },
+        {
+            "agentID": 61,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 15
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 15
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 15
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 15
+        },
+        {
+            "agentID": 65,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 15
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 15
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 15
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 15
+        },
+        {
+            "agentID": 59,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 16
+        },
+        {
+            "agentID": 60,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 16
+        },
+        {
+            "agentID": 61,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 16
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 16
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 16
+        },
+        {
+            "agentID": 64,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 16
+        },
+        {
+            "agentID": 65,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 16
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 16
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 16
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 16
+        },
+        {
+            "agentID": 59,
+            "dx": 1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 1,
+            "turn": 17
+        },
+        {
+            "agentID": 60,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 17
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 1,
+            "turn": 17
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 17
+        },
+        {
+            "agentID": 63,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 17
+        },
+        {
+            "agentID": 64,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 17
+        },
+        {
+            "agentID": 65,
+            "dx": -1,
+            "dy": 1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 17
+        },
+        {
+            "agentID": 66,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 17
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 17
+        },
+        {
+            "agentID": 68,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 17
+        },
+        {
+            "agentID": 59,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 18
+        },
+        {
+            "agentID": 60,
+            "dx": 0,
+            "dy": -1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 18
+        },
+        {
+            "agentID": 61,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 18
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 18
+        },
+        {
+            "agentID": 63,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 18
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 18
+        },
+        {
+            "agentID": 65,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 18
+        },
+        {
+            "agentID": 66,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 1,
+            "turn": 18
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 18
+        },
+        {
+            "agentID": 68,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 18
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 19
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 19
+        },
+        {
+            "agentID": 61,
+            "dx": 1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 1,
+            "turn": 19
+        },
+        {
+            "agentID": 62,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 19
+        },
+        {
+            "agentID": 63,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 19
+        },
+        {
+            "agentID": 64,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 19
+        },
+        {
+            "agentID": 65,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 19
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 19
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 19
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 19
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 20
+        },
+        {
+            "agentID": 60,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 20
+        },
+        {
+            "agentID": 61,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 20
+        },
+        {
+            "agentID": 62,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 20
+        },
+        {
+            "agentID": 63,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 20
+        },
+        {
+            "agentID": 64,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 20
+        },
+        {
+            "agentID": 65,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 20
+        },
+        {
+            "agentID": 66,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 20
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 20
+        },
+        {
+            "agentID": 68,
+            "dx": 1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 1,
+            "turn": 20
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 21
+        },
+        {
+            "agentID": 60,
+            "dx": 0,
+            "dy": -1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 21
+        },
+        {
+            "agentID": 61,
+            "dx": 0,
+            "dy": -1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 21
+        },
+        {
+            "agentID": 62,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 21
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 21
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 1,
+            "turn": 21
+        },
+        {
+            "agentID": 65,
+            "dx": 1,
+            "dy": 1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 21
+        },
+        {
+            "agentID": 66,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 21
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 21
+        },
+        {
+            "agentID": 68,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 21
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 22
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 22
+        },
+        {
+            "agentID": 61,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 22
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 22
+        },
+        {
+            "agentID": 63,
+            "dx": -1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 22
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 22
+        },
+        {
+            "agentID": 65,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 22
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 22
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 22
+        },
+        {
+            "agentID": 68,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 22
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 0,
+            "turn": 23
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 23
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 23
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 23
+        },
+        {
+            "agentID": 63,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 23
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 23
+        },
+        {
+            "agentID": 65,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 23
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 23
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 23
+        },
+        {
+            "agentID": 68,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 23
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 0,
+            "turn": 24
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 24
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 1,
+            "turn": 24
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 1,
+            "turn": 24
+        },
+        {
+            "agentID": 63,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 24
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 24
+        },
+        {
+            "agentID": 65,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 24
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 24
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 24
+        },
+        {
+            "agentID": 68,
+            "dx": -1,
+            "dy": 1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 24
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 0,
+            "turn": 25
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 25
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 25
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 25
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 25
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 25
+        },
+        {
+            "agentID": 65,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 25
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 25
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 25
+        },
+        {
+            "agentID": 68,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 25
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 0,
+            "turn": 26
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 26
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 1,
+            "turn": 26
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 26
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 26
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 26
+        },
+        {
+            "agentID": 65,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 26
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 26
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 26
+        },
+        {
+            "agentID": 68,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 26
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 0,
+            "turn": 27
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 27
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 27
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 27
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 27
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 27
+        },
+        {
+            "agentID": 65,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 27
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 27
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 27
+        },
+        {
+            "agentID": 68,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 27
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 0,
+            "turn": 28
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 28
+        },
+        {
+            "agentID": 61,
+            "dx": 1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 28
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 28
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 28
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 28
+        },
+        {
+            "agentID": 65,
+            "dx": 1,
+            "dy": 1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 28
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 28
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 28
+        },
+        {
+            "agentID": 68,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 28
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 0,
+            "turn": 29
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 29
+        },
+        {
+            "agentID": 61,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 29
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 29
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 29
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 29
+        },
+        {
+            "agentID": 65,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 29
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 29
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 29
+        },
+        {
+            "agentID": 68,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 29
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 0,
+            "turn": 30
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 30
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 30
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 30
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 30
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 30
+        },
+        {
+            "agentID": 65,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 30
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 30
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 30
+        },
+        {
+            "agentID": 68,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 30
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 0,
+            "turn": 31
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 31
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 31
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 31
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 31
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 31
+        },
+        {
+            "agentID": 65,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 31
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 31
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 31
+        },
+        {
+            "agentID": 68,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 31
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 0,
+            "turn": 32
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 32
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 32
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 32
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 32
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 32
+        },
+        {
+            "agentID": 65,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 32
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 32
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 32
+        },
+        {
+            "agentID": 68,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 32
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 0,
+            "turn": 33
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 33
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 33
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 33
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 33
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 33
+        },
+        {
+            "agentID": 65,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 33
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 33
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 33
+        },
+        {
+            "agentID": 68,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 33
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 0,
+            "turn": 34
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 34
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 34
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 34
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 34
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 34
+        },
+        {
+            "agentID": 65,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 34
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 34
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 34
+        },
+        {
+            "agentID": 68,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 34
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 0,
+            "turn": 35
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 35
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 35
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 35
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 35
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 35
+        },
+        {
+            "agentID": 65,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 35
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 35
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 35
+        },
+        {
+            "agentID": 68,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 35
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 0,
+            "turn": 36
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 36
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 36
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 36
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 36
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 36
+        },
+        {
+            "agentID": 65,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 36
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 36
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 36
+        },
+        {
+            "agentID": 68,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 36
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 0,
+            "turn": 37
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 37
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 37
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 37
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 37
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 37
+        },
+        {
+            "agentID": 65,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 37
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 37
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 37
+        },
+        {
+            "agentID": 68,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 37
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 1,
+            "turn": 38
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 38
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 38
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 38
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 38
+        },
+        {
+            "agentID": 64,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 38
+        },
+        {
+            "agentID": 65,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 38
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 38
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 38
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 38
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 39
+        },
+        {
+            "agentID": 60,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 39
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 39
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 39
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 39
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": -1,
+            "turn": 39
+        },
+        {
+            "agentID": 65,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 39
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 39
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 39
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 39
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 40
+        },
+        {
+            "agentID": 60,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 40
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 40
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 1,
+            "turn": 40
+        },
+        {
+            "agentID": 63,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 40
+        },
+        {
+            "agentID": 64,
+            "dx": 0,
+            "dy": 1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 40
+        },
+        {
+            "agentID": 65,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 40
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 40
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": -1,
+            "turn": 40
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 40
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 41
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 41
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 41
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 41
+        },
+        {
+            "agentID": 63,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 41
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 1,
+            "turn": 41
+        },
+        {
+            "agentID": 65,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 41
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 41
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 41
+        },
+        {
+            "agentID": 68,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 41
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 42
+        },
+        {
+            "agentID": 60,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 42
+        },
+        {
+            "agentID": 61,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 42
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 42
+        },
+        {
+            "agentID": 63,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 42
+        },
+        {
+            "agentID": 64,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 42
+        },
+        {
+            "agentID": 65,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 42
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 42
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 42
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 42
+        },
+        {
+            "agentID": 59,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 43
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 43
+        },
+        {
+            "agentID": 61,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 43
+        },
+        {
+            "agentID": 62,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 0,
+            "turn": 43
+        },
+        {
+            "agentID": 63,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 43
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 43
+        },
+        {
+            "agentID": 65,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 43
+        },
+        {
+            "agentID": 66,
+            "dx": 1,
+            "dy": 1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 43
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 43
+        },
+        {
+            "agentID": 68,
+            "dx": -1,
+            "dy": -1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 43
+        },
+        {
+            "agentID": 59,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 44
+        },
+        {
+            "agentID": 60,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 44
+        },
+        {
+            "agentID": 61,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 44
+        },
+        {
+            "agentID": 62,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 44
+        },
+        {
+            "agentID": 63,
+            "dx": 0,
+            "dy": 0,
+            "type": "stay",
+            "apply": -1,
+            "turn": 44
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 1,
+            "turn": 44
+        },
+        {
+            "agentID": 65,
+            "dx": 0,
+            "dy": 1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 44
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 44
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 44
+        },
+        {
+            "agentID": 68,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 44
+        },
+        {
+            "agentID": 59,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 45
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 45
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 45
+        },
+        {
+            "agentID": 62,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 0,
+            "turn": 45
+        },
+        {
+            "agentID": 63,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 45
+        },
+        {
+            "agentID": 64,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 45
+        },
+        {
+            "agentID": 65,
+            "dx": 1,
+            "dy": 1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 45
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 45
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 45
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": 1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 45
+        },
+        {
+            "agentID": 59,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 46
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 46
+        },
+        {
+            "agentID": 61,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 46
+        },
+        {
+            "agentID": 62,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 46
+        },
+        {
+            "agentID": 63,
+            "dx": -1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 46
+        },
+        {
+            "agentID": 64,
+            "dx": 0,
+            "dy": 1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 46
+        },
+        {
+            "agentID": 65,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 46
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 46
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 46
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 46
+        },
+        {
+            "agentID": 59,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 47
+        },
+        {
+            "agentID": 60,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 47
+        },
+        {
+            "agentID": 61,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 47
+        },
+        {
+            "agentID": 62,
+            "dx": 0,
+            "dy": -1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 47
+        },
+        {
+            "agentID": 63,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 47
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 47
+        },
+        {
+            "agentID": 65,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 47
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 47
+        },
+        {
+            "agentID": 67,
+            "dx": 1,
+            "dy": 1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 47
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 47
+        },
+        {
+            "agentID": 59,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 48
+        },
+        {
+            "agentID": 60,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 48
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 48
+        },
+        {
+            "agentID": 62,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 48
+        },
+        {
+            "agentID": 63,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 48
+        },
+        {
+            "agentID": 64,
+            "dx": 1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 1,
+            "turn": 48
+        },
+        {
+            "agentID": 65,
+            "dx": 1,
+            "dy": 1,
+            "type": "remove",
+            "apply": 0,
+            "turn": 48
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 48
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 48
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 48
+        },
+        {
+            "agentID": 59,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 49
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 49
+        },
+        {
+            "agentID": 61,
+            "dx": 1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 1,
+            "turn": 49
+        },
+        {
+            "agentID": 62,
+            "dx": -1,
+            "dy": 0,
+            "type": "remove",
+            "apply": 0,
+            "turn": 49
+        },
+        {
+            "agentID": 63,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 49
+        },
+        {
+            "agentID": 64,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 49
+        },
+        {
+            "agentID": 65,
+            "dx": 1,
+            "dy": 1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 49
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 49
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": 1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 49
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 49
+        },
+        {
+            "agentID": 59,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 0,
+            "turn": 50
+        },
+        {
+            "agentID": 60,
+            "dx": 1,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 50
+        },
+        {
+            "agentID": 61,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 0,
+            "turn": 50
+        },
+        {
+            "agentID": 62,
+            "dx": -1,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 50
+        },
+        {
+            "agentID": 63,
+            "dx": -1,
+            "dy": 0,
+            "type": "move",
+            "apply": 1,
+            "turn": 50
+        },
+        {
+            "agentID": 64,
+            "dx": 0,
+            "dy": 1,
+            "type": "remove",
+            "apply": 1,
+            "turn": 50
+        },
+        {
+            "agentID": 65,
+            "dx": 1,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 50
+        },
+        {
+            "agentID": 66,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 0,
+            "turn": 50
+        },
+        {
+            "agentID": 67,
+            "dx": 0,
+            "dy": -1,
+            "type": "move",
+            "apply": 1,
+            "turn": 50
+        },
+        {
+            "agentID": 68,
+            "dx": 0,
+            "dy": 1,
+            "type": "move",
+            "apply": 1,
+            "turn": 50
+        }
+    ],
+    "height": 14,
+    "intervalMs": 1000,
+    "matchID": 468,
+    "name": "セカンドステージ2",
+    "points": [
+        [
+            -1,
+            -5,
+            -2,
+            -12,
+            -10,
+            -1,
+            -6,
+            -6,
+            -1,
+            -10,
+            -12,
+            -2,
+            -5,
+            -1
+        ],
+        [
+            -6,
+            9,
+            16,
+            -3,
+            16,
+            8,
+            -2,
+            -2,
+            8,
+            16,
+            -3,
+            16,
+            9,
+            -6
+        ],
+        [
+            -1,
+            4,
+            10,
+            -4,
+            10,
+            9,
+            -1,
+            -1,
+            9,
+            10,
+            -4,
+            10,
+            4,
+            -1
+        ],
+        [
+            -1,
+            -15,
+            -3,
+            -16,
+            -6,
+            -10,
+            -4,
+            -4,
+            -10,
+            -6,
+            -16,
+            -3,
+            -15,
+            -1
+        ],
+        [
+            -4,
+            8,
+            10,
+            -7,
+            10,
+            9,
+            -3,
+            -3,
+            9,
+            10,
+            -7,
+            10,
+            8,
+            -4
+        ],
+        [
+            -1,
+            3,
+            16,
+            -2,
+            16,
+            11,
+            -1,
+            -1,
+            11,
+            16,
+            -2,
+            16,
+            3,
+            -1
+        ],
+        [
+            -2,
+            -4,
+            -7,
+            -11,
+            -4,
+            -1,
+            -5,
+            -5,
+            -1,
+            -4,
+            -11,
+            -7,
+            -4,
+            -2
+        ],
+        [
+            -2,
+            -4,
+            -7,
+            -11,
+            -4,
+            -1,
+            -5,
+            -5,
+            -1,
+            -4,
+            -11,
+            -7,
+            -4,
+            -2
+        ],
+        [
+            -1,
+            3,
+            16,
+            -2,
+            16,
+            11,
+            -1,
+            -1,
+            11,
+            16,
+            -2,
+            16,
+            3,
+            -1
+        ],
+        [
+            -4,
+            8,
+            10,
+            -7,
+            10,
+            9,
+            -3,
+            -3,
+            9,
+            10,
+            -7,
+            10,
+            8,
+            -4
+        ],
+        [
+            -1,
+            -15,
+            -3,
+            -16,
+            -6,
+            -10,
+            -4,
+            -4,
+            -10,
+            -6,
+            -16,
+            -3,
+            -15,
+            -1
+        ],
+        [
+            -1,
+            4,
+            10,
+            -4,
+            10,
+            9,
+            -1,
+            -1,
+            9,
+            10,
+            -4,
+            10,
+            4,
+            -1
+        ],
+        [
+            -6,
+            9,
+            16,
+            -3,
+            16,
+            8,
+            -2,
+            -2,
+            8,
+            16,
+            -3,
+            16,
+            9,
+            -6
+        ],
+        [
+            -1,
+            -5,
+            -2,
+            -12,
+            -10,
+            -1,
+            -6,
+            -6,
+            -1,
+            -10,
+            -12,
+            -2,
+            -5,
+            -1
+        ]
+    ],
+    "stageID": 18,
+    "startedAtUnixTime": 1571017488,
+    "step": 1,
+    "teams": [
+        {
+            "agents": [
+                {
+                    "agentID": 59,
+                    "x": 8,
+                    "y": 3
+                },
+                {
+                    "agentID": 60,
+                    "x": 4,
+                    "y": 2
+                },
+                {
+                    "agentID": 61,
+                    "x": 11,
+                    "y": 6
+                },
+                {
+                    "agentID": 62,
+                    "x": 9,
+                    "y": 10
+                },
+                {
+                    "agentID": 63,
+                    "x": 9,
+                    "y": 12
+                }
+            ],
+            "areaPoint": 124,
+            "collegeName": "win",
+            "teamID": 935,
+            "tilePoint": 395
+        },
+        {
+            "agents": [
+                {
+                    "agentID": 64,
+                    "x": 2,
+                    "y": 2
+                },
+                {
+                    "agentID": 65,
+                    "x": 9,
+                    "y": 5
+                },
+                {
+                    "agentID": 66,
+                    "x": 9,
+                    "y": 1
+                },
+                {
+                    "agentID": 67,
+                    "x": 9,
+                    "y": 8
+                },
+                {
+                    "agentID": 68,
+                    "x": 12,
+                    "y": 6
+                }
+            ],
+            "areaPoint": 0,
+            "collegeName": "lose",
+            "teamID": 936,
+            "tilePoint": 46
+        }
+    ],
+    "tiled": [
+        [
+            0,
+            936,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            936,
+            0,
+            0,
+            936,
+            0,
+            0
+        ],
+        [
+            0,
+            936,
+            936,
+            935,
+            935,
+            0,
+            0,
+            0,
+            0,
+            0,
+            936,
+            935,
+            935,
+            0
+        ],
+        [
+            0,
+            0,
+            935,
+            936,
+            935,
+            0,
+            0,
+            935,
+            935,
+            935,
+            935,
+            935,
+            936,
+            0
+        ],
+        [
+            935,
+            0,
+            0,
+            0,
+            935,
+            0,
+            0,
+            0,
+            936,
+            936,
+            0,
+            936,
+            0,
+            0
+        ],
+        [
+            0,
+            935,
+            935,
+            935,
+            935,
+            935,
+            0,
+            936,
+            936,
+            936,
+            936,
+            936,
+            936,
+            0
+        ],
+        [
+            0,
+            0,
+            935,
+            935,
+            935,
+            935,
+            935,
+            0,
+            936,
+            0,
+            935,
+            936,
+            936,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            935,
+            935,
+            0,
+            0,
+            0,
+            936
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            936,
+            936,
+            935,
+            0,
+            0,
+            936
+        ],
+        [
+            0,
+            0,
+            935,
+            0,
+            935,
+            935,
+            935,
+            936,
+            936,
+            935,
+            936,
+            935,
+            936,
+            936
+        ],
+        [
+            0,
+            935,
+            935,
+            935,
+            935,
+            935,
+            0,
+            935,
+            935,
+            0,
+            936,
+            935,
+            935,
+            0
+        ],
+        [
+            935,
+            0,
+            935,
+            0,
+            0,
+            0,
+            935,
+            0,
+            0,
+            0,
+            0,
+            935,
+            0,
+            935
+        ],
+        [
+            0,
+            935,
+            935,
+            0,
+            935,
+            935,
+            935,
+            935,
+            935,
+            935,
+            935,
+            935,
+            935,
+            0
+        ],
+        [
+            0,
+            935,
+            935,
+            935,
+            935,
+            935,
+            0,
+            0,
+            935,
+            935,
+            935,
+            935,
+            935,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    ],
+    "turn": 50,
+    "turnMs": 11000,
+    "turns": 50,
+    "width": 14
+}

@@ -113,7 +113,10 @@ p{
         line-height: 55px;
     }
     #daraa{
-        font-size: 50px;
+        font-size: 40px;
         line-height: 50px;
+    }
+    .medremjtext{
+        width: 100%;
     }
 }

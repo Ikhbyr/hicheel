@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string.h>
+#include <math.h>
 using namespace std;
 int search();
 static int ih=0;
@@ -9,7 +10,8 @@ public:
     char id[11];
     student(){
         name = new char[1];
-        strcpy(name,"");
+        strcpy(name,"0");
+        strcpy(id,"11111111111");
     }
     set_name(char a[]){
         name = new char(strlen(a));
@@ -42,6 +44,7 @@ int bairlal(char a[]){
     int n = onlyint(a), year;
     year = 10+inttochar(a[1]);
     n = (n - 50000)/year;
+    n=fabs(n);
     return n;
 }
 int haritsuulah (char a[], char b[]){
@@ -57,9 +60,10 @@ int hash(char a[]){
     int check = 1,n;
     n = bairlal(a);
     while(check){
-        if(stu[n].name[0] == 0){
+        if(strcmp(stu[n].name,"0") == 0){
             break;
         }else{
+            cout<<stu[n].id[0];
             if(haritsuulah(stu[n].id,a)==0){
                 return -1;
             }

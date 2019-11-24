@@ -64,9 +64,9 @@ int main(){
             settextstyle(8, 0, 3);
             outtextxy(width-ehlel,height/2,ner2);
         }
-        //asciiValue=getch();
-        //Enter darsan esehiig shalgana
-        if(asciiValue==13 || asciiValue==32 || (GetAsyncKeyState(VK_LBUTTON)&&tseg1<=ehlel+nudT*nud_size&&tseg1>=ehlel&&tseg2<=ehlel+nudT*nud_size&&tseg2>=ehlel)){
+        asciiValue=getch();
+        //Enter darsan esehiig shalgana (GetAsyncKeyState(VK_LBUTTON)&&tseg1<=ehlel+nudT*nud_size&&tseg1>=ehlel&&tseg2<=ehlel+nudT*nud_size&&tseg2>=ehlel)
+        if(asciiValue==13 || asciiValue==32){
             if(GetAsyncKeyState(VK_LBUTTON)){
                 ut2=mousel(tseg2);
                 ut1=mousel(tseg1);
@@ -381,10 +381,10 @@ int main(){
     return 0;
 }
 void durvuljin(int x1, int y1, int x2, int y2){
-    //line(x1,y1,x1,y2);
-    //line(x1,y1,x2,y1);
-    //line(x1,y2,x2,y2);
-    //line(x2,y1,x2,y2);
+    line(x1,y1,x1,y2);
+    line(x1,y1,x2,y1);
+    line(x1,y2,x2,y2);
+    line(x2,y1,x2,y2);
 }
 //Massiviin ymar bairlald oruulahiig butsaana
 int tawih(int x){

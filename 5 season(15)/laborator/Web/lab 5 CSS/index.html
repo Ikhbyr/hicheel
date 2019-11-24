@@ -7,6 +7,36 @@
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <script>
+          window.onload=function()
+          {
+      let req = new XMLHttpRequest();
+
+      req.onreadystatechange = () => {
+        if (req.readyState == XMLHttpRequest.DONE) {
+          let articlesJSON=JSON.parse(req.responseText).udahgui;
+          console.log(req.responseText);
+          let articles=document.getElementById("demo");
+          for (const iterator of articlesJSON) {
+              let articleElement=document.createElement("article");
+              articleElement.classList.add("coming");
+              articleElement.innerHTML=`
+                                          <img src="${iterator.photo_link}"" alt="${iterator.movie_name}"/>
+                                        <div>
+                                            <span class="left">2019-10-13</span><span class="right">5 хоног
+                                            үлдлээ...</span>
+                                        </div>`
+              articles.appendChild(articleElement);
+          }
+        }
+      };
+
+      req.open("GET", "https://api.jsonbin.io/b/5dce4ef8ee15a6060aa1cc94/latest", true);
+      req.setRequestHeader("secret-key", "$2b$10$EDTE4unbaZ7OFINaGMpNueIAmldsqpuarOzElwfyLbtQqWC8lOXUW");
+      req.send();
+
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -87,7 +117,7 @@
     </section>
     <section class="showcome">
       <h2>Удахгүй дэлгэцнээ</h2>
-      <div class="slide-grid">
+      <div class="slide-grid" id="demo">
         <article class="coming">
           <img src="http://urgoo.mn/Files/FilmPosterGraphic//ho00000754.jpg"
             alt="photo">

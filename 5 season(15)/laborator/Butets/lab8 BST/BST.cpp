@@ -22,7 +22,7 @@ node* shiljuuleh(node* root)
 }
 
 struct node* Delete(struct node *root, int data) {
-    int a;
+    struct node *a;
 	if(root == NULL) return root;
 	else if(data < root->data){
         root->left = Delete(root->left,data);
@@ -51,7 +51,6 @@ struct node* Delete(struct node *root, int data) {
 			struct node *temp = shiljuuleh(root->right);
 			root->data = temp->data;
 			a=Delete(root->right,temp->data);
-			cout<<"a ni "<<a;
 			root->right = a;
 		}
 	}

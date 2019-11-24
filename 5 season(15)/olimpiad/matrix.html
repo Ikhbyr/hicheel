@@ -1,0 +1,86 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="matrix.css" />
+  <script type="application/javascript" src="post.js"></script>
+  <script>
+    
+  </script>
+  <title>МУИС-Procon</title>
+</head>
+  <body>
+    <div style="position: absolute; left: 300px;">
+      Red:
+      <span id="onooR">
+
+      </span>
+    Blue: 
+    <span id="onooB">
+
+    </span>
+    </div>
+    
+    <div id="matrix">
+      <button id="next" onclick="next()">done</button>
+      <!-- <script src="matrix.js" charset="utf-8"></script> -->
+      <script src="matrix.js" charset="utf-8" type="application/javascript"></script>
+      <script type="text/javascript">
+        let req = new XMLHttpRequest();
+
+        req.onreadystatechange = () => {
+            if (req.readyState == XMLHttpRequest.DONE) {
+                let agentsJSON=JSON.parse(req.responseText).teams;
+                let agents=document.getElementById("agents");
+                //let tr = trs.getElementsByTagName("tr");
+                var x,y,id;
+                for (const i in agentsJSON)
+                {
+                  let pElement=document.createElement("p");
+                  pElement.innerHTML=`Teamid ${i}: ${agentsJSON[i].teamID}`
+                  for (const j in agentsJSON[i].agents){
+                    console.log("tID "+agentsJSON[i].teamID+" id "+agentsJSON[i].agents[j].agentID + " x "+agentsJSON[i].agents[j].x+ " y "+agentsJSON[i].agents[j].y)
+                  }
+                  agents.appendChild(pElement);
+                }
+            }
+        };
+
+        req.open("GET", "http://localhost:8081/status", true);
+        req.send();
+        matrix1=new Matrix(10);
+        matrix1.render(10);
+         matrix1.buildAgent();
+        function next(){
+          matrix1.moveAgent();
+        }
+      </script>
+    </div>
+    <div id="agents"></div>
+    <div style="position: absolute; top:100px; right:10px; width: 450px">
+      <p id="msj"></p>
+      <p class="result" style="color:green"></p>
+        <p>Agent 1:</p>
+        <input type="number" placeholder="x" id="x1">
+        <input type="number" placeholder="y" id="y1">
+        <select name="" id="type1">
+          <option value="move" selected>move</option>
+          <option value="remove">remove</option>
+        </select>
+        <p>Agent 2:</p>
+        <input type="number" placeholder="x" id="x2">
+        <input type="number" placeholder="y" id="y2">
+        <select name="" id="type2">
+            <option value="move" selected>move</option>
+            <option value="remove">remove</option>
+          </select>
+        <!-- <p>Agent 3:</p>
+        <input type="number" placeholder="x" id="x3">
+        <input type="number" placeholder="y" id="y3">
+        <select name="" id="type3">
+            <option value="move" selected>move</option>
+            <option value="remove">remove</option>
+          </select> -->
+        <div><button onclick="sendJSON()">Send JSON</button></div>
+      </div>
+  </body>
+
+</html>

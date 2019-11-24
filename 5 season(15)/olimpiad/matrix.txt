@@ -1,0 +1,168 @@
+class Matrix{
+
+    /*constructor(){
+      this.field=this.render(number);
+    }*/
+  
+    render(number){
+      var field;
+      var tiled;
+      let req = new XMLHttpRequest();
+    req.onreadystatechange = () => {
+      if (req.readyState == XMLHttpRequest.DONE) {
+        field=JSON.parse(req.responseText).points;
+        tiled=JSON.parse(req.responseText).tiled;
+        console.log(field)
+        var cell;
+        for(var i=0; i<number; i++){
+          var row=document.createElement("div");
+          row.setAttribute("class","row");
+          row.setAttribute("id","row"+i);
+          document.getElementById("matrix").appendChild(row);
+          for(var j=0; j<number; j++){
+            cell=document.createElement("div");
+            if(tiled[i][j]==2){
+                cell.setAttribute("class","red");
+              }else if(tiled[i][j]==1){
+                cell.setAttribute("class","blue");
+              }else{
+                cell.setAttribute("class","cell");
+                cell.setAttribute("id","cell"+j);
+              }
+            row.appendChild(cell);
+            cell.innerHTML=field[i][j];
+          }
+        }
+        // for(var i=0; i<number; i++){
+        //     var row=document.createElement("div");
+        //     row.setAttribute("class","row");
+        //     row.setAttribute("id","row"+i);
+        //     document.getElementById("matrix").appendChild(row);
+        //     for(var j=0; j<number; j++){
+        //       cell=document.createElement("div");
+        //       if(tiled[i][j]==2){
+        //         cell.setAttribute("class","red");
+        //       }else if(tiled[i][j]==1){
+        //         cell.setAttribute("class","red");
+        //       }else{
+        //         cell.setAttribute("class","cell");
+        //         cell.setAttribute("id","cell"+j);
+        //       }
+              
+        //       row.appendChild(cell);
+        //       cell.innerHTML=tiled[i][j];
+        //     }
+        //   }
+      }
+    }
+    req.open("GET", "https://api.jsonbin.io/b/5dd54f942e22356f234ed37b/latest", true);
+    req.send();
+      this.field=field;
+    }
+    //Агентаа будна
+    buildAgent(){
+      var agentRow=document.getElementById("row");
+      var agentCell=agentRow.childNodes[1];
+      agentCell.setAttribute("class", "agent");
+    }
+    //Агентаа хөдөлгөнө.
+    /*moveAgent(){
+      for(var i=0; i<10; i++){
+        for(var j=0; j<9; j++){
+          var agentRow=document.getElementById("row"+i);
+          var agentCell=agentRow.childNodes[j].getAttribute("class");
+          //var class=agentCell.getAttribute(class);
+          if(agentCell==="agent"){
+            var pizda=agentRow.childNodes[j];
+            pizda.setAttribute("class", "track");
+            pizda=agentRow.childNodes[j+1];
+            pizda.setAttribute("class", "agent");
+            break;
+          }
+        }
+      }
+    }*/
+    moveAgent(){
+      for(var i=0; i<10; i++){
+          for(var j=0; j<9; j++){
+              var agentRow=document.getElementById("row"+i);
+              var agentCell=agentRow.childNodes[j];
+              var agentClass=agentCell.getAttribute("class");
+              if(agentClass==="agent"){
+                  agentCell.setAttribute("class", "track");
+                  var max=this.findMax(i,j);
+                  //console.log(max.innerHTML);
+                  max.setAttribute("class","agent");
+                  break;
+                }
+          }
+      }
+    }
+  
+    findMax(i,j){
+      var max;
+      var retX,retY;
+      //max эхний утга оноож байна
+      //зүүн дээр
+      if(this.field[i-1][j-1]){
+        console.log("-1 -1");
+        max=this.field[i-1][j-1];
+        retX=i-1; retY=j-1;
+      }
+      //1 дээр
+      else if(this.field[i-1][j]){
+        console.log("-1 0");
+        max=this.field[i-1][j];
+        retX=i-1; retY=j;
+      }
+      //зүүн хажууд
+      else if(this.field[i][j-1]){
+        console.log("0 -1");
+        max=this.field[i][j-1];
+        retX=i; retY=j-1;
+      }
+      //баруун хажууд
+      else{
+        console.log("0 1");
+        max=this.field[i][j+1];
+        retX=i; retY=j+1;
+      }
+      //console.log(this.field[i-1][j+1]);
+      console.log("first max is "+max);
+      //агент болон олбогоос бусад нүднүүдээс max олон буцаана.
+        for(var x=-1; x<2; x++){
+              for(var y=-1; y<2; y++){
+                console.log(document.getElementById("row"+(i+x) ).childNodes[j+y].getAttribute("class"));
+                    //  if(document.getElementById("row"+(i+x) ).childNodes[j+y].getAttribute("class")=== "agent") continue;
+                      //агент эсвэл олбог биш байвал
+                      if(this.check(i+x,j+y)){
+                            console.log("next value "+this.field[i+x][j+y]);
+                            //хэрвээ матрикс дотор байвал
+                            if(this.field[i+x][j+y]){
+                              //агент эсвэл олбог биш байвал
+                                    if(this.check(i+x,j+y)===1){
+                                      //console.log(this.check(i+x,j+y));
+                                        if(this.field[i+x][j+y]>max){
+                                          max=this.field[i+x][j+y];
+                                          retX=i+x;
+                                          retY=j+y;
+                                        }
+                                    }
+                            }
+                      }
+  
+              }
+        }
+        console.log(max);
+        var retRow=document.getElementById("row"+retX);
+        var retCell=retRow.childNodes[retY];
+        return retCell;
+    }
+    check(i,j){
+      var retRow=document.getElementById("row"+i);
+      var retCell=retRow.childNodes[j];
+      if(retCell.getAttribute("class")==="track" || retCell.getAttribute("class")==="agent") {     return 0;  }
+      else { return 1;  }
+    }
+  }
+  

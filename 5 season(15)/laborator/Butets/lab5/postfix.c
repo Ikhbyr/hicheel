@@ -255,7 +255,7 @@ void convert_to_postfix(struct List *p_tk, struct List *p_pf)
                 }
                 else if((st.top->x.op==47||st.top->x.op==42)&&(x1.op==43||x1.op==45))
                 {
-                    while(empty(&st)!=1)
+                    while(empty(&st)!=1&&(st.top=='('))
                     {
                         push_back(p_pf,pop(&st));
                     }

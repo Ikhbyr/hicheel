@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+            <title>Hello</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type="text/stylesheet" href="" />
+<style>
+body{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-seri;}
+section{ display:flex; flex-flow:row; flex-wrap: wrap;}
+article {flex:1; padding:1rem;}
+article img{width:100%;}
+.articleText{width:100%;height:7rem;}
+
+.articleImg{width:25rem;height:17rem;margin:0.5rem;padding:0;}
+.articleText{width:25rem;height:3rem;margin:0.5rem;padding:0 0;}
+.empty {background-color: #dddddd;}
+</style>
+
+<script>
+    window.onload=function()
+    {
+let req = new XMLHttpRequest();
+
+req.onreadystatechange = () => {
+  if (req.readyState == XMLHttpRequest.DONE) {
+    let articlesJSON=JSON.parse(req.responseText).sections;
+    let articles=document.getElementById("articles");
+
+
+    /*
+    Dynamic add
+    */
+    // for (const iterator of articlesJSON) {
+    //     let articleElement=document.createElement("article");
+    //     articleElement.innerHTML=`<div class="articleImg">
+    //         <img src="${iterator.imgURL}"" alt="${iterator.altText}"/>
+    //         </div>
+    //         <div class="articleText">${iterator.para}</div>`
+    //     articles.appendChild(articleElement);
+    // }
+
+
+
+    /*
+    Replace content
+    */
+    let articlesCollection= articles.getElementsByTagName("article");
+    for (const i in articlesCollection) 
+    {
+                let artImg=document.createElement("img");
+                artImg.setAttribute("src", articlesJSON[i].imgURL);
+                artImg.setAttribute("alt", articlesJSON[i].imgtext);
+
+                articlesCollection[i].childNodes[0].appendChild(artImg);
+                articlesCollection[i].childNodes[0].classList.remove("empty");
+
+                articlesCollection[i].childNodes[1].classList.remove("empty");
+                articlesCollection[i].childNodes[1].innerHTML=articlesJSON[i].para;
+    }    
+       
+
+
+  }
+};
+
+req.open("GET", "https://api.jsonbin.io/b/5dca00eec9b247772abe1dc2/latest", true);
+req.setRequestHeader("secret-key", "$2b$10$6YCtg6lI8jp4W2rdDMBG4.CDJurLT3BNJl9NViMX75nHdcwaldk/m");
+req.send();
+
+}
+</script>
+    </head>
+    <body>
+        <section id="articles">
+            <article>
+                <div class="articleImg empty"></div>
+                <div class="articleText empty"></div>
+            </article>
+            <article><div class="articleImg empty"></div><div class="articleText empty"></div></article>
+            <article><div class="articleImg empty"></div><div class="articleText empty"></div></article>       
+        </section>
+    </body>
+</html>
