@@ -1,6 +1,9 @@
 #include<iostream>
-#include<stdio.h>
+#include<graphics.h>
 using namespace std;
+
+DWORD Width = GetSystemMetrics(SM_CXSCREEN);
+DWORD Height = GetSystemMetrics(SM_CYSCREEN);
 
 int error = 0;
 const char error_msg[][50] = {
@@ -9,26 +12,143 @@ const char error_msg[][50] = {
 	"List xooson!"
 };
 
-struct node {
-	int data;
-	struct node *left;
-	struct node *right;
+class Node{
+	public:
+	int val;
+	Node *left;
+	Node *right;
+	int height;
 };
 
-node* shiljuuleh(node* root)
-{
+// unduriig butsaana
+int height(Node *N){
+	if (N == NULL)
+		return 0;
+		//cout<<"\nondor ni "<<N->height;
+	return N->height;
+}
+
+Node* shiljuuleh(Node* root){
 	while(root->left != NULL) root = root->left;
 	return root;
 }
 
-struct node* Delete(struct node *root, int data) {
-    int a;
-	if(root == NULL) return root;
-	else if(data < root->data){
-        root->left = Delete(root->left,data);
+int max(int a, int b){
+	return (a > b)? a : b;
+}
+
+/* Шинэ элемент хадгалах хаяг бэлдэнэ */
+Node* newNode(int val){
+	Node* node = new Node();
+	node->val = val;
+	node->left = NULL;
+	node->right = NULL;
+	node->height = 1; // new node is initially
+					// added at leaf
+	return(node);
+}
+
+// Baruun erguuleh
+Node *rightRotate(Node *y){
+	Node *x = y->left;
+	Node *T2 = x->right;
+
+	// Perform rotation
+	x->right = y;
+	y->left = T2;
+
+	// Unduriig shinechlene
+	y->height = max(height(y->left),
+					height(y->right)) + 1;
+	x->height = max(height(x->left),
+					height(x->right)) + 1;
+	return x;
+}
+
+// Zuun erguuleh
+Node *leftRotate(Node *x){
+	Node *y = x->right;
+	Node *T2 = y->left;
+	y->left = x;
+	x->right = T2;
+	x->height = max(height(x->left),height(x->right)) + 1;
+	y->height = max(height(y->left),height(y->right)) + 1;
+	return y;
+}
+
+// Node -iin baruun zuun modnii ondriin ylgawriig butsaana
+int getBalance(Node *N){
+	if (N == NULL)
+		return 0;
+	return height(N->left) - height(N->right);
+}
+
+Node* insert(Node* node, int val){
+// engiin BST-d ehleed insert hiine
+	if (node == NULL)
+		return(newNode(val));
+    //cout<<"\n utga "<<node->val;
+	if (val < node->val)
+		node->left = insert(node->left, val);
+	else if (val > node->val)
+		node->right = insert(node->right, val);
+	else
+		return node;
+
+	/* 2. Update height of this ancestor node */
+	//cout<<"\n utga "<<node->val<<" left h "<<height(node->left)<<" right h "<<height(node->right);
+	node->height = 1 + max(height(node->left),height(node->right));
+    //cout<<"\nnode h "<<node->height;
+	// Node ondoriin zoruug zoruu-d hadgalna
+	int zoruu = getBalance(node);
+
+	// bugd zuun
+	if (zoruu > 1 && val < node->left->val)
+		return rightRotate(node);
+
+	// bugd baruun
+	if (zoruu < -1 && val > node->right->val)
+		return leftRotate(node);
+
+	// zuun baruun uyd
+	if (zoruu > 1 && val > node->left->val){
+		node->left = leftRotate(node->left);
+		return rightRotate(node);
 	}
-	else if (data > root->data){
-        root->right = Delete(root->right,data);
+
+	// baruun zuun uyd
+	if (zoruu < -1 && val < node->right->val){
+		node->right = rightRotate(node->right);
+		return leftRotate(node);
+	}
+	return node;
+}
+
+int search(Node *root, int val){
+	if(root == NULL){
+        cout<<val<<" utga oldsongui\n";
+        return 0;
+	}
+	else if(val < root->val){
+        search(root->left,val);
+	}
+	else if (val > root->val){
+        search(root->right,val);
+	}
+	else {
+	    cout<<val<<" utga oldloo\n";
+		return 1;
+	}
+}
+
+struct Node* Delete(struct Node *root, int val) {
+    struct Node *a;
+	if(root == NULL) return root;
+	else if(val < root->val){
+        root->left = Delete(root->left,val);
+	}
+	else if (val > root->val){
+        root->right = Delete(root->right,val);
 	}else{
 		//No child
 		if(root->left == NULL && root->right == NULL) {
@@ -37,73 +157,38 @@ struct node* Delete(struct node *root, int data) {
 		}
 		//One child
 		else if(root->left == NULL) {
-			struct node *temp = root;
+			struct Node *temp = root;
 			root = root->right;
 			delete temp;
 		}
 		else if(root->right == NULL) {
-			struct node *temp = root;
+			struct Node *temp = root;
 			root = root->left;
 			delete temp;
 		}
 		//2 children
 		else {
-			struct node *temp = shiljuuleh(root->right);
-			root->data = temp->data;
-			a=Delete(root->right,temp->data);
-			cout<<"a ni "<<a;
+			struct Node *temp = shiljuuleh(root->right);
+			root->val = temp->val;
+			a=Delete(root->right,temp->val);
 			root->right = a;
 		}
 	}
 	return root;
 }
 
-void print(node *root) {
-	if(root == NULL) return;
-	print(root->left);
-	printf("%d ",root->data);
-	print(root->right);
-}
-void zurah(node *root){
-if(root == NULL) return;
-    printf("%d ",root->data);
-	print(root->left);
-	print(root->right);
-}
-int search(node *root, int data){
-	if(root == NULL){
-        cout<<data<<" utga oldsongui\n";
-        return 0;
-	}
-	else if(data < root->data){
-        search(root->left,data);
-	}
-	else if (data > root->data){
-        search(root->right,data);
-	}
-	else {
-	    cout<<data<<" utga oldloo\n";
-		return 1;
+void preOrder(Node *root){
+	if(root != NULL){
+		cout << root->val << " ";
+		preOrder(root->left);
+		preOrder(root->right);
 	}
 }
 
-// Function to Insert node in a Binary Search Tree
-node* Insert(node *root,char data) {
-	if(root == NULL) {
-		root = new node();
-		root->data = data;
-		root->left = root->right = NULL;
-	}
-	else if(data <= root->data)
-		root->left = Insert(root->left,data);
-	else
-		root->right = Insert(root->right,data);
-	return root;
-}
-
-int main() {
-    int n, i, a,t;
-	node* root = NULL;
+int main(){
+    initwindow(Width/2,Height);
+	Node *root = NULL;
+int n, i, a,t;
 	while(1){
         cout<<"1: insert, 2: delete, 3: search, 4: print, 0: exit\n";
         cin>>t;
@@ -112,12 +197,11 @@ int main() {
             case 1:
                 cout<<"Oruulah utga: ";
                 cin>>a;
-                root=Insert(root,a);
+                root=insert(root,a);
                 if(error)
                     cout<<"Aldaa: "<<error_msg[error];
                 else
                     cout<<a<<" utga orloo\n";
-                zurah(root);
                 break;
             case 2:
                 cout<<"Ustgah too: ";
@@ -134,11 +218,12 @@ int main() {
                 search(root,a);
                 break;
             case 4:
-                print(root);
+                preOrder(root);
                 cout<<"\n";
                 break;
             default:
                 return 0;
         }
     }
+	return 0;
 }

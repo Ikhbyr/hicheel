@@ -82,7 +82,7 @@ int search(char b[]){
         return 1;
     }else{
         for(check; check<=ih; check++){
-            if(stu[check].name[0]==0){
+            if(strcmp(stu[check].name,"0")==0){
                 return 0;
             }else{
                 if(haritsuulah(stu[check].id,b)==0)
@@ -104,14 +104,14 @@ main(){
         case 1:
             cout<<"Oyutnii id oruulna uu?"<<endl;
             cin>>sisi;
-            cout<<"Oyutnii Ner oruulna uu?"<<endl;
-            cin>>name;
             i=hash(sisi);
             if(i==-1){
                 cout<<"Tanii oruulsan medeelel dawhtslaa\n";
             }else{
-                stu[i].set_name(name);
                 strcpy(stu[i].id,sisi);
+                cout<<"\nOyutnii Ner oruulna uu?"<<endl;
+                cin>>name;
+                stu[i].set_name(name);
                 cout<<"\n"<<stu[i].name<<" ta amjilttai burtguullee\n";
             }
             break;
