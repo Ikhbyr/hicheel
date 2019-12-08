@@ -89,7 +89,6 @@ Node* insert(Node* node, int val){
 	else
 		return node;
 
-	/* 2. Update height of this ancestor node */
 	//cout<<"\n utga "<<node->val<<" left h "<<height(node->left)<<" right h "<<height(node->right);
 	node->height = 1 + max(height(node->left),height(node->right));
     //cout<<"\nnode h "<<node->height;
@@ -136,8 +135,8 @@ int search(Node *root, int val){
 }
 
 struct Node* Delete(struct Node *root, int val) {
-    struct Node *a;
-	if(root == NULL) return root;
+	if(root == NULL)
+        return root;
 	else if(val < root->val){
         root->left = Delete(root->left,val);
 	}
@@ -164,12 +163,33 @@ struct Node* Delete(struct Node *root, int val) {
 		else {
 			struct Node *temp = shiljuuleh(root->right);
 			root->val = temp->val;
-			a=Delete(root->right,temp->val);
-			a->height = max(height(a->left),height(a->right))-1;
-			root->right = a;
+			root->right=Delete(root->right,temp->val);
 		}
 	}
+	if(root == NULL)
 	return root;
+	root->height = 1+max(height(root->left),height(root->right));
+	int balance = getBalance(root);
+	if (balance > 1 &&
+        getBalance(root->left) >= 0)
+        return rightRotate(root);
+
+    if (balance > 1 && getBalance(root->left) < 0)
+    {
+        root->left = leftRotate(root->left);
+        return rightRotate(root);
+    }
+
+    if (balance < -1 && getBalance(root->right) <= 0)
+        return leftRotate(root);
+
+    if (balance < -1 && getBalance(root->right) > 0)
+    {
+        root->right = rightRotate(root->right);
+        return leftRotate(root);
+    }
+
+    return root;
 }
 
 void preOrder(Node *root){
@@ -216,7 +236,7 @@ int n, i, a,t;
                 preOrder(root);
                 cout<<"\n";
                 break;
-            default:
+            case 0:
                 return 0;
         }
     }

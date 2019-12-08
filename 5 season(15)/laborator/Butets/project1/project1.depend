@@ -1,4 +1,8 @@
 # depslib dependency file v1.0
-1574842642 source:c:\users\ikhbayar\desktop\lesson\hicheel\5 season(15)\laborator\butets\project1\main.cpp
+1575693990 source:c:\users\ikhbayar\desktop\lesson\hicheel\5 season(15)\laborator\butets\project1\main.cpp
 	<iostream>
+	<graphics.h>
+
+1575558486 source:c:\users\ikhbayar\desktop\c hel\calc.cpp
+	<stdio.h>
 

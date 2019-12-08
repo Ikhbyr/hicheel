@@ -270,7 +270,7 @@ main(){
                 cout<<endl;
             }
             break;
-        default:
+        case 0:
             return 0;
         }
     }

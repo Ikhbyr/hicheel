@@ -1,0 +1,452 @@
+#include<iostream>
+#include<string.h>
+#include<math.h>
+using namespace std;
+class Shape{
+protected:
+char *name;
+float *x;
+float *y;
+public:
+static int cnt;
+virtual float premeter()=0;
+virtual void setX(float _x)=0;
+virtual float *getX()=0;
+virtual void setY(float _y)=0;
+virtual float *getY()=0;
+void setName(char *_name)
+{
+strcpy(this-&gt;name,_name);
+}
+char *getName()
+{
+return this-&gt;name;
+}
+Shape()
+{
+this-&gt;name=new char[strlen(&quot;shape&quot;)+1];
+strcpy(this-&gt;name,&quot;shape&quot;);
+}
+Shape(char *_name)
+{
+strcpy(this-&gt;name,_name);
+}
+~Shape()
+{
+delete this-&gt;name;
+cout<<"\ndeleted"<<"\n";
+}
+static int getObjectNum()
+{
+return cnt;
+}
+static void setObjectNum(int _cnt)
+{
+cnt=_cnt;
+}
+};
+int Shape::cnt=0;
+class Shape_2D:public Shape{
+protected:
+float line;
+public:
+virtual float area()=0;
+virtual void setLine(float _line)=0;
+virtual float getLine()=0;
+Shape_2D():Shape()
+{
+this-&gt;line=3;
+}
+Shape_2D(float _line):Shape()
+{
+this-&gt;line=_line;
+}
+};
+class Circle:public Shape_2D{
+public:
+float premeter();
+float area();
+Circle():Shape_2D()
+{
+strcpy(name,&quot;av&quot;);
+this-&gt;x=new float[1];
+this-&gt;y=new float[1];
+this-&gt;x[0]=0;
+this-&gt;y[0]=0;
+this-&gt;line=0;
+cnt++;
+}
+Circle(float _x,float _y,float _radius,char *_name):Shape_2D(_radius)
+{
+strcpy(name,_name);
+this-&gt;x[0]=_x;
+this-&gt;y[0]=_y;
+this-&gt;line=_radius;
+cnt++;
+}
+~Circle()
+{
+delete this-&gt;name;
+delete this-&gt;x;
+delete this-&gt;y;
+cnt--;
+}
+void setX(float _x)
+{
+this-&gt;x[0]=_x;
+}
+float *getX()
+{
+return this-&gt;x;
+}
+void setY(float _y)
+{
+this-&gt;y[0]=_y;
+}
+float *getY()
+{
+return this-&gt;y;
+}
+void setLine(float _line)
+{
+this-&gt;line=_line;
+
+}
+float getLine()
+{
+return this-&gt;line;
+}
+};
+class Rectangle:public Shape_2D{
+public:
+float premeter();
+float area();
+Rectangle():Shape_2D()
+{
+name=new char[strlen(&quot;square&quot;)+1];
+strcpy(name,&quot;square&quot;);
+this-&gt;x=new float[4];
+this-&gt;y=new float[4];
+this-&gt;x[0]=0; this-&gt;y[0]=0;
+this-&gt;x[1]=0; this-&gt;y[1]=0;
+this-&gt;x[2]=0; this-&gt;y[2]=0;
+this-&gt;x[3]=0; this-&gt;y[3]=0;
+this-&gt;line=0;
+cnt++;
+}
+Rectangle(float _x,float _y,float _line,char *_name):Shape_2D(_line)
+{
+name=new char[strlen(_name)+1];
+strcpy(name,_name);
+this-&gt;x[0]=_x; this-&gt;y[0]=_y;
+this-&gt;x[1]=x[0]+_line; this-&gt;y[1]=y[0];
+this-&gt;x[2]=x[0]; this-&gt;y[2]=y[0]+_line;
+this-&gt;x[3]=x[1]; this-&gt;y[3]=y[2];
+this-&gt;line=_line;
+cnt++;
+}
+~Rectangle()
+{
+delete this-&gt;name;
+delete this-&gt;x;
+delete this-&gt;y;
+cnt--;
+}
+void setX(float _x)
+{
+this-&gt;x[0]=_x;
+this-&gt;x[1]=x[0]+this-&gt;line;
+this-&gt;x[2]=x[0];
+this-&gt;x[3]=x[1];
+
+}
+float *getX()
+{
+return this-&gt;x;
+}
+void setY(float _y)
+{
+this-&gt;y[0]=_y;
+this-&gt;y[1]=y[0];
+this-&gt;y[2]=y[0]+line;
+this-&gt;y[3]=y[2];
+}
+float *getY()
+{
+return this-&gt;y;
+}
+void setLine(float _line)
+{
+this-&gt;line=_line;
+}
+float getLine()
+{
+return this-&gt;line;
+}
+};
+class Triangle:public Shape_2D{
+protected:
+float high;
+public:
+float premeter();
+float area();
+Triangle():Shape_2D()
+{
+this-&gt;name=new char[strlen(&quot;triangle&quot;)+1];
+strcpy(this-&gt;name,&quot;triangle&quot;);
+this-&gt;high=0;
+this-&gt;x=new float[3];
+this-&gt;y=new float[3];
+this-&gt;x[0]=0; this-&gt;y[0]=0;
+this-&gt;x[1]=0; this-&gt;y[1]=0;
+this-&gt;x[2]=0; this-&gt;y[2]=0;
+this-&gt;line=0;
+cnt++;
+}
+Triangle(float _x,float _y,float _line,char *_name,float _high):Shape_2D(_line)
+{
+this-&gt;name=new char[strlen(_name)+1];
+strcpy(this-&gt;name,_name);
+this-&gt;line=_line;
+this-&gt;high=sqrt(3*pow(line,2)/4);
+this-&gt;x[0]=_x; this-&gt;y[0]=_y;
+this-&gt;x[1]=x[0]-x[0]/2;
+this-&gt;x[2]=x[0]+x[0]/2;
+this-&gt;y[1]=y[0]-high;
+this-&gt;y[2]=y[1];
+cnt++;
+}
+~Triangle()
+{
+delete this-&gt;name;
+delete this-&gt;x;
+delete this-&gt;y;
+cnt--;
+}
+void setX(float _x)
+{
+this-&gt;x[0]=_x;
+this-&gt;x[1]=x[0]-x[0]/2;
+this-&gt;x[2]=x[0]+x[0]/2;
+}
+float *getX()
+{
+return this-&gt;x;
+}
+void setY(float _y)
+{
+this-&gt;y[0]=_y;
+this-&gt;y[1]=y[0]-this-&gt;high;
+this-&gt;y[2]=y[1];
+}
+float *getY()
+{
+return this-&gt;y;
+}
+void setLine(float _line)
+{
+this-&gt;line=_line;
+this-&gt;high=sqrt(3*pow(line,2)/4);
+}
+float getLine()
+{
+return this-&gt;line;
+}
+};
+int main()
+{
+int j,i,_x,_y,_line;
+char _name[20];
+int c;
+/*float *cx,*cy;
+cx=new float[1];
+cy=new float[1];*/
+cout&lt;&lt;&quot;Heden shirheg toirog uusgeh ve?:&quot;;
+cin&gt;&gt;c;
+Circle circle[c];
+for(i=0;i&lt;c;i++)
+{
+cout&lt;&lt;i+1&lt;&lt;&quot;-r toirgiin neriig oruul: &quot;;
+cin&gt;&gt;_name;
+cout&lt;&lt;i+1&lt;&lt;&quot;-r toirgiin koordinatiig oruul: &quot;;
+cin&gt;&gt;_x;
+cin&gt;&gt;_y;
+cout&lt;&lt;i+1&lt;&lt;&quot;-r toirgiin radiusiig oruul: &quot;;
+cin&gt;&gt;_line;
+circle[i].setName(_name);
+circle[i].setLine(_line);
+circle[i].setX(_x);
+circle[i].setY(_y);
+circle[i].area();
+circle[i].premeter();
+}
+// cout&lt;&lt;&quot;object:&quot;&lt;&lt;Shape_2D::getObjectNum()&lt;&lt;endl;
+cout&lt;&lt;&quot;object:&quot;&lt;&lt;Circle::cnt&lt;&lt;endl;
+/* for(i=0;i&lt;c;i++)
+{
+cout&lt;&lt;i+1&lt;&lt;&quot;-R TOIROG\n&quot;;
+cx=circle[i].getX();
+cy=circle[i].getY();
+for(j=0;j&lt;1;j++)
+{
+cout&lt;&lt;j+1&lt;&lt;&quot;-r koordinat&quot;&lt;&lt;&quot;\n&quot;;
+cout&lt;&lt;&quot;x:&quot;&lt;&lt;cx[j]&lt;&lt;&quot; &quot;;
+cout&lt;&lt;&quot;y:&quot;&lt;&lt;cy[j]&lt;&lt;&quot;\n&quot;;
+}
+cout&lt;&lt;&quot;ner:&quot;&lt;&lt;circle[i].getName()&lt;&lt;&quot; &quot;;
+cout&lt;&lt;&quot;talbai:&quot;&lt;&lt;circle[i].area(circle[i].getLine())&lt;&lt;&quot; &quot;;
+cout&lt;&lt;&quot;premeter:&quot;&lt;&lt;circle[i].premeter(circle[i].getLine())&lt;&lt;&quot;\n&quot;;
+}*/
+
+int r;
+/*float *rx,*ry;
+rx=new float[4];
+ry=new float[4];*/
+cout&lt;&lt;&quot;Heden shirheg kvadrat uusgeh ve?:&quot;;
+cin&gt;&gt;r;
+Rectangle rectangle[r];
+for(i=0;i&lt;r;i++)
+{
+cout&lt;&lt;i+1&lt;&lt;&quot;-r kvadratiin neriig oruul: &quot;;
+cin&gt;&gt;_name;
+cout&lt;&lt;i+1&lt;&lt;&quot;-r kvadratiin koordinatiig oruul: &quot;;
+cin&gt;&gt;_x;
+cin&gt;&gt;_y;
+cout&lt;&lt;i+1&lt;&lt;&quot;-r kvadratiin taliin urtiig oruul: &quot;;
+cin&gt;&gt;_line;
+rectangle[i].setName(_name);
+rectangle[i].setLine(_line);
+rectangle[i].setX(_x);
+rectangle[i].setY(_y);
+rectangle[i].area();
+rectangle[i].premeter();
+}
+/* for(i=0;i&lt;r;i++)
+{
+cout&lt;&lt;i+1&lt;&lt;&quot;-R KVADRAT\n&quot;;
+rx=rectangle[i].getX();
+ry=rectangle[i].getY();
+for(j=0;j&lt;4;j++)
+{
+cout&lt;&lt;j+1&lt;&lt;&quot;-r koordinat&quot;&lt;&lt;&quot;\n&quot;;
+cout&lt;&lt;&quot;x:&quot;&lt;&lt;rx[j]&lt;&lt;&quot; &quot;;
+cout&lt;&lt;&quot;y:&quot;&lt;&lt;ry[j]&lt;&lt;&quot;\n&quot;;
+}
+cout&lt;&lt;&quot;ner:&quot;&lt;&lt;rectangle[i].getName()&lt;&lt;&quot; &quot;;
+cout&lt;&lt;&quot;talbai:&quot;&lt;&lt;rectangle[i].area(rectangle[i].getLine())&lt;&lt;&quot; &quot;;
+cout&lt;&lt;&quot;premeter:&quot;&lt;&lt;rectangle[i].premeter(rectangle[i].getLine())&lt;&lt;&quot;\n&quot;;
+}*/
+//cout&lt;&lt;&quot;object:&quot;&lt;&lt;Shape_2D::getObjectNum()&lt;&lt;endl;
+cout&lt;&lt;&quot;object:&quot;&lt;&lt;Shape_2D::cnt&lt;&lt;endl;
+int t;
+/*float *tx,*ty;
+tx=new float[3];
+ty=new float[3];*/
+cout&lt;&lt;&quot;Heden shirheg gurvaljin durs uusgeh ve?:&quot;;
+cin&gt;&gt;t;
+Triangle triangle[t];
+for(i=0;i&lt;t;i++)
+{
+cout&lt;&lt;i+1&lt;&lt;&quot;-r gurvaljnii neriig oruul: &quot;;
+cin&gt;&gt;_name;
+cout&lt;&lt;i+1&lt;&lt;&quot;-r gurvaljnii koordinatiig oruul: &quot;;
+cin&gt;&gt;_x;
+cin&gt;&gt;_y;
+cout&lt;&lt;i+1&lt;&lt;&quot;-r gurvaljnii taliin urtiig oruul: &quot;;
+cin&gt;&gt;_line;
+triangle[i].setName(_name);
+triangle[i].setLine(_line);
+triangle[i].setX(_x);
+triangle[i].setY(_y);
+triangle[i].area();
+triangle[i].premeter();
+}
+/* for(i=0;i&lt;t;i++)
+{
+cout&lt;&lt;i+1&lt;&lt;&quot;-R GURVALJIN&quot;;
+tx=triangle[i].getX();
+ty=triangle[i].getY();
+for(j=0;j&lt;3;j++)
+{
+cout&lt;&lt;j+1&lt;&lt;&quot;-r koordinat&quot;&lt;&lt;&quot;\n&quot;;
+cout&lt;&lt;&quot;x:&quot;&lt;&lt;tx[j]&lt;&lt;&quot; &quot;;
+cout&lt;&lt;&quot;y:&quot;&lt;&lt;ty[j]&lt;&lt;&quot;\n&quot;;
+}
+cout&lt;&lt;&quot;ner:&quot;&lt;&lt;triangle[i].getName()&lt;&lt;&quot; &quot;;
+cout&lt;&lt;&quot;talbai:&quot;&lt;&lt;triangle[i].area(triangle[i].getLine())&lt;&lt;&quot; &quot;;
+cout&lt;&lt;&quot;premeter:&quot;&lt;&lt;triangle[i].premeter(triangle[i].getLine())&lt;&lt;&quot;\n&quot;;
+}*/
+// cout&lt;&lt;&quot;object:&quot;&lt;&lt;Shape_2D::getObjectNum()&lt;&lt;endl;
+cout&lt;&lt;&quot;object:&quot;&lt;&lt;Shape_2D::cnt&lt;&lt;endl;
+int s=t+r+c;
+Shape_2D *shapes[s];
+for(i=0;i&lt;c;i++)
+{
+shapes[i]=&amp;circle[i];
+}
+j=i;
+for(i=0;i&lt;r;i++,j++)
+{
+shapes[j]=&amp;rectangle[i];
+}
+int k=j;
+for(i=0;i&lt;t;i++,k++)
+{
+shapes[k]=&amp;triangle[i];
+}
+for(i=0;i&lt;s;i++)
+{
+cout&lt;&lt;shapes[i]-&gt;getName()&lt;&lt;&quot; &quot;;
+}
+cout&lt;&lt;&quot;\n&quot;;
+Shape_2D *temp;
+for(int i=0; i&lt;s; i++){
+for(int j=i+1; j&lt;s; j++){
+if(shapes[i]-&gt;area()&gt;shapes[j]-&gt;area())
+{
+
+temp = shapes[i];
+shapes[i]=shapes[j];
+shapes[j]=temp;
+
+}
+}
+}
+for(i=0;i&lt;s;i++)
+{
+cout&lt;&lt;shapes[i]-&gt;getName()&lt;&lt;&quot; &quot;;
+cout&lt;&lt;shapes[i]-&gt;area()&lt;&lt;&quot;\n&quot;;
+}
+return 0;
+}
+float Circle::premeter()
+{
+float p=3.14,l;
+l=2*p*this-&gt;line;
+return l;
+}
+float Circle::area()
+{
+float p=3.14,s;
+s=p*this-&gt;line*this-&gt;line;
+return s;
+}
+
+float Rectangle::area()
+{
+return this-&gt;line*this-&gt;line;
+}
+float Rectangle::premeter()
+{
+return 4*this-&gt;line;
+}
+
+float Triangle::area()
+{
+
+return this-&gt;high*this-&gt;line/2;
+}
+float Triangle::premeter()
+{
+return 3*this-&gt;line;
+}

@@ -1,15 +1,15 @@
 #include<iostream>
 #include<graphics.h>
+#include<math.h>
+#include<stdio.h>
 using namespace std;
-
-DWORD Width = GetSystemMetrics(SM_CXSCREEN);
-DWORD Height = GetSystemMetrics(SM_CYSCREEN);
 
 int error = 0;
 const char error_msg[][50] = {
 	"",
 	"List duuren!",
-	"List xooson!"
+	"List xooson!",
+	"Adilhan utga orloo!"
 };
 
 class Node{
@@ -58,10 +58,8 @@ Node *rightRotate(Node *y){
 	y->left = T2;
 
 	// Unduriig shinechlene
-	y->height = max(height(y->left),
-					height(y->right)) + 1;
-	x->height = max(height(x->left),
-					height(x->right)) + 1;
+	y->height = max(height(y->left),height(y->right)) + 1;
+	x->height = max(height(x->left),height(x->right)) + 1;
 	return x;
 }
 
@@ -92,10 +90,12 @@ Node* insert(Node* node, int val){
 		node->left = insert(node->left, val);
 	else if (val > node->val)
 		node->right = insert(node->right, val);
-	else
+	else{
+        error=3;
 		return node;
+	}
 
-	/* 2. Update height of this ancestor node */
+
 	//cout<<"\n utga "<<node->val<<" left h "<<height(node->left)<<" right h "<<height(node->right);
 	node->height = 1 + max(height(node->left),height(node->right));
     //cout<<"\nnode h "<<node->height;
@@ -142,8 +142,8 @@ int search(Node *root, int val){
 }
 
 struct Node* Delete(struct Node *root, int val) {
-    struct Node *a;
-	if(root == NULL) return root;
+	if(root == NULL)
+        return root;
 	else if(val < root->val){
         root->left = Delete(root->left,val);
 	}
@@ -170,11 +170,33 @@ struct Node* Delete(struct Node *root, int val) {
 		else {
 			struct Node *temp = shiljuuleh(root->right);
 			root->val = temp->val;
-			a=Delete(root->right,temp->val);
-			root->right = a;
+			root->right=Delete(root->right,temp->val);
 		}
 	}
+	if(root == NULL)
 	return root;
+	root->height = 1+max(height(root->left),height(root->right));
+	int balance = getBalance(root);
+	if (balance > 1 &&
+        getBalance(root->left) >= 0)
+        return rightRotate(root);
+
+    if (balance > 1 && getBalance(root->left) < 0)
+    {
+        root->left = leftRotate(root->left);
+        return rightRotate(root);
+    }
+
+    if (balance < -1 && getBalance(root->right) <= 0)
+        return leftRotate(root);
+
+    if (balance < -1 && getBalance(root->right) > 0)
+    {
+        root->right = rightRotate(root->right);
+        return leftRotate(root);
+    }
+
+    return root;
 }
 
 void preOrder(Node *root){
@@ -185,10 +207,40 @@ void preOrder(Node *root){
 	}
 }
 
+void draw(struct Node* node, int x, int y, int golOloh, int flag, int rad)
+{
+    if (node != NULL)
+    {
+        char tooChar[5];
+        if (node->left != NULL)
+            draw(node->left, x - golOloh, y + 50, golOloh / 2, -1, rad);
+        if (node->right != NULL)
+            draw(node->right, x + golOloh, y + 50, golOloh / 2, 1, rad);
+        delay(300);
+        sprintf(tooChar, "%d", node->val);
+        setcolor(YELLOW);
+        outtextxy(x - 8, y - 10, tooChar);
+        setcolor(BLUE);
+        circle(x, y, rad);
+        setcolor(RED);
+        if (flag == 1)
+        {
+            line((x - golOloh * 2) + rad, y - 50, x, y - rad);
+        }
+        else if(flag == -1)
+        {
+            line((x + golOloh * 2) - rad, y - 50, x, y - rad);
+        }
+    }
+}
 int main(){
-    initwindow(Width/2,Height);
 	Node *root = NULL;
-int n, i, a,t;
+    int n, i, a,t;
+    int shalgah, uildel, radius=25, complete = 1, height;
+    DWORD Width = GetSystemMetrics(SM_CXSCREEN);
+    DWORD fullHeight = GetSystemMetrics(SM_CYSCREEN);
+    int wUrgun = Width/2;
+    initwindow(wUrgun, fullHeight);
 	while(1){
         cout<<"1: insert, 2: delete, 3: search, 4: print, 0: exit\n";
         cin>>t;
@@ -202,6 +254,8 @@ int n, i, a,t;
                     cout<<"Aldaa: "<<error_msg[error];
                 else
                     cout<<a<<" utga orloo\n";
+                cleardevice();
+                draw(root, wUrgun / 2, radius, wUrgun / 4, 0, radius);
                 break;
             case 2:
                 cout<<"Ustgah too: ";
@@ -211,6 +265,8 @@ int n, i, a,t;
                     cout<<"\nAldaa: "<<error_msg[error];
                 else
                     cout<<a<<"\nUtga ustlaa\n";
+                cleardevice();
+                draw(root, wUrgun / 2, radius, wUrgun / 4, 0, radius);
                 break;
             case 3:
                 cout<<"Haih too: ";

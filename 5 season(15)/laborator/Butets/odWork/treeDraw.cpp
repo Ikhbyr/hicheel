@@ -104,9 +104,9 @@ void inOrder(int a[], int idx){
 void postOrder(int a[], int idx){
     int j=0,hi=0,wid,head;
     if(idx<=n-1){
-    postOrder(a,2*idx+1);
-    postOrder(a,2*idx+2);
-    while(j<=idx){
+        postOrder(a,2*idx+1);
+        postOrder(a,2*idx+2);
+        while(j<=idx){
             hi++;
             j=j*2+1;
         }
