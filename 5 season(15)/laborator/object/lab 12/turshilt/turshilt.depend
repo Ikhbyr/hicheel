@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1576232313 source:c:\users\ikhbayar\desktop\lesson\hicheel\5 season(15)\laborator\object\lab 12\turshilt\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<graphics.h>
+	<math.h>
+

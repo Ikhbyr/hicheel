@@ -37,12 +37,15 @@ int main()
 	}
 	pthread_t p[siz_THREAD];
     int i,j,point[2];
-    for(i=0;i<x;i++)
-        for(j=0;j<2;j++){
-            point[0]= i;
+    for(i=0;i<3;i++)
+        for(j=i;j<3;j++){
+                if(i==j){
+                    point[0]= i;
             point[1]= j;
             pthread_create(&p[i],NULL,Arr_multi,point);
             pthread_join(p[i], NULL);
+                }
+
         }
 	cout << "\n"<< "Urjver Matrix" << "\n";
 	for (int i = 0; i < x; i++) {

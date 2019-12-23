@@ -102,7 +102,7 @@ int main(){
             }
         }
         //cout<<"huu 0: "<<huu[0].i<<" "<<huu[0].j<<endl;
-        delay(50);
+        delay(100);
     }
 }
 void nuudel(int nuuh, int player, int a[][10], int urt){
@@ -152,12 +152,14 @@ void nuudel(int nuuh, int player, int a[][10], int urt){
                         //delay(300);
                         //cout<<"butsaj ireh utga "<<shalgah(0)<<endl;
                         if(shalgah(0)==1){
-                            //cout<<"talbar zurah\n";
                             readimagefile("talbar/hari.jpg",head+(urt-head*2)/3+margin+3,head+margin+3,head+(urt-head*2)/3+margin+zai-3,head+margin+zai-3);
                         }else{
                             readimagefile("talbar/horseR.jpg",head+(urt-head*2)/3+margin+3,head+margin+3,head+(urt-head*2)/3+margin+zai-3,head+margin+zai-3);
                         }
                         if(odCheck(1)==1 && odCheck(0)==1){
+                            readimagefile("talbar/hari.jpg",head+(urt-head*2)/3+margin+3,head+margin+2,head+(urt-head*2)/3+margin+zai-2,head+margin+zai-2);
+                        }else
+                        if((odCheck(1)==1 || odCheck(0)==1)&&(odCheck(2)==1 || odCheck(3)==1)){
                             readimagefile("talbar/zereg.jpg",head+(urt-head*2)/3+margin+3,head+margin+2,head+(urt-head*2)/3+margin+zai-2,head+margin+zai-2);
                         }
                         break;
@@ -204,10 +206,10 @@ void nuudel(int nuuh, int player, int a[][10], int urt){
                         }
                         if(odCheck(2)==2 && odCheck(3)==2){
                             readimagefile("talbar/shari.jpg",urt-head-(urt-head*2)/3-margin-zai+3,urt-head-margin-zai+3,urt-head-(urt-head*2)/3-margin-3,urt-head-margin-3);
-                        }else{
-                            readimagefile("talbar/mori.jpg",urt-head-(urt-head*2)/3-margin-zai+3,urt-head-margin-zai+3,urt-head-(urt-head*2)/3-margin-3,urt-head-margin-3);
+                        }else
+                        if((odCheck(1)==1 || odCheck(0)==1)&&(odCheck(2)==1 || odCheck(3)==1)){
+                            readimagefile("talbar/zereg.jpg",head+(urt-head*2)/3+margin+3,head+margin+2,head+(urt-head*2)/3+margin+zai-2,head+margin+zai-2);
                         }
-                        break;
                     }
                 }else{
                     if(X>huu[2].x && (huu[2].x+zai)>X && huu[2].y<Y && (huu[2].y+zai)>Y){
@@ -345,6 +347,7 @@ void nuulgeh(int urt, int des, int nuuh){
             huu[des].x=head+(urt-head*2)/3+margin;
             huu[des].y=head+margin;
         }
+        delay(300);
     }
 
     for(i=0;i<4;i++){
@@ -357,9 +360,12 @@ void nuulgeh(int urt, int des, int nuuh){
                     huu[i].x=0;
                     huu[i].y=0;
                     huu[i].ehleh=0;
-                    if((huu[0].i==0 && huu[0].j==0) || (huu[1].i==0 && huu[1].j==0)){
+                    if((huu[0].i==0 && huu[0].j==0) && (huu[1].i==0 && huu[1].j==0)){
+                        readimagefile("talbar/talbarFull.jpg",head,head,head+(urt-head*2)/3,head+(urt-head*2)/3);
+                    }else if((huu[0].i==0 && huu[0].j==0) || (huu[1].i==0 && huu[1].j==0)){
                         readimagefile("talbar/tal1.jpg",head,head,head+(urt-head*2)/3,head+(urt-head*2)/3);
-                    }else{
+                    }else
+                    {
                         readimagefile("talbar/talemp.jpg",head,head,head+(urt-head*2)/3,head+(urt-head*2)/3);
                     }
                 }else{
@@ -368,6 +374,9 @@ void nuulgeh(int urt, int des, int nuuh){
                     huu[i].x=0;
                     huu[i].y=0;
                     huu[i].ehleh=0;
+                    if((huu[2].i==0 && huu[2].j==0) && (huu[3].i==0 && huu[3].j==0)){
+                        readimagefile("talbar/talbarFull1.jpg",(urt-head)-(urt-head*2)/3, (urt-head)-(urt-head*2)/3,urt-head,urt-head);
+                    }else
                     if((huu[2].i==0 && huu[2].j==0) || (huu[3].i==0 && huu[3].j==0)){
                         readimagefile("talbar/tal12.jpg",(urt-head)-(urt-head*2)/3, (urt-head)-(urt-head*2)/3,urt-head,urt-head);
                     }else{
@@ -459,11 +468,17 @@ void nuulgeh(int urt, int des, int nuuh){
     if(l2==0){
         readimagefile("talbar/od.jpg",urt-head-margin-(urt-head*2)/3-zai+4,urt-margin-head-zai+4,urt-head-margin-(urt-head*2)/3-3,urt-margin-head-3);
     }
+    if((huu[2].i==0 && huu[2].j==0) && (huu[3].i==0 && huu[3].j==0)){
+        readimagefile("talbar/talbarFull1.jpg",(urt-head)-(urt-head*2)/3, (urt-head)-(urt-head*2)/3,urt-head,urt-head);
+    }else
     if((huu[2].i==0 && huu[2].j==0) || (huu[3].i==0 && huu[3].j==0)){
         readimagefile("talbar/tal12.jpg",(urt-head)-(urt-head*2)/3, (urt-head)-(urt-head*2)/3,urt-head,urt-head);
     }else{
         readimagefile("talbar/talemp.jpg",(urt-head)-(urt-head*2)/3, (urt-head)-(urt-head*2)/3,urt-head,urt-head);
     }
+    if((huu[0].i==0 && huu[0].j==0) && (huu[1].i==0 && huu[1].j==0)){
+        readimagefile("talbar/talbarFull.jpg",head,head,head+(urt-head*2)/3,head+(urt-head*2)/3);
+    }else
     if((huu[0].i==0 && huu[0].j==0) || (huu[1].i==0 && huu[1].j==0)){
         readimagefile("talbar/tal1.jpg",head,head,head+(urt-head*2)/3,head+(urt-head*2)/3);
     }else{
@@ -572,7 +587,7 @@ int shoo(int urt, int player){
                 readimagefile("shoo/6.jpg",head+(urt-head*2)/3+2*margin+zai,head+zai+2*margin,urt-head-2*margin-zai,urt-2*margin-head-(urt-head*2)/3-zai);
                 break;
             }
-            //delay(100);
+            delay(50);
         }
         readimagefile("shoo/go.jpg",head+2*margin+zai,head+(urt-head*2)/3+zai+2*margin,urt-2*margin-head-(urt-head*2)/3-zai,urt-head-2*margin-zai);
         return j;
@@ -599,7 +614,7 @@ int shoo(int urt, int player){
                 readimagefile("shoo/6.jpg",head+2*margin+zai,head+(urt-head*2)/3+zai+2*margin,urt-2*margin-head-(urt-head*2)/3-zai,urt-head-2*margin-zai);
                 break;
             }
-            delay(100);
+            delay(50);
         }
         readimagefile("shoo/go.jpg",head+(urt-head*2)/3+2*margin+zai,head+zai+2*margin,urt-head-2*margin-zai,urt-2*margin-head-(urt-head*2)/3-zai);
         return j;
@@ -735,8 +750,10 @@ void onoo(int wUrgun){
     sprintf(too, "%d", onoo1);
     sprintf(too1, "%d", onoo2);
     outtextxy(wUrgun/2-50,3,too);
-    outtextxy(wUrgun/2-35,3,"/2 : ");
+    char point[6]="/2 : ";
+    outtextxy(wUrgun/2-35,3,point);
     outtextxy(wUrgun/2+18,3,too1);
-    outtextxy(wUrgun/2+36,3,"/2");
+    char dan[3]="/2";
+    outtextxy(wUrgun/2+36,3,dan);
     setcolor(BLUE);
 }

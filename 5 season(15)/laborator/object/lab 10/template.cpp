@@ -71,16 +71,23 @@ template <class T>
 void List<T>::insert(T t, int index){
     int too=0;
     Node<T>* p = first, *newNd = new Node<T>;
-    while(p!=NULL){
-        too++;
-        if(too == index-1){
-            newNd->val = t;
-            newNd->next = p->next;
-            p->next = newNd;
-            break;
+    if(index==0){
+        newNd->val = t;
+        newNd->next = first;
+        first = newNd;
+    }else{
+        while(p!=NULL){
+            too++;
+            if(too == index-1){
+                newNd->val = t;
+                newNd->next = p->next;
+                p->next = newNd;
+                break;
+            }
+            p=p->next;
         }
-        p=p->next;
     }
+
 }
 
 template <class T>
