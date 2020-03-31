@@ -1,0 +1,33 @@
+hoyurt MACRO utga
+    
+mov bl,utga
+mov bh,utga
+   
+mov ah,2
+mov dl," "
+int 21h
+       
+mov dh,7
+mov cx,8
+label1:
+    mov cl,dh 
+    shr bl,cl
+    shl bl,7   
+    shr bl,7
+    add bl,30h
+    mov ah,2
+    mov dl,bl
+    int 21h
+    mov bl,bh 
+    sub dh,1
+    cmp cl,8
+    jl user      
+    
+    jmp alga1
+    user: add cl,1 
+    alga1:  
+loop label1
+mov dl,'b'
+int 21h
+  
+ENDM 
