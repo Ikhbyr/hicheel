@@ -1,0 +1,15 @@
+.date-cell {
+    -fx-background-color: DEEPSKYBLUE;
+    -fx-font-size: 12.0;
+}
+.date-cell.selected {
+    -fx-background-color: blue;
+    -fx-font-weight: bold;
+}
+.date-picker-popup > .month-year-pane {
+    -fx-background-color: blue;
+    -fx-font-weight: bold;
+}
+.date-cell:hover{
+-fx-font-weight: bold;
+}

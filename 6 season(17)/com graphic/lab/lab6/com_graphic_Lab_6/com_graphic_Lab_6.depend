@@ -227,11 +227,22 @@
 	<stddef.h>
 	<GL/gl.h>
 
-1585638306 source:c:\users\ikhbayar\desktop\hicheel\6 season(17)\com graphic\lab\lab6\com_graphic_lab_6\main.cpp
+1586693757 source:c:\users\ikhbayar\desktop\hicheel\6 season(17)\com graphic\lab\lab6\com_graphic_lab_6\main.cpp
 	<windows.h>
 	<gl/glut.h>
 	<math.h>
+	<stdio.h>
 
 1341006774 c:\program files (x86)\codeblocks\mingw\include\math.h
 	<_mingw.h>
+
+1341006776 c:\program files (x86)\codeblocks\mingw\include\stdio.h
+	<_mingw.h>
+	<stddef.h>
+	<stdarg.h>
+	<sys/types.h>
+
+1341006780 c:\program files (x86)\codeblocks\mingw\include\sys\types.h
+	<_mingw.h>
+	<stddef.h>
 

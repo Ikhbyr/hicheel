@@ -1,0 +1,168 @@
+
+USE MonsonUniversity1;
+
+CREATE TABLE Departments
+(
+    DepartmentCode varchar(4) not null,
+    DepartmentName varchar(50) not null,
+    Notes text,
+    Constraint PK_Departments Primary Key(DepartmentCode)
+);
+
+CREATE TABLE Employees
+(
+    EmployeeNumber varchar(8) not null,
+    FirstName varchar(20),
+    MiddleName varchar(20),
+    LastName varchar(20) not null,
+    DepartmentCode varchar(4),
+    Title varchar(100),
+    Notes text,
+    Constraint PK_Employees Primary Key(EmployeeNumber)
+);
+
+CREATE TABLE Semesters
+(
+    SemesterID int not null,
+    Semester varchar(40),
+    Notes text,
+    Constraint PK_Semesters Primary Key(SemesterID)
+);
+
+CREATE TABLE Locations
+(
+    LocationCode varchar(5) not null,
+    LocationName varchar(50) not null,
+    Notes text,
+    Constraint PK_Locations Primary Key(LocationCode)
+);
+
+CREATE TABLE UndergraduateMajors
+(
+    MajorID int not null,
+    Major varchar(60),
+    Dean varchar(8) not null,
+    Notes text,
+    Constraint PK_UndergraduateMajors Primary Key(MajorID)
+);
+
+CREATE TABLE Minors
+(
+    MinorID int not null,
+    Minor varchar(60) unique,
+    Notes text,
+    Constraint PK_Minors Primary Key(MinorID)
+);
+
+CREATE TABLE CourseDeliveryTypes
+(
+    CourseDeliveryTypeCode varchar(1) not null,
+    CourseDeliveryType varchar(25),
+    Notes text,
+    Constraint PK_CourseDeliveryTypes Primary Key(CourseDeliveryTypeCode)
+);
+
+CREATE TABLE TeachersStatus
+(
+    TeacherStatusCode varchar(1) not null,
+    TeacherStatus varchar(25),
+    Notes text,
+    Constraint PK_TeacherStatus Primary Key(TeacherStatusCode)
+);
+
+
+CREATE TABLE Teachers
+(
+    TeacherNumber varchar(10) not null,
+    FirstName varchar(25),
+    MiddleName varchar(25),
+    LastName varchar(25) not null,
+    Degrees varchar(200) null,
+    DepartmentCode varchar(4),
+    TeacherStatusCode varchar(1),
+    Notes text,
+    Constraint PK_Teachers Primary Key(TeacherNumber)
+);
+
+CREATE TABLE UndergraduateCourses
+(
+    CourseCode varchar(8) not null,
+    CourseName varchar(100),
+    Credits integer not null,
+    CourseDescription text,
+    Prerequisites varchar(100),
+    Notes text,
+    Constraint PK_UndergraduateCourses Primary Key(CourseCode)
+);
+
+CREATE TABLE UndergraduateCoursesTaught
+(
+    CourseTaughtID integer not null,
+    TeacherNumber varchar(10),
+    CourseCode varchar(8),
+    Notes text,
+    Constraint PK_UndergraduateCoursesTaught Primary Key(CourseTaughtID)
+);
+
+CREATE TABLE UndergraduateStudents
+(
+    StudentNumber varchar(8) not null,
+    FirstName varchar(20),
+    MiddleName varchar(20),
+    LastName varchar(20),
+    MajorID int,
+    MinorID int,
+    Notes text,
+    Constraint PK_UndergraduateStudents Primary Key(StudentNumber)
+);
+
+CREATE TABLE UndergraduateSchedules
+(
+    UndergraduateScheduleID int not null,
+    SemesterID int,
+    StartDate date,
+    EndDate date,
+    StartTime date,
+    EndTime date,
+    Weekdays varchar(32),
+    TeacherNumber varchar(10),
+    TANumber varchar(10),
+    CourseCode varchar(8),
+    CourseDeliveryTypeCode varchar(1),
+    LocationCode varchar(5) not null,
+    RoomNumber varchar(40),
+    Notes text,
+    Constraint PK_UndergraduateSchedules Primary Key(UndergraduateScheduleID),
+    Constraint FK_UndergradSemSchedule Foreign Key(SemesterID) References Semesters(SemesterID),
+    Constraint FK_UndergraduateMainTeachers Foreign Key(TeacherNumber) References Teachers(TeacherNumber),
+    Constraint FK_UndergraduateTeacherAssistants Foreign Key(TeacherNumber) References Teachers(TeacherNumber),
+    Constraint FK_UndergraduateCourses Foreign Key(CourseCode) References UndergraduateCourses(CourseCode),
+    Constraint FK_UndergraduateDeliveryTypes Foreign Key(CourseDeliveryTypeCode) References CourseDeliveryTypes(CourseDeliveryTypeCode),
+    Constraint FK_Locations Foreign Key(LocationCode) References Locations(LocationCode)
+);
+
+    
+CREATE TABLE PassesFailsStatus
+(
+    PassFailStatus varchar(20) not null,
+    Notes text,
+    Constraint PK_PassesFailsStatus Primary Key(PassFailStatus)
+);
+
+    
+CREATE TABLE UndergraduateRegistrations
+(
+    RegistrationID int not null,
+    RegistrationDate date,
+    StudentNumber varchar(8),
+    UndergraduateScheduleID int,
+    LetterGrade varchar(10),
+    PassFailStatus varchar(20),
+    CourseCredit integer,
+    TotalCurentCredit integer,
+    Notes text,
+    Constraint PK_UndergraduateRegistrations Primary Key(RegistrationID),
+    Constraint FK_UndergraduateRegistrations Foreign Key(StudentNumber) References UndergraduateStudents(StudentNumber),
+    Constraint FK_UndergraduateSchedules Foreign Key(UndergraduateScheduleID) References UndergraduateSchedules(UndergraduateScheduleID),
+    Constraint FK_PassesFailsStatus Foreign Key(PassFailStatus) References PassesFailsStatus(PassFailStatus)
+);

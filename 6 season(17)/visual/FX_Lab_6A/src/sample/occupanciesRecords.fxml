@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="420.0" prefWidth="877.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.OccupanciesRecord">
+   <children>
+      <TableView fx:id="lvwOccupancies" layoutX="14.0" layoutY="14.0" prefHeight="351.0" prefWidth="850.0">
+        <columns>
+          <TableColumn fx:id="colOccupancyNumber" text="Occupancy #" />
+          <TableColumn fx:id="colDateOccupied" prefWidth="150.0" text="Date Occupied" />
+            <TableColumn fx:id="colProcessedBy" prefWidth="140.0" text="Processed By" />
+            <TableColumn fx:id="colProcessedFor" prefWidth="140.0" text="Processed For" />
+            <TableColumn fx:id="colRoomOccupied" prefWidth="180.0" text="Room Occupied" />
+            <TableColumn fx:id="colRateApplied" text="Rate Applied" />
+            <TableColumn fx:id="colPhoneUse" prefWidth="65.0" text="Phone Use" />
+        </columns>
+      </TableView>
+      <Button layoutX="648.0" layoutY="381.0" mnemonicParsing="false" onAction="#btnNewOccupancy" text="New Occupency..." translateX="6.0" />
+      <Button fx:id="btnClose" layoutX="778.0" layoutY="381.0" mnemonicParsing="false" onAction="#btnClose" style="-fx-min-width: 80;" text="Close" translateX="6.0" />
+   </children>
+</AnchorPane>

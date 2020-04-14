@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="323.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DepartmentStore">
+   <children>
+      <TableView fx:id="tbvDepartmentStore" layoutX="14.0" layoutY="14.0" prefHeight="268.0" prefWidth="489.0">
+        <columns>
+            <TableColumn fx:id="colItemNumber" prefWidth="98.0" text="ItemNumber" />
+          <TableColumn fx:id="colUnitPrice" prefWidth="78.0" text="UnitPrice" />
+          <TableColumn fx:id="colSize" prefWidth="64.0" text="Size" />
+            <TableColumn fx:id="colItemName" prefWidth="210.0" text="Item Name" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="291.0" mnemonicParsing="false" onAction="#btnLoad" text="Load" />
+      <Button fx:id="btnClose" layoutX="448.0" layoutY="291.0" mnemonicParsing="false" onAction="#btnClose" text="Close" />
+   </children>
+</Pane>

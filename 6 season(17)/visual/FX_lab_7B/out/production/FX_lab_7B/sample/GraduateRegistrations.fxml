@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GraduateRegistrations">
+    <children>
+        <TableView fx:id="dgvRegistrations" layoutX="14.0" layoutY="14.0" prefHeight="333.0" prefWidth="603.0">
+            <columns>
+                <TableColumn fx:id="colStudentNumber" prefWidth="98.0" text="StudentNumber" />
+                <TableColumn fx:id="colStudentName" prefWidth="100.0" text="StudentName" />
+                <TableColumn fx:id="colSemester" prefWidth="90.0" text="Semester" />
+                <TableColumn fx:id="colCourseCode" prefWidth="98.0" text="CourseCode" />
+                <TableColumn fx:id="colCourseName" prefWidth="104.0" text="CourseName" />
+                <TableColumn fx:id="colCredits" prefWidth="77.0" text="Credits" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnClose" layoutX="509.0" layoutY="358.0" mnemonicParsing="false" onAction="#btnClose" prefHeight="25.0" prefWidth="108.0" text="Close" />
+    </children>
+</AnchorPane>

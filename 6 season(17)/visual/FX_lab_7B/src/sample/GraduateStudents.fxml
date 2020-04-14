@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.GraduateStudents"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <TableView fx:id="dgvUnnderStudent" layoutX="14.0" layoutY="14.0" prefHeight="344.0" prefWidth="614.0">
+            <columns>
+                <TableColumn fx:id="colStudentNumber" prefWidth="101.0" text="StudentNumber" />
+                <TableColumn fx:id="colFirstName" prefWidth="81.0" text="FirsName" />
+                <TableColumn fx:id="colMiddleName" prefWidth="91.0" text="MiddleName" />
+                <TableColumn fx:id="colLastName" prefWidth="78.0" text="LastName" />
+                <TableColumn fx:id="colMajor" prefWidth="137.0" text="Major" />
+                <TableColumn fx:id="colMinor" prefWidth="124.0" text="Minor" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnPrint" layoutX="446.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" text="Print Student" />
+        <Button fx:id="btnClose" layoutX="545.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnClose" prefHeight="25.0" prefWidth="79.0" text="Close" />
+    </children>
+</AnchorPane>

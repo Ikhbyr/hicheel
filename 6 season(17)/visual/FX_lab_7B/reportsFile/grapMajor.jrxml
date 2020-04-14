@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="underStudent" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a03010f4-b389-4164-9f6c-625d1e863911">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[bW9uc29udW5pdmVyc2l0eTEudW5kZXJncmFkdWF0ZXN0dWRlbnRzIEFTICwxMzgsNDIsZGU0OThj
+YTktZGYyMy00NGZhLTgyNTktYmVlZWY3Mzk5MTQ4Ow==]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataset3" uuid="1d28dfed-617d-4ffe-84f4-27e512cb808c">
+		<property name="com.jaspersoft.studio.data.sql.tables">
+			<![CDATA[bW9uc29udW5pdmVyc2l0eTEudW5kZXJncmFkdWF0ZW1ham9ycyBBUyAsMjA4LDY4LGEwNjgyYjFi
+LWUwODEtNDU2OS1hZjdlLWVkNDRjZWUzNmJmNTs=]]>
+		</property>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+		<queryString language="SQL">
+			<![CDATA[SELECT monsonuniversity1.graduatemajors.`MajorID`,
+	monsonuniversity1.graduatemajors.`Major`,
+	monsonuniversity1.graduatemajors.`Dean`,
+	monsonuniversity1.graduatemajors.`Notes`
+FROM monsonuniversity1.graduatemajors]]>
+		</queryString>
+		<field name="MajorID" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.label" value="MajorID"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="graduatemajors"/>
+		</field>
+		<field name="Major" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Major"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="graduatemajors"/>
+		</field>
+		<field name="Dean" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Dean"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="graduatemajors"/>
+		</field>
+		<field name="Notes" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="Notes"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="graduatemajors"/>
+		</field>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[SELECT monsonuniversity1.graduatestudents.`StudentNumber`,
+	monsonuniversity1.graduatestudents.`FirstName`,
+	monsonuniversity1.graduatestudents.`MiddleName`,
+	monsonuniversity1.graduatestudents.`LastName`,
+	monsonuniversity1.graduatestudents.`Notes`
+FROM monsonuniversity1.graduatestudents]]>
+	</queryString>
+	<field name="StudentNumber" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="StudentNumber"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="graduatestudents"/>
+	</field>
+	<field name="FirstName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="FirstName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="graduatestudents"/>
+	</field>
+	<field name="MiddleName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="MiddleName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="graduatestudents"/>
+	</field>
+	<field name="LastName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="LastName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="graduatestudents"/>
+	</field>
+	<field name="Notes" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Notes"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="graduatestudents"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="87" splitType="Stretch">
+			<image onErrorType="Icon">
+				<reportElement x="10" y="18" width="50" height="50" uuid="158ed4db-db7c-4573-8fce-db65355aead5"/>
+				<imageExpression><![CDATA["reportsFile/Logo.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="140" y="23" width="360" height="40" uuid="570641bb-be08-4d84-bbaf-6f0aa8d1a99e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial Black" size="19"/>
+				</textElement>
+				<text><![CDATA[Report Of graduate Major]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="96" splitType="Stretch">
+			<componentElement>
+				<reportElement x="72" y="10" width="410" height="63" uuid="64f42eff-6349-4573-9a3d-59f1b2c83abd">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 1_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 1_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 1_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="Dataset3" uuid="62552ed5-faf7-49d3-b4bf-cf936219d7d1">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="100" uuid="8dc36db1-b578-4ab5-abf8-4e8424720eda">
+						<jr:columnHeader style="Table 1_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="30" uuid="30b0c64e-0423-4e86-a376-981a710a3712"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="DejaVu Serif" size="14"/>
+								</textElement>
+								<text><![CDATA[MajorID]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="30" uuid="6ed9d008-b833-4d0d-8b69-2642d590727e"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Microsoft New Tai Lue" size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{MajorID}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100" uuid="0d4a9560-de48-4b6f-90f6-2d5cde5d39bf">
+						<jr:columnHeader style="Table 1_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="30" uuid="1f711add-1939-4fd5-accf-655b1d5c8f14"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="DejaVu Serif" size="14"/>
+								</textElement>
+								<text><![CDATA[Major]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="30" uuid="435c01dc-1a1a-4129-b392-6c91d72dca1c"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Microsoft New Tai Lue" size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Major}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100" uuid="cb074f6c-3b9c-496d-b093-71ae829b8d47">
+						<jr:columnHeader style="Table 1_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="30" uuid="165eddb5-aeec-4463-9e2e-9e778c545e2f"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="DejaVu Serif" size="14"/>
+								</textElement>
+								<text><![CDATA[Dean]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="100" height="30" uuid="2d7ae339-3135-4bdc-ac4d-056137c6c078"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Microsoft New Tai Lue" size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Dean}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="110" uuid="579ce3b6-3afd-4cd3-bc12-480d57b89e12">
+						<jr:columnHeader style="Table 1_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="110" height="30" uuid="68ed4b00-d3a8-4795-b2c7-240b467ed56f"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="DejaVu Serif" size="14"/>
+								</textElement>
+								<text><![CDATA[Notes]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="110" height="30" uuid="b341e089-d12d-4135-b3cb-0a0af021adee"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Microsoft New Tai Lue" size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Notes}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

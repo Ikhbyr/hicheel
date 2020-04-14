@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CustomerRecord">
+   <children>
+      <TableView fx:id="lvwCustomers" layoutX="18.0" layoutY="13.0" prefHeight="343.0" prefWidth="495.0">
+        <columns>
+          <TableColumn fx:id="colAccountNumber" prefWidth="70.0" text="Acount#" />
+          <TableColumn fx:id="colFirstName" prefWidth="67.0" text="First Name" />
+            <TableColumn fx:id="colLastName" prefWidth="65.0" text="Last Name" />
+            <TableColumn fx:id="colPhoneNumber" text="Phone #" />
+            <TableColumn fx:id="colEmergencyName" prefWidth="100.0" text="Emergency Name" />
+            <TableColumn fx:id="colEmergencyPhone" prefWidth="100.0" text="Emergency Phone" />
+        </columns>
+      </TableView>
+      <Button layoutX="345.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnNewCustomer" style="-fx-background-radius: 0;" text="New Customer..." />
+      <Button fx:id="btnClose" layoutX="468.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnClose" style="-fx-background-radius: 0;" text="Close" />
+      <Label fx:id="txtInfo" layoutX="100.0" layoutY="365.0" />
+   </children>
+</Pane>

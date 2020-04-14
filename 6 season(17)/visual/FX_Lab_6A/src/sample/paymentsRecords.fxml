@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="1263.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PaymentsRecords">
+   <children>
+      <TableView fx:id="lvwPayments" layoutX="14.0" layoutY="14.0" prefHeight="413.0" prefWidth="1235.0">
+        <columns>
+            <TableColumn fx:id="colRecieptNumber" prefWidth="68.0" text="Reciept #" />
+          <TableColumn fx:id="colProcessedBy" maxWidth="140.0" minWidth="140.0" prefWidth="140.0" text="Processed By" />
+          <TableColumn fx:id="colPaymentDate" prefWidth="130.0" text="Payment Date" />
+            <TableColumn fx:id="colAccountNumber" maxWidth="140.0" minWidth="140.0" prefWidth="140.0" text="ProcessedFor" />
+            <TableColumn fx:id="colFirstDayOccupied" maxWidth="140.0" minWidth="140.0" prefWidth="140.0" text="First Day Occupied" />
+            <TableColumn fx:id="colLastDayOccupied" maxWidth="140.0" minWidth="140.0" prefWidth="140.0" text="Lat Day Occupied" />
+            <TableColumn fx:id="colTotalNights" prefWidth="76.0" text="Total Nights" />
+            <TableColumn fx:id="colAmountCharged" prefWidth="81.0" text="Amt Charged" />
+            <TableColumn fx:id="colPhoneUse" prefWidth="66.0" text="Phone Use" />
+            <TableColumn fx:id="colSubTotal" prefWidth="58.0" text="SubTotal" />
+            <TableColumn fx:id="colTaxRate" prefWidth="55.0" text="Tax Rate" />
+            <TableColumn fx:id="coltaxAmount" maxWidth="57.0" prefWidth="55.0" text="Tax Amt" />
+            <TableColumn fx:id="colAmountPaid" prefWidth="57.0" text="Amt Paid" />
+        </columns>
+      </TableView>
+      <Button layoutX="1033.0" layoutY="443.0" mnemonicParsing="false" onAction="#btnNewPayment" text="New Payment..." />
+      <Button fx:id="btnClose" layoutX="1159.0" layoutY="443.0" mnemonicParsing="false" onAction="#btnClose" prefHeight="25.0" prefWidth="90.0" text="Close" />
+   </children>
+</Pane>
