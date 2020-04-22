@@ -246,3 +246,9 @@
 	<_mingw.h>
 	<stddef.h>
 
+1587197724 source:e:\hicheel\6 season(17)\com graphic\lab\lab6\com_graphic_lab_6\main.cpp
+	<windows.h>
+	<gl/glut.h>
+	<math.h>
+	<stdio.h>
+

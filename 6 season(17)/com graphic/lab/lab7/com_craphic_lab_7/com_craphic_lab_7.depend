@@ -227,3 +227,7 @@
 	<stddef.h>
 	<GL/gl.h>
 
+1587197724 source:e:\hicheel\6 season(17)\com graphic\lab\lab7\com_craphic_lab_7\main.cpp
+	<GL/glut.h>
+	<stdlib.h>
+
