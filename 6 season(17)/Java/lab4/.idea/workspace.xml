@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b1de2c1-41f3-4952-9862-617bf543408d" name="Default Changelist" comment="" />
+    <list default="true" id="4b1de2c1-41f3-4952-9862-617bf543408d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../java_lab_7C/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../visual/FX_LAB_8/src/sample/ParkParts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java_lab_7C/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java_lab_7C/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../visual/FX_LAB_8/out/production/FX_LAB_8/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/FX_LAB_8/out/production/FX_LAB_8/sample/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../visual/FX_LAB_8/out/production/FX_LAB_8/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/FX_LAB_8/out/production/FX_LAB_8/sample/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../visual/FX_LAB_8/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/FX_LAB_8/src/sample/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../visual/FX_LAB_8/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/FX_LAB_8/src/sample/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../visual/FX_lab_7B/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/FX_lab_7B/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../visual/FX_lab_7B/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/FX_lab_7B/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,15 +24,19 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="ProjectId" id="1Z4b346mIK4mshcY298mrVv0fap" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab5" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -83,10 +97,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1584101759083" />
-    <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1584104330242">
+    <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1587806434407">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584104330241" />
+    <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587806434407" />
     <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1584104338783">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

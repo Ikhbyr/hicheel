@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="284.0" prefWidth="468.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NewAutoPart">
+   <children>
+      <GridPane hgap="10.0" prefHeight="269.0" prefWidth="447.0" vgap="5.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="91.0" minWidth="10.0" prefWidth="81.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="111.0" minWidth="10.0" prefWidth="111.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="84.0" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.60000000000002" minWidth="10.0" prefWidth="117.60000000000002" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="76.0" minWidth="10.0" prefWidth="59.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Year:" />
+            <Label text="Make:" GridPane.rowIndex="1" />
+            <Label text="Model:" GridPane.rowIndex="2" />
+            <Label text="Category:" GridPane.rowIndex="3" />
+            <Label text="Unit Price:" GridPane.rowIndex="4" />
+            <Label text="Part Name:" GridPane.rowIndex="5" />
+            <ComboBox fx:id="cbxYear" prefWidth="150.0" GridPane.columnIndex="1" />
+            <ComboBox fx:id="cbxMakes" prefWidth="150.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+            <ComboBox fx:id="cbxModels" prefWidth="150.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+            <ComboBox fx:id="cbxCategories" prefWidth="150.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+            <TextField fx:id="txtUnitPrice" nodeOrientation="RIGHT_TO_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="txtPartName" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="5" />
+            <Label text="Part #:" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TextField fx:id="txtPartNumber" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button fx:id="btnNewCategory" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnNewCategory" text="New Category" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button fx:id="btnNewModel" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnNewModel" text="New Model" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="btnNewMake" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnNewMake" text="New Make" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <HBox alignment="CENTER_RIGHT" prefHeight="43.0" prefWidth="447.0" spacing="10.0">
+         <children>
+            <Button fx:id="btnSubmit" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnSubmit" prefHeight="26.0" prefWidth="67.0" text="Submit" />
+            <Button fx:id="btnClose" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnClose" prefHeight="26.0" prefWidth="61.0" text="Close" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

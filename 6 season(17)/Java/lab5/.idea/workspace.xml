@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a4f16d3-57b6-41b5-a5b4-fa7911388465" name="Default Changelist" comment="" />
+    <list default="true" id="0a4f16d3-57b6-41b5-a5b4-fa7911388465" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../java_lab_7C/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../visual/FX_LAB_8/.idea/dictionaries/Ikhbayar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../visual/FX_LAB_8/src/sample/ParkParts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../visual/FX_LAB_8/src/sample/parts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java_lab_7C/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java_lab_7C/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../visual/FX_LAB_8/out/production/FX_LAB_8/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/FX_LAB_8/out/production/FX_LAB_8/sample/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../visual/FX_LAB_8/out/production/FX_LAB_8/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/FX_LAB_8/out/production/FX_LAB_8/sample/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../visual/FX_LAB_8/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/FX_LAB_8/src/sample/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../visual/FX_LAB_8/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/FX_LAB_8/src/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../visual/FX_LAB_8/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/FX_LAB_8/src/sample/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../visual/FX_lab_7B/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/FX_lab_7B/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../visual/FX_lab_7B/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/FX_lab_7B/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,15 +48,20 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="ProjectId" id="1ZAD3CUELgsJcmDpJNKKfYkQECw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="C:/Program Files/Java/javafx-sdk-11.0.2" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../visual/FX_lab_7B" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -78,6 +117,17 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Inspections" timestamp="1584679512792">
       <screen x="0" y="0" width="1366" height="728" />
@@ -95,10 +145,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="447" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1584422790723" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1584802437690">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1587815781951">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584802437690" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587815781951" />
     <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1584684769431">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

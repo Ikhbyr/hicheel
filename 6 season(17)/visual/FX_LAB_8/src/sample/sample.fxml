@@ -12,58 +12,58 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Rectangle arcHeight="1.0" arcWidth="1.0" fill="WHITE" height="80.0" layoutX="20.0" layoutY="444.0" stroke="#948383" strokeType="INSIDE" width="635.0" />
       <Rectangle arcHeight="1.0" arcWidth="1.0" fill="WHITE" height="233.0" layoutX="201.0" layoutY="199.0" stroke="#948383" strokeType="INSIDE" width="453.0" />
       <Rectangle arcHeight="1.0" arcWidth="1.0" fill="WHITE" height="113.0" layoutX="201.0" layoutY="72.0" stroke="#948383" strokeType="INSIDE" width="453.0" />
       <Rectangle arcHeight="1.0" arcWidth="1.0" fill="WHITE" height="360.0" layoutX="20.0" layoutY="72.0" stroke="#948383" strokeType="INSIDE" width="176.0" />
-      <TableView layoutX="209.0" layoutY="89.0" prefHeight="86.0" prefWidth="436.0">
+      <TableView fx:id="lvwAutoParts" layoutX="209.0" layoutY="89.0" onMouseReleased="#btnRowSelcet" prefHeight="86.0" prefWidth="436.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Part #" />
-          <TableColumn prefWidth="259.0" text="Part Name" />
-            <TableColumn minWidth="9.0" prefWidth="62.0" text="Unit Price" />
+          <TableColumn fx:id="colPartnumber" prefWidth="75.0" text="Part #" />
+          <TableColumn fx:id="colPartName" prefWidth="259.0" text="Part Name" />
+            <TableColumn fx:id="colUnitPrice" minWidth="9.0" prefWidth="62.0" text="Unit Price" />
         </columns>
       </TableView>
-      <TableView layoutX="209.0" layoutY="290.0" prefHeight="128.0" prefWidth="436.0">
+      <TableView fx:id="lvwSelectedParts" layoutX="209.0" layoutY="290.0" prefHeight="128.0" prefWidth="436.0">
         <columns>
-          <TableColumn prefWidth="45.0" text="Part#" />
-          <TableColumn prefWidth="221.0" text="PartName" />
-            <TableColumn minWidth="0.0" prefWidth="66.0" text="Unit Price" />
-            <TableColumn minWidth="4.0" prefWidth="42.0" text="Qty" />
-            <TableColumn minWidth="7.0" prefWidth="55.0" text="Sub Total" />
+          <TableColumn fx:id="colPartNumberSelected" prefWidth="45.0" text="Part#" />
+          <TableColumn fx:id="colPartNameSelected" prefWidth="221.0" text="PartName" />
+            <TableColumn fx:id="colUnitPriceSelected" minWidth="0.0" prefWidth="60.0" text="Unit Price" />
+            <TableColumn fx:id="colQtySelected" minWidth="4.0" prefWidth="32.0" text="Qty" />
+            <TableColumn fx:id="colSubTotalSelected" minWidth="7.0" prefWidth="71.0" text="Sub Total" />
         </columns>
       </TableView>
-      <TextField layoutX="208.0" layoutY="227.0" prefHeight="25.0" prefWidth="48.0" />
-      <TextField layoutX="264.0" layoutY="227.0" prefHeight="25.0" prefWidth="200.0" />
-      <TextField layoutX="467.0" layoutY="227.0" prefHeight="25.0" prefWidth="64.0" />
-      <TextField layoutX="535.0" layoutY="227.0" prefHeight="25.0" prefWidth="40.0" />
-      <TextField layoutX="580.0" layoutY="227.0" prefHeight="25.0" prefWidth="64.0" />
-      <Button layoutX="209.0" layoutY="259.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="436.0" text="Add/Select" />
-      <Button layoutX="27.0" layoutY="463.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="119.0" text="New Auto Part...">
+      <TextField fx:id="txtPartNumber" layoutX="208.0" layoutY="227.0" prefHeight="25.0" prefWidth="48.0" />
+      <TextField fx:id="txtPartName" layoutX="264.0" layoutY="227.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="txtUnitPrice" layoutX="467.0" layoutY="227.0" prefHeight="25.0" prefWidth="64.0" />
+      <TextField fx:id="txtQty" layoutX="535.0" layoutY="227.0" prefHeight="25.0" prefWidth="40.0" />
+      <TextField fx:id="txtSubTotal" layoutX="580.0" layoutY="227.0" prefHeight="25.0" prefWidth="64.0" />
+      <Button fx:id="btnAdd" layoutX="209.0" layoutY="259.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="436.0" text="Add/Select" />
+      <Button fx:id="btnNewAutoPart" layoutX="27.0" layoutY="463.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="119.0" text="New Auto Part...">
          <font>
             <Font size="11.0" />
          </font>
       </Button>
-      <Button layoutX="27.0" layoutY="489.0" mnemonicParsing="false" text="New Customer Order">
+      <Button fx:id="btnNewCustomerOrder" layoutX="27.0" layoutY="489.0" mnemonicParsing="false" text="New Customer Order">
          <font>
             <Font size="11.0" />
          </font>
       </Button>
-      <TextField layoutX="206.0" layoutY="463.0" prefHeight="25.0" prefWidth="56.0" />
-      <Button layoutX="268.0" layoutY="462.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="45.0" text="Save">
+      <TextField fx:id="txtSave" layoutX="206.0" layoutY="463.0" prefHeight="25.0" prefWidth="56.0" />
+      <Button fx:id="btnSave" layoutX="268.0" layoutY="462.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="45.0" text="Save">
          <font>
             <Font size="11.0" />
          </font>
       </Button>
-      <TextField layoutX="205.0" layoutY="489.0" prefHeight="25.0" prefWidth="56.0" />
-      <Button layoutX="268.0" layoutY="488.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="45.0" text="Open">
+      <TextField fx:id="txtOpen" layoutX="205.0" layoutY="489.0" prefHeight="25.0" prefWidth="56.0" />
+      <Button fx:id="btnOpen" layoutX="268.0" layoutY="488.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="45.0" text="Open">
          <font>
             <Font size="11.0" />
          </font>
       </Button>
-      <TextField layoutX="388.0" layoutY="463.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField layoutX="388.0" layoutY="489.0" prefHeight="25.0" prefWidth="67.0" />
+      <TextField fx:id="txtTaxRate" layoutX="388.0" layoutY="463.0" prefHeight="25.0" prefWidth="47.0" />
+      <TextField fx:id="txtTaxAmount" layoutX="388.0" layoutY="489.0" prefHeight="25.0" prefWidth="67.0" />
       <Label layoutX="211.0" layoutY="210.0" text="Part #" />
       <Label layoutX="466.0" layoutY="493.0" text="Order Total:">
          <font>
@@ -100,9 +100,9 @@
             <Font size="11.0" />
          </font>
       </Label>
-      <TextField layoutX="530.0" layoutY="464.0" prefHeight="25.0" prefWidth="56.0" />
-      <TextField layoutX="530.0" layoutY="490.0" prefHeight="25.0" prefWidth="56.0" />
-      <Button layoutX="590.0" layoutY="464.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="56.0" text="Save">
+      <TextField fx:id="txtPartsTotal" layoutX="530.0" layoutY="464.0" prefHeight="25.0" prefWidth="56.0" />
+      <TextField fx:id="txtOrderTotal" layoutX="530.0" layoutY="490.0" prefHeight="25.0" prefWidth="56.0" />
+      <Button fx:id="btnClose" layoutX="590.0" layoutY="464.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="56.0" text="Close">
          <font>
             <Font size="11.0" />
          </font>
@@ -138,6 +138,16 @@
       </Label>
       <Line endX="37.5" layoutX="146.0" layoutY="76.0" startX="-10.5" stroke="#070707" strokeMiterLimit="4.0" strokeWidth="0.4" />
       <Line endX="295.0" layoutX="321.0" layoutY="77.0" startX="-10.5" stroke="#070707" strokeMiterLimit="4.0" strokeWidth="0.4" />
-      <TreeView fx:id="tvwAutoParts" layoutX="28.0" layoutY="85.0" prefHeight="340.0" prefWidth="160.0" />
+      <TreeView fx:id="tvwAutoParts" layoutX="28.0" layoutY="85.0" onMouseClicked="#btnSelected" prefHeight="340.0" prefWidth="160.0" />
+      <Button fx:id="rptInfo1" layoutX="128.0" layoutY="528.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="176.0" text="Report 1">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="rptInfo2" layoutX="379.0" layoutY="528.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="176.0" text="Report 2">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
    </children>
 </Pane>
