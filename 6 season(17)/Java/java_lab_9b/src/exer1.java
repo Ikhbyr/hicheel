@@ -8,6 +8,7 @@ public class exer1 {
         double f=1;
         for ( int i=1; i <= 1000; i++) {
             f = f * (1.0 / i);
+            System.out.println(f);
             if ( f == 0 ) break;
             e +=  f;
         }

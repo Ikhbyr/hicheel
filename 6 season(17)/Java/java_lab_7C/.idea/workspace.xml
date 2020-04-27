@@ -20,15 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49a0c6dc-c9a1-4ad3-b72b-a11d249a011c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../visual/FX_LAB_8/src/sample/ParkParts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_lab_9b/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_lab_9b/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_lab_9b/src/exer2/Machine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_lab_9b/src/exer2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_lab_9b/src/exer2/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java_lab_9b/src/exer2/Vote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../visual/FX_LAB_8/out/production/FX_LAB_8/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/FX_LAB_8/out/production/FX_LAB_8/sample/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../visual/FX_LAB_8/out/production/FX_LAB_8/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/FX_LAB_8/out/production/FX_LAB_8/sample/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../visual/FX_LAB_8/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/FX_LAB_8/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../visual/FX_LAB_8/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/FX_LAB_8/src/sample/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../visual/FX_lab_7B/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/FX_lab_7B/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../visual/FX_lab_7B/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/FX_lab_7B/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_lab_7C/Read_file.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_lab_7C/Read_file.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_lab_7C/exercise_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_lab_7C/exercise_1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_lab_7C/exercise_2$DiceThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_lab_7C/exercise_2$LastThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/java_lab_7C/exercise_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_lab_7C/exercise_2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java_lab_9b/src/exer1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java_lab_9b/src/exer1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java_lab_9b/src/exer2.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,12 +62,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../java_lab_9b/src/exer2/Client.java" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.exercise_2">
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Client" />
+      <module name="java_lab_7C" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="client" />
+      <module name="java_lab_7C" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="exercise_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exercise_1" />
       <module name="java_lab_7C" />
@@ -77,6 +98,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.client" />
         <item itemvalue="Application.exercise_2" />
         <item itemvalue="Application.exercise_1" />
       </list>
@@ -112,26 +135,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1586516281599" />
-    <state x="804" y="122" key="FileChooserDialogImpl" timestamp="1587806393254">
+    <state x="804" y="122" key="FileChooserDialogImpl" timestamp="1587919001197">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="804" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587806393254" />
-    <state width="1323" height="198" key="GridCell.Tab.0.bottom" timestamp="1586533916119">
+    <state x="804" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587919001197" />
+    <state width="639" height="181" key="GridCell.Tab.0.bottom" timestamp="1588008685038">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="198" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586533916119" />
-    <state width="1323" height="198" key="GridCell.Tab.0.center" timestamp="1586533916119">
+    <state width="639" height="181" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588008685038" />
+    <state width="639" height="181" key="GridCell.Tab.0.center" timestamp="1588008685037">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="198" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586533916119" />
-    <state width="1323" height="198" key="GridCell.Tab.0.left" timestamp="1586533916118">
+    <state width="639" height="181" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588008685037" />
+    <state width="639" height="181" key="GridCell.Tab.0.left" timestamp="1588008685037">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="198" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586533916118" />
-    <state width="1323" height="198" key="GridCell.Tab.0.right" timestamp="1586533916119">
+    <state width="639" height="181" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588008685037" />
+    <state width="639" height="181" key="GridCell.Tab.0.right" timestamp="1588008685038">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="198" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586533916119" />
+    <state width="639" height="181" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588008685038" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1587919090219">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1587919090219" />
     <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1586616998283">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
