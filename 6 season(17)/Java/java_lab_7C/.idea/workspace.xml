@@ -19,24 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49a0c6dc-c9a1-4ad3-b72b-a11d249a011c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_lab_9b/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_lab_9b/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_lab_9b/src/exer2/Machine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_lab_9b/src/exer2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_lab_9b/src/exer2/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_lab_9b/src/exer2/Vote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_lab_7C/Read_file.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_lab_7C/Read_file.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_lab_7C/exercise_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_lab_7C/exercise_1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_lab_7C/exercise_2$DiceThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_lab_7C/exercise_2$LastThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java_lab_7C/exercise_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java_lab_7C/exercise_2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java_lab_9b/src/exer1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java_lab_9b/src/exer1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java_lab_9b/src/exer2.java" beforeDir="false" />
-    </list>
+    <list default="true" id="49a0c6dc-c9a1-4ad3-b72b-a11d249a011c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

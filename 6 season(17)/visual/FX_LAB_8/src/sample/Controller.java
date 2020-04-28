@@ -107,7 +107,7 @@ public class Controller implements Serializable{
     public Button rptInfo2;
 
     @FXML
-    void btnSelected(MouseEvent event) {
+    void btnSelected() {
         try {
             System.out.println(tvwAutoParts.getSelectionModel().getSelectedItem().getValue());
             for(ParkParts parkParts1:parkParts){
@@ -200,6 +200,14 @@ public class Controller implements Serializable{
     }
 
     public void setButtonEvent(){
+        rptInfo1.setOnAction(actionEvent -> {
+            Reports reports = new Reports();
+            reports.PrintAutoParts();
+        });
+        rptInfo2.setOnAction(actionEvent -> {
+            Reports reports = new Reports();
+            reports.PrintAutoPartsOrder();
+        });
         btnNewAutoPart.setOnAction(actionEvent->{
             NewAutoPart newAutoPart = new NewAutoPart();
             newAutoPart.showStage();

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.12.2.final using JasperReports Library version 6.12.2-75c5e90a222ab406e416cbf590a5397028a52de3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="parkPartOrder" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1e3cc215-8088-425b-8e9b-cb2c3ee6d2cf">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[YXV0b3BhcmsucGFya3BhcnRzIEFTICwzMSwxOSw2YzE4OWY4MS1hODZjLTQwMzMtYjdmNy03MDIy
+OGM5MjE5NzQ7]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ParkPart"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#4682B4">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE2FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="ParkParts" uuid="622e3ee3-581c-4e17-a3ca-825d4b532859">
+		<property name="com.jaspersoft.studio.data.sql.tables">
+			<![CDATA[YXV0b3BhcmsucGFya3BhcnRzIEFTICwxMTMsMTA1LDA1YmU5NTQxLTkyMDUtNDgyNy05YTMyLTUx
+YjhmNTdiM2YyNzs=]]>
+		</property>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ParkPart"/>
+		<queryString language="SQL">
+			<![CDATA[SELECT autopark.parkparts.`year`,
+	autopark.parkparts.partname,
+	autopark.parkparts.make,
+	autopark.parkparts.model,
+	autopark.parkparts.`unitPrice`,
+	autopark.parkparts.category,
+	autopark.parkparts.`partNumber`
+FROM autopark.parkparts]]>
+		</queryString>
+		<field name="year" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.label" value="year"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="parkparts"/>
+		</field>
+		<field name="partname" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="partname"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="parkparts"/>
+		</field>
+		<field name="make" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="make"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="parkparts"/>
+		</field>
+		<field name="model" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="model"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="parkparts"/>
+		</field>
+		<field name="unitPrice" class="java.lang.Double">
+			<property name="com.jaspersoft.studio.field.label" value="unitPrice"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="parkparts"/>
+		</field>
+		<field name="category" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.label" value="category"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="parkparts"/>
+		</field>
+		<field name="partNumber" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.label" value="partNumber"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="parkparts"/>
+		</field>
+		<group name="year">
+			<groupExpression><![CDATA[$F{year}]]></groupExpression>
+		</group>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[SELECT autopark.parkparts.`year`,
+	autopark.parkparts.partname,
+	autopark.parkparts.make,
+	autopark.parkparts.model,
+	autopark.parkparts.`unitPrice`,
+	autopark.parkparts.category,
+	autopark.parkparts.`partNumber`
+FROM autopark.parkparts]]>
+	</queryString>
+	<field name="year" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="year"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="parkparts"/>
+	</field>
+	<field name="partname" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="partname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="parkparts"/>
+	</field>
+	<field name="make" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="make"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="parkparts"/>
+	</field>
+	<field name="model" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="model"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="parkparts"/>
+	</field>
+	<field name="unitPrice" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="unitPrice"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="parkparts"/>
+	</field>
+	<field name="category" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="category"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="parkparts"/>
+	</field>
+	<field name="partNumber" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="partNumber"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="parkparts"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="87" splitType="Stretch">
+			<image>
+				<reportElement x="30" y="13" width="50" height="44" uuid="f42d15ad-ce0b-4e55-b137-05ad0690ba0d"/>
+				<imageExpression><![CDATA["reportsFile//se4.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="180" y="10" width="364" height="47" uuid="56f73071-4c3f-44ea-ae20-fd73a73be660"/>
+				<textElement>
+					<font fontName="Serif" size="33"/>
+				</textElement>
+				<text><![CDATA[Сэлбэгний мэдээлэл]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-7" y="73" width="571" height="1" uuid="fa387fb3-43da-4951-aeaa-96c0ae92b9ec"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="27"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="136" splitType="Stretch">
+			<componentElement>
+				<reportElement x="6" y="20" width="544" height="100" uuid="8534ebb2-5c89-4756-912a-1c666ce6005e">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="ParkParts" uuid="71c6cb79-de00-4c6d-a7a8-2e0552e516fd">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="40" uuid="d2e8005d-a9bb-4708-9eb6-4d9b91ea6158">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="40" height="30" uuid="f1ca9fba-a633-4c98-8d15-28562fa5a59e"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Serif" size="16"/>
+								</textElement>
+								<text><![CDATA[№]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30" rowSpan="1"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="40" height="30" uuid="4464aeb3-61e9-430b-b773-0bb25b813549"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Serif" size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="64" uuid="7471a717-0e22-459e-b49b-6e2fc39f4a29">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="64" height="30" uuid="39cf36e3-9724-4e96-9766-9ec578c3dbbb"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Serif" size="16"/>
+								</textElement>
+								<text><![CDATA[Year]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30" rowSpan="1"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="64" height="30" uuid="7b7f94f2-37e5-413b-9551-6bf4cdd8bab5"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Serif" size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{year}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="114" uuid="bcde5f78-5ff7-4f7a-898a-d6b41333bfb4">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="114" height="30" uuid="5797cbe1-058e-47d3-bb6a-5241fa1dead8"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Serif" size="16"/>
+								</textElement>
+								<text><![CDATA[PartName]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30" rowSpan="1"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="114" height="30" uuid="0fc94c4a-f5d8-446d-af01-9a70729999a2"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Serif" size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{partname}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="92" uuid="232c91e3-f01e-4e2b-8ca3-a00fb18a118a">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="92" height="30" uuid="599f1289-c89e-4a2c-9d12-be05453795b9"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Serif" size="16"/>
+								</textElement>
+								<text><![CDATA[make]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30" rowSpan="1"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="92" height="30" uuid="f6c0caa7-e1af-48ac-baae-8a773ffc8088"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Serif" size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{make}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="74" uuid="c7fd93fd-b5a8-41a7-826c-dff0e6a1a0d8">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="74" height="30" uuid="261ffc8a-90ab-49af-91f3-82b3bf6f58c0"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Serif" size="16"/>
+								</textElement>
+								<text><![CDATA[model]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30" rowSpan="1"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="74" height="30" uuid="0129871c-e0fc-46ba-866f-4ec11ff18e2e"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Serif" size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{model}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="71" uuid="291512a7-4404-46a2-be07-365b284063a4">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column6"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="71" height="30" uuid="5d145f22-05c9-4cb8-bc5b-88fab681fc5c"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Serif" size="16"/>
+								</textElement>
+								<text><![CDATA[unitPrice]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30" rowSpan="1"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="71" height="30" uuid="212473e8-be28-470a-937c-73733aba72cb"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Serif" size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{unitPrice}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="89" uuid="0168e879-a4e9-4618-8693-59cdacdb6841">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column7"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="89" height="30" uuid="8fbf22ab-ff84-4fba-aca9-bba46c9d6852"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Serif" size="16"/>
+								</textElement>
+								<text><![CDATA[category]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table_CH" height="30" rowSpan="1"/>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="89" height="30" uuid="2db24bc2-f955-4eca-8d69-738a4fdfa859"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Serif" size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{category}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="122" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="39" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="53" splitType="Stretch">
+			<textField>
+				<reportElement x="526" y="17" width="100" height="30" uuid="9fc1596e-1b62-4b94-a3c1-cfb14fa636ed"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="5" y="11" width="100" height="30" uuid="c2a5751d-2b12-4a12-afd6-1c0b65d2867c"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="36" splitType="Stretch"/>
+	</summary>
+</jasperReport>
