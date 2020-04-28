@@ -195,7 +195,7 @@ FROM monsonuniversity1.undergraduatestudents]]>
 					</datasetRun>
 					<jr:column width="110" uuid="f8f8ade1-8522-45e3-9602-84bcc6d79689">
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
-						<jr:columnHeader style="Table 1_CH" height="30">
+						<jr:columnHeader style="Table 1_CH" height="30" rowSpan="1">
 							<staticText>
 								<reportElement x="0" y="0" width="110" height="30" uuid="e0ba572b-c7b2-4d20-bfde-b48094f9215c"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -204,7 +204,7 @@ FROM monsonuniversity1.undergraduatestudents]]>
 								<text><![CDATA[StudentNumber]]></text>
 							</staticText>
 						</jr:columnHeader>
-						<jr:columnFooter style="Table 1_CH" height="30"/>
+						<jr:columnFooter style="Table 1_CH" height="30" rowSpan="1"/>
 						<jr:detailCell style="Table 1_TD" height="30">
 							<textField>
 								<reportElement x="0" y="0" width="110" height="30" uuid="4f14a5a3-593a-49bf-ad2c-951f4ef9c32d"/>
@@ -215,9 +215,31 @@ FROM monsonuniversity1.undergraduatestudents]]>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
-					<jr:column width="100" uuid="25a154d6-a845-4855-84c5-f0c138f326e0">
+					<jr:column width="70" uuid="349c3d09-0cb1-4d06-8f8c-e05d53100b8f">
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
-						<jr:columnHeader style="Table 1_CH" height="30">
+						<jr:columnHeader style="Table 1_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="70" height="30" uuid="6c498c10-70ea-4780-9b7c-3f823a5523b1"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="SansSerif" size="12"/>
+								</textElement>
+								<text><![CDATA[Notes]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="Table 1_CH" height="30" rowSpan="1"/>
+						<jr:detailCell style="Table 1_TD" height="30">
+							<textField>
+								<reportElement x="0" y="0" width="70" height="30" uuid="4be9de6e-0ec1-4f53-af53-38e63927d7f5"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font fontName="Arial" size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{Notes}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100" uuid="25a154d6-a845-4855-84c5-f0c138f326e0">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:columnHeader style="Table 1_CH" height="30" rowSpan="1">
 							<staticText>
 								<reportElement x="0" y="0" width="100" height="30" uuid="bebe5f35-1569-42c0-a08a-a509d8fe3854"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -226,7 +248,7 @@ FROM monsonuniversity1.undergraduatestudents]]>
 								<text><![CDATA[FirstName]]></text>
 							</staticText>
 						</jr:columnHeader>
-						<jr:columnFooter style="Table 1_CH" height="30"/>
+						<jr:columnFooter style="Table 1_CH" height="30" rowSpan="1"/>
 						<jr:detailCell style="Table 1_TD" height="30">
 							<textField>
 								<reportElement x="0" y="0" width="100" height="30" uuid="e44c7687-aaae-4c0b-8e7d-b034bca34201"/>
@@ -237,31 +259,9 @@ FROM monsonuniversity1.undergraduatestudents]]>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
-					<jr:column width="100" uuid="a5b4345f-1aac-4122-bb12-560ade3ac9ec">
-						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
-						<jr:columnHeader style="Table 1_CH" height="30">
-							<staticText>
-								<reportElement x="0" y="0" width="100" height="30" uuid="ad7b9649-d505-4362-bcac-41a058707cff"/>
-								<textElement textAlignment="Center" verticalAlignment="Middle">
-									<font fontName="SansSerif" size="12"/>
-								</textElement>
-								<text><![CDATA[MiddleName]]></text>
-							</staticText>
-						</jr:columnHeader>
-						<jr:columnFooter style="Table 1_CH" height="30"/>
-						<jr:detailCell style="Table 1_TD" height="30">
-							<textField>
-								<reportElement x="0" y="0" width="100" height="30" uuid="d7e7f05e-317c-4537-ae9d-cf0d5df38fb6"/>
-								<textElement textAlignment="Center" verticalAlignment="Middle">
-									<font fontName="Arial" size="12"/>
-								</textElement>
-								<textFieldExpression><![CDATA[$F{MiddleName}]]></textFieldExpression>
-							</textField>
-						</jr:detailCell>
-					</jr:column>
 					<jr:column width="100" uuid="2d611bc5-a25f-4116-9982-a176f006fdaf">
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
-						<jr:columnHeader style="Table 1_CH" height="30">
+						<jr:columnHeader style="Table 1_CH" height="30" rowSpan="1">
 							<staticText>
 								<reportElement x="0" y="0" width="100" height="30" uuid="18a72f54-b63b-41cd-94b9-174903332eae"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
@@ -270,7 +270,7 @@ FROM monsonuniversity1.undergraduatestudents]]>
 								<text><![CDATA[LastName]]></text>
 							</staticText>
 						</jr:columnHeader>
-						<jr:columnFooter style="Table 1_CH" height="30"/>
+						<jr:columnFooter style="Table 1_CH" height="30" rowSpan="1"/>
 						<jr:detailCell style="Table 1_TD" height="30">
 							<textField>
 								<reportElement x="0" y="0" width="100" height="30" uuid="ff2b04be-5a92-48b3-9fce-9934e963a296"/>
@@ -281,25 +281,25 @@ FROM monsonuniversity1.undergraduatestudents]]>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
-					<jr:column width="70" uuid="349c3d09-0cb1-4d06-8f8c-e05d53100b8f">
+					<jr:column width="100" uuid="a5b4345f-1aac-4122-bb12-560ade3ac9ec">
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column5"/>
-						<jr:columnHeader style="Table 1_CH" height="30">
+						<jr:columnHeader style="Table 1_CH" height="30" rowSpan="1">
 							<staticText>
-								<reportElement x="0" y="0" width="70" height="30" uuid="6c498c10-70ea-4780-9b7c-3f823a5523b1"/>
+								<reportElement x="0" y="0" width="100" height="30" uuid="ad7b9649-d505-4362-bcac-41a058707cff"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font fontName="SansSerif" size="12"/>
 								</textElement>
-								<text><![CDATA[Notes]]></text>
+								<text><![CDATA[MiddleName]]></text>
 							</staticText>
 						</jr:columnHeader>
-						<jr:columnFooter style="Table 1_CH" height="30"/>
+						<jr:columnFooter style="Table 1_CH" height="30" rowSpan="1"/>
 						<jr:detailCell style="Table 1_TD" height="30">
 							<textField>
-								<reportElement x="0" y="0" width="70" height="30" uuid="4be9de6e-0ec1-4f53-af53-38e63927d7f5"/>
+								<reportElement x="0" y="0" width="100" height="30" uuid="d7e7f05e-317c-4537-ae9d-cf0d5df38fb6"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font fontName="Arial" size="12"/>
 								</textElement>
-								<textFieldExpression><![CDATA[$F{Notes}]]></textFieldExpression>
+								<textFieldExpression><![CDATA[$F{MiddleName}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>

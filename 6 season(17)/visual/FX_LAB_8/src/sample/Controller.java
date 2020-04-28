@@ -2,11 +2,13 @@ package sample;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
@@ -108,29 +110,56 @@ public class Controller implements Serializable{
 
     @FXML
     void btnSelected() {
-        try {
-            System.out.println(tvwAutoParts.getSelectionModel().getSelectedItem().getValue());
-            for(ParkParts parkParts1:parkParts){
-                if ((tvwAutoParts.getSelectionModel().getSelectedItem().getValue().equals(parkParts1.getPartName())) && (tvwAutoParts.getSelectionModel().getSelectedItem().getParent().getValue().equals(parkParts1.getModel())) && (tvwAutoParts.getSelectionModel().getSelectedItem().getParent().getParent().getValue().equals(parkParts1.getMake()))){
-                    System.out.println("Оллоо "+parkParts1.getYear()+parkParts1.getMake()+parkParts1.getModel());
-                    selectedParts.add(parkParts1);
-                    tvwAutoParts.getSelectionModel().clearSelection();
+        tvwAutoParts.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if (mouseEvent.getButton().equals(MouseButton.PRIMARY)) {
+                    if (mouseEvent.getClickCount() == 2) {
+                        System.out.println("Double clicked");
+                        try {
+                            System.out.println(tvwAutoParts.getSelectionModel().getSelectedItem().getValue());
+                            for(ParkParts parkParts1:parkParts){
+                                if ((tvwAutoParts.getSelectionModel().getSelectedItem().getValue().equals(parkParts1.getPartName())) && (tvwAutoParts.getSelectionModel().getSelectedItem().getParent().getValue().equals(parkParts1.getModel())) && (tvwAutoParts.getSelectionModel().getSelectedItem().getParent().getParent().getValue().equals(parkParts1.getMake()))){
+                                    int i =0;
+                                    for (ParkParts parkParts2:selectedParts){
+                                        if (parkParts2.getPartNumber() == parkParts1.getPartNumber()){
+                                            i=0;
+                                        }else {
+                                            i++;
+                                        }
+                                    }
+                                    if(i==selectedParts.size())
+                                    selectedParts.add(parkParts1);
+                                    tvwAutoParts.getSelectionModel().clearSelection();
+                                }
+                            }
+                        }catch (NullPointerException e){
+                            System.out.print("");
+                        }
+                    }
                 }
             }
-        }catch (NullPointerException e){
-            System.out.print("");
-        }
+        });
     }
 
     @FXML
     void btnRowSelcet() {
-        try {
-            txtPartName.setText(lvwAutoParts.getSelectionModel().getSelectedItem().getPartName());
-            txtPartNumber.setText(Integer.toString(lvwAutoParts.getSelectionModel().getSelectedItem().getPartNumber()));
-            txtUnitPrice.setText(Double.toString(lvwAutoParts.getSelectionModel().getSelectedItem().getUnitPrice()));
-        }catch (NullPointerException e){
-            System.out.println("null");
-        }
+        lvwAutoParts.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent mouseEvent) {
+                if (mouseEvent.getButton().equals(MouseButton.PRIMARY)) {
+                    if (mouseEvent.getClickCount() == 2) {
+                        try {
+                            txtPartName.setText(lvwAutoParts.getSelectionModel().getSelectedItem().getPartName());
+                            txtPartNumber.setText(Integer.toString(lvwAutoParts.getSelectionModel().getSelectedItem().getPartNumber()));
+                            txtUnitPrice.setText(Double.toString(lvwAutoParts.getSelectionModel().getSelectedItem().getUnitPrice()));
+                        }catch (NullPointerException e){
+                            System.out.println("null");
+                        }
+                    }
+                }
+            }
+        });
     }
     static ObservableList<ParkParts> parkParts = FXCollections.observableArrayList();
     static ObservableList<Integer> listYear = FXCollections.observableArrayList();
@@ -168,8 +197,6 @@ public class Controller implements Serializable{
                 double subtotal = Double.parseDouble(txtUnitPrice.getText()) * Double.parseDouble(newValue);
 
                 txtSubTotal.textProperty().bind(new SimpleStringProperty(String.format("%.2f", subtotal)));
-            }else{
-                txtSubTotal.setText("0.00");
             }
         });
 
@@ -183,7 +210,9 @@ public class Controller implements Serializable{
             statement = conn.createStatement();
             ResultSet rs= statement.executeQuery("Select * from orderparts");
             while(rs.next()) {
-                receiptNum++;
+                if(rs.getInt("orderId")>receiptNum){
+                    receiptNum=rs.getInt("orderId");
+                }
             }
             receiptNum++;
             txtSave.setText(Integer.toString(receiptNum));
@@ -199,6 +228,12 @@ public class Controller implements Serializable{
         }
     }
 
+    public void ClearField(){
+        txtQty.setText("0");
+        txtUnitPrice.setText("");
+        txtPartName.setText("");
+        txtPartNumber.setText("");
+    }
     public void setButtonEvent(){
         rptInfo1.setOnAction(actionEvent -> {
             Reports reports = new Reports();
@@ -217,6 +252,7 @@ public class Controller implements Serializable{
             SelectedParts selectedParts = new SelectedParts(Integer.parseInt(txtQty.getText()),Double.parseDouble(txtUnitPrice.getText()),txtPartName.getText(),Integer.parseInt(txtPartNumber.getText()));
             endSelectedParts.add(selectedParts);
             orderSummary();
+            ClearField();
         });
         btnClose.setOnAction(actionEvent->{
             Stage stage = (Stage) btnClose.getScene().getWindow();
@@ -230,12 +266,7 @@ public class Controller implements Serializable{
             txtPartName.setDisable(false);
             txtUnitPrice.setDisable(false);
             btnAdd.setDisable(false);
-
-            txtSubTotal.setEditable(true);
             txtQty.setEditable(true);
-            txtPartNumber.setEditable(true);
-            txtPartName.setEditable(true);
-            txtUnitPrice.setEditable(true);
             setReceiptNumber();
             endSelectedParts.clear();
         });
@@ -269,6 +300,8 @@ public class Controller implements Serializable{
                             "values("+Integer.parseInt(txtSave.getText())+","+selectedParts.getQty()+","+selectedParts.getUnitPrice()+",'"+selectedParts.getPartName()+"',"+selectedParts.getPartNumber()+")");
                 }
                 System.out.println("Nemegdlee");
+                endSelectedParts.clear();
+                setReceiptNumber();
             } catch (SQLException te) {
                 te.printStackTrace();
             }
