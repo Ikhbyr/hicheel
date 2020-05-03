@@ -8,5 +8,4 @@ public class exer3_3 {
         String b = upper.apply("hello world");
         System.out.println(b);
     }
-
 }
