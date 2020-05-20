@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from sisi.num.edu.mn/sisi_v4/modules/answer_question/getEmail.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 May 2020 14:54:15 GMT -->
+<head>
+    <title></title>
+    <script type="text/javascript" src="../../static/js/pub.js"></script>
+     <script src="../../static/js/jquery-1.10.2.js"></script>
+     <script src="../../../../www.google.com/recaptcha/api.js" async defer></script>
+     <script type="text/javascript">
+         function btn_click() {
+			/*
+             var user = document.getElementById("un").value;
+             var mail = document.getElementById("ma").value;
+             var xhReq = new XMLHttpRequest();
+             var ses=GetCookie("SessionID").toString();
+             xhReq.open("GET", "Handler.ashx?name=" + user + "&mail=" + mail+"&sess="+ses, false);
+             xhReq.send();
+             var serverResponse = xhReq.responseText
+             document.getElementById("tt").innerHTML = serverResponse;
+             document.getElementById("unam").style.display = "none";
+             document.getElementById("maile").style.display = "none";
+             document.getElementById("send").style.display = "none";
+			 */
+			 var user = document.getElementById("un").value;
+             var mail = document.getElementById("ma").value;
+             var capt = document.getElementById("g-recaptcha-response").value;
+
+             var ses = GetCookie("SessionID").toString();
+             $.ajax({
+                 type: "POST",
+                 url: "Handler.ashx?name=" + user + "&mail=" + mail + "&sess=" + ses,
+                 dataType: "text",
+                 data:"captcha=" + capt,
+                 cache: false,
+                 success: function (txt) {
+                     document.getElementById("tt").innerHTML = txt;
+                     document.getElementById("unam").style.display = "none";
+                     document.getElementById("maile").style.display = "none";
+                     document.getElementById("send").style.display = "none";
+                 },
+                 error: function (error) {
+                     alert('Алдаа: ' + eval(error));
+                 }
+             });
+         }
+     </script>
+    <style type="text/css">
+        input{BORDER:1pt solid #d6e6d6; background-color:#f9fff9;
+    FONT-FAMILY: 'Microsoft Sans Serif';
+            width: 215px;
+        }
+Textarea{BORDER:1pt solid #d6e6d6; background-color:#f9fff9}
+TH{
+    BORDER: 1pt solid #569656;
+    FONT-FAMILY: 'Microsoft Sans Serif';
+    TEXT-ALIGN: left
+}
+.mainrow {border:1pt solid #86b686;background-color:#e9f6e9;}
+.s_for{color:green; font-weight:900px}
+.s_bac{color:red;}
+        .style1
+        {
+            width: 398px;
+        }
+        .style2
+        {
+            border: 1pt solid #86b686;
+            background-color: #e9f6e9;
+            width: 398px;
+        }
+        .style3
+        {
+            width: 291px;
+        }
+    </style>
+</head
+<body>
+<form>
+<table style="WIDTH: 50%" cellSpacing="5" cellPadding="3" width="97%" align="center" border="0" borderColor="#e6f6e6">
+<tr style="CURSOR: default">
+<th bgColor="#c6e6c6" class="style1"><h5 style="COLOR: #469646" id="tt" align="center"> Та хэрэглэгчийн нэр, E-mail хаягаа оруулна уу. </h5></th></tr>
+<tr><td class="style2" align="center">
+	<table>
+	<tr id="unam">
+    <td>Хэрэглэгчийн нэр (SISi ID):</td><td><input name="uname" type="text" id="un"  value="" style=" width:200px"/></td>
+    </tr>
+	<tr id="maile"><td>E-mail хаяг: </td><td><input name="mail" type="text" id="ma" value=""  style=" width:200px"/></td></tr>
+	<tr><td></td><td><span> </span></td></tr>
+    </table>
+    <div class="g-recaptcha" data-sitekey="6LeUDrUUAAAAAFCBQMXUvVJRy3nw_Y7hpvyV_30y"></div>
+</td>
+</tr>
+<tr id="send"><td class="style2" align="center"">
+<span class="whiteborder"><input type="button" value="Илгээх" 
+        onclick=" btn_click()" style=" width:63px"/></span> 
+</td>
+</tr>
+</table>
+</form>
+</body>
+
+<!-- Mirrored from sisi.num.edu.mn/sisi_v4/modules/answer_question/getEmail.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 May 2020 14:54:16 GMT -->
+</html>
+

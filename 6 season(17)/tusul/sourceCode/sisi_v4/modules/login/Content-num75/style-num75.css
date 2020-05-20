@@ -1,0 +1,235 @@
+﻿
+body {
+}
+#login .col-md-12 {
+    padding: 0px !important;
+}
+
+#login .col-md-4 {
+    height: 100vh;
+    background-color: #1f4785;
+    padding: 0;
+}
+
+#login .col-md-8 {
+    padding: 0;
+    height: 100vh;
+    background-image: url('MUIS-building.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/*WRAPPER-LEFT*/
+#wrapper-left {
+    margin-top: 20%;
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+    #wrapper-left .logo-img {
+        width: 120px;
+        margin: 0 auto;
+        margin-bottom: 8% !important;
+    }
+
+    #wrapper-left .logo-text {
+        color: #fff;
+        margin-bottom: 16% !important;
+    }
+
+    #wrapper-left .form-signin {
+        max-width: 330px !important;
+        background: transparent !important;
+        padding: 0 !important;
+    }
+
+        #wrapper-left .form-signin .form-control {
+            border: 0;
+            border-bottom: 1px solid #fff;
+            border-radius: 0;
+            background-color: transparent;
+            color: #fff;
+            -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075);
+            box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075);
+            -webkit-transition: border-color ease-in-out .0s, -webkit-box-shadow ease-in-out .0s;
+            -o-transition: border-color ease-in-out .0s, box-shadow ease-in-out .0s;
+            transition: border-color ease-in-out .0s, box-shadow ease-in-out .0s;
+        }
+
+            #wrapper-left .form-signin .form-control::-webkit-input-placeholder {
+                color: #fff; /* WebKit, Blink, Edge */
+            }
+
+            #wrapper-left .form-signin .form-control:-moz-placeholder {
+                color: #fff; /* Mozilla Firefox 4 to 18 */
+            }
+
+            #wrapper-left .form-signin .form-control::-moz-placeholder {
+                color: #fff; /* Mozilla Firefox 19+ */
+            }
+
+            #wrapper-left .form-signin .form-control:-ms-input-placeholder {
+                color: #fff; /* Internet Explorer 10-11 */
+            }
+
+            #wrapper-left .form-signin .form-control::-ms-input-placeholder {
+                color: #fff; /* Microsoft Edge */
+            }
+
+        #wrapper-left .form-signin .form-group {
+            margin-bottom: 13%;
+        }
+
+            #wrapper-left .form-signin .form-group .pull-right a {
+                color: rgba(255, 255, 255, 0.55);
+
+            }
+
+        #wrapper-left .form-signin .btn-primary {
+            color: #1f4785;
+            font-weight: bold;
+            background-color: #fff;
+        }
+    #id_capcha img {
+        margin-left:35%;
+        margin-top:3%;
+    }
+    
+    #footer {
+        position: absolute;
+        bottom: 0;
+        height: 60px;
+    }
+
+    #footer h5 {
+        text-align: center;
+        font-weight: bold;
+        color: #fff;
+    }
+
+/*WRAPPER-RIGHT*/
+#main-wrap {
+
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    align-items: center;
+    justify-content: center;
+    z-index: 9997;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+.wrapper-right {
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    flex-direction: column;
+    margin: auto 0;
+}
+
+#anime1 {
+    align-self: center;
+    margin-bottom: 40px;
+}
+
+#anime2 {
+    align-self: center;
+    margin-bottom: -17%;
+}
+
+#anime3 h2 {
+    font-family: 'Yeseva One', cursive;
+    color: #1b4588;
+    animation: hue-rotate 1.3s linear infinite;
+    text-align: center;
+    margin-top: 0;
+    font-size: 26px;
+}
+
+
+/*small SCREEN*/
+.sign-small-desktop {
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 5px;
+}
+    .sign-small-desktop .btn-primary {
+        background-color: transparent;
+        font-size: 45px;
+        color: #1b4588;
+        border-color: transparent;
+        justify-content: center;
+        animation: hue-rotate 1.3s alternate-reverse infinite;
+    }
+@media (max-width: 320px) {
+    #footer {
+        display:none;
+    }
+    #anime1 {
+        width:170px;
+        margin-top:3%;
+    }
+    #anime2 {
+        width: 170px;
+    }
+    #anime3 {
+        width: 280px;
+    }
+}
+    @media (max-width: 768px) {
+        #wrapper-left {
+            margin-top: 10%;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .sign-small-desktop {
+            visibility: hidden;
+        }
+    }
+    /*Keyframes*/
+    @keyframes hue-rotate {
+        from {
+            -webkit-filter: hue-rotate(0);
+            -moz-filter: hue-rotate(0);
+            -ms-filter: hue-rotate(0);
+            filter: hue-rotate(0)
+        }
+
+        to {
+            -webkit-filter: hue-rotate(360deg);
+            -moz-filter: hue-rotate(360deg);
+            -ms-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg)
+        }
+    }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    #wrapper-left {
+        display: -webkit-inline-box !important; /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-inline-box !important; /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-inline-flexbox !important; /* TWEENER - IE 10 */
+        display: -webkit-inline-box !important; /* NEW - Chrome */
+        display: inline !important; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    }
+    #footer {
+        margin-left:30%;
+    }
+
+
+}

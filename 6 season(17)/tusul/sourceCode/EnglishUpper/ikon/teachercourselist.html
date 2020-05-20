@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from sisi.num.edu.mn/EnglishUpper/ikon/teachercourselist by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 May 2020 14:54:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - My ASP.NET Application</title>
+    <link href="../Content/jquery-ui.css" rel="stylesheet"/>
+<link href="../Content/bootstrap.css" rel="stylesheet"/>
+<link href="../Content/bootstrap-reset.css" rel="stylesheet"/>
+<link href="../Content/main.css" rel="stylesheet"/>
+<link href="../Content/site.css" rel="stylesheet"/>
+
+    <script src="../Scripts/modernizr-2.6.2.js"></script>
+
+
+    <script src="../Scripts/jquery-1.10.2.js"></script>
+<script src="../Scripts/jquery-1.12.4.js"></script>
+<script src="../Scripts/jquery-ui.js"></script>
+<script src="../Scripts/jquery-ui-timepicker-addon.js"></script>
+<script src="../Scripts/admission.js"></script>
+
+    <script src="../Scripts/bootstrap.js"></script>
+<script src="../Scripts/respond.js"></script>
+
+    
+</head>
+<body>
+    
+    <div class="container">
+        <div class="col-md-12 body-content">
+            
+            
+
+
+<div class="col-md-8">
+    <div class="alert alert-info">
+        <p>
+            Сайн байна уу? <br>
+            Цахим сургалтын чанарыг сайжруулах зорилгоор тандалт судалгаа зохион байгуулж байна. <br>
+            Тус асуулгын хариулт нь багшийн хичээл зааж байгаа чанарыг үнэлэхэд хамаарахгүй болно.
+        </p>
+        <strong> Санал асуулгыг бүрэн бөглөж системд нэвтэрнэ үү! </strong>
+    </div>
+    <div id="accordion">
+    </div>
+
+    <a href="../../index.html" class="btn btn-default">Санал асуулгыг алгасах</a>
+</div>
+    <script>
+        teacherikon();
+    var issanal = [];
+        function GetCookie(sCookie) {
+            // cookies are separated by semicolons
+            var aCookie = document.cookie.split("; ");
+            for (var i = 0; i < aCookie.length; i++) {
+                var aCrumb = aCookie[i].split("=");
+                if (sCookie == aCrumb[0]) {
+                    if (decodeURIComponent == undefined)
+                        return unescape(aCrumb[1]);
+                    else
+                        return decodeURIComponent(aCrumb[1]);
+                }
+            }
+            return null;
+        }
+        $(function () {
+            var str = "";
+            var courseIDS = [];
+            $.ajax({
+                url: "/sisi_v4/Modules/xproxyasp.ashx?nr=5&nr1=307&lng=1&p1=" + GetCookie("userid"),
+                type: 'GET',
+                success: function (xml) {
+                    str = '<table class="table table-bordered"><thead><tr><th>Хичээлийн нэр</th><th>Санал асуулга</th></tr><thead><tbody>'
+                    $(xml).find('row').each(function (index) {
+                        str += '<tr><td><strong>' + $(this).attr('su') + '</strong></td>' +
+                            '<td><a href="/EnglishUpper/ikon/index/' + $(this).attr('recnr') + '" class="btn btn-primary" id="courseID' + $(this).attr('recnr') +'">Санал өгөх</a></td>'
+                        '</tr>';
+                        courseIDS.push($(this).attr('recnr'));
+                    });
+                    str += '</tbody></table>';
+                    $("#accordion").html(str);
+                    courseIDS.forEach((element) => {
+                        teacherchecksanal(element)
+                    })
+                },
+                error: function (jqXHR, exception) {
+                    console.log("Холболт амжилтгүй");
+                    window.location.replace("../../index.html");
+
+                }
+            });
+        });
+
+            function teacherchecksanal(courseID) {
+
+            var sendData = { courseID: courseID };
+             $.ajax({
+                    url: '/EnglishUpper/ikon/teacherchecksanal',
+                    type: 'POST',
+                    data: sendData,
+                    success: function (data) {
+
+                        issanal.push(data);
+                        if (data == 1) {
+
+                            $("#courseID" + courseID).removeAttr('href');
+                            $("#courseID" + courseID).removeClass('btn-primary');
+                            $("#courseID" + courseID).addClass('btn-success');
+                            $("#courseID" + courseID).val("Санал өгсөн");
+                            $("#courseID" + courseID).text("Санал өгсөн");
+                        }
+                    },
+                    error: function (jqXHR, exception) {
+                    alert("Холболт амжилтгүй");
+                    anscheck.prop('checked', false);
+                    }
+                    });
+        }
+
+        function teacherikon() {
+            window.location = "../../index.html";
+            $.ajax({
+                type: "GET",
+                url: "/sisi_v4/modules/menu/zovlol.ashx?nr=3",
+                dataType: "xml",
+                success: function (xml) {
+                    console.log(xml);
+                    var stat = $(xml).find('row').attr('stat');
+                    console.log(stat);
+                    if (stat == "0") {
+                        console.log("Санал асуулга өгч дуусаагүй");
+                        // window.location = "/EnglishUpper/ikon/teachercourselist";
+                    } else {
+                        window.location = "../../index.html";
+                    }
+                }
+            });
+
+        }
+    </script>
+
+
+
+
+            
+        </div>
+    </div>
+
+</body>
+
+<!-- Mirrored from sisi.num.edu.mn/EnglishUpper/ikon/teachercourselist by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 May 2020 14:54:15 GMT -->
+</html>

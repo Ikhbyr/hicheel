@@ -1,0 +1,714 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from sisi.num.edu.mn/sisi_v4/modules/login/login.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 May 2020 14:53:52 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="application-name" content="SISi мэдээллийн систем" />
+    <meta name="msapplication-tooltip" content="SISi мэдээллийн систем -д нэвтрэх" />
+    <meta name="msapplication-task" content="name=Нүүр хуудас;action-uri=login.htm;icon-uri=favicon.ico" />
+    <meta name="application-name" content="МУИС -ийн Форум" />
+    <meta name="msapplication-task" content="name=МУИС -ийн Форум;action-uri=http://sisi.num.edu.mn/forum/get.ashx;icon-uri=fo-favicon.ico" />
+    <meta name="msapplication-task" content="name=SISi Форум;action-uri=http://sisi.num.edu.mn/forum/get.ashx?forumid=691;icon-uri=fo-favicon.ico" />
+
+    <title>Sisi Нэвтрэх</title>
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../static/image/favicon.ico">
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../static/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="../../static/css/jquery-ui.css" />
+    <link href="Content-num75/style-num75.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Yeseva+One" rel="stylesheet">
+    <link href="../../static/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="Content-num75/animate.css" rel="stylesheet" />
+    <!-- Javascript -->
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!--[if IE]>
+        <link href="Content-num75/style-num75 -all-ie.css" rel="stylesheet" />
+    <![endif]-->
+
+    
+    <script src="../../static/js/jquery-1.10.2.js"></script>
+    <script src="../../static/js/bootstrap.min.js"></script>
+    <script src="../../static/js/login/md5v2.js"></script>
+    <script src="../../static/js/login/xmldom.js"></script>
+    <script src="../../static/js/pub.js"></script>
+    <script src="../../static/js/md5.js"></script>
+    <script src="../../static/js/jquery-ui.js"></script>
+	<!--<script src="/sisi_v4/static/js/snow.js"></script>-->
+    
+	<!--<script src="/sisi_v4/static/js/jquery.snow.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $.fn.snow({ minSize: 20, maxSize: 50, newOn: 800, flakeColor: 'white' });
+        });
+</script>-->
+
+    <!-- Added 2020-03-23 for new tracking  -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18983048-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-18983048-2');
+    </script>
+
+
+    <script type="text/javascript">
+
+
+        function teacherikon() {
+            $.ajax({
+                type: "GET",
+                url: "/sisi_v4/modules/menu/zovlol.ashx?nr=3",
+                dataType: "xml",
+                success: function (xml) {
+                    console.log(xml);
+                    var stat = $(xml).find('row').attr('stat');
+                    console.log(stat);
+                    if (stat == "0") {
+                        window.location = "../../../EnglishUpper/ikon/teachercourselist.html";
+                    } else {
+                        window.location = "../../../index.html";
+                    }
+                }
+            });
+
+        }
+        function studikon() {
+            $.ajax({
+                type: "GET",
+                url: "/sisi_v4/modules/menu/zovlol.ashx?nr=4",
+                dataType: "xml",
+                success: function (xml) {
+
+                    var stat = $(xml).find('row').attr('stat');
+                    if (stat == "0") {
+
+                        window.location = "../../../EnglishUpper/ikon/studcourselist.html";
+                    } else {
+
+                        window.location = "../../../index.html";
+                    }
+                }
+            });
+
+        }
+
+        function loginMe() {
+            var stat = 0;
+            if ($("#nick").val() != "" && $("#pswd").val() && $("#pvc").val()) {
+                var md5eh = hex_md5($("#pswd").val()).toLowerCase() + "s" + $("#pvc").val();
+                var ss = hex_md5(md5eh).toLowerCase();
+                var objDoc = loadXMLDoc("auth.ashx?username=" + $("#nick").val() + "&password=" + ss);
+                if (objDoc.getElementsByTagName("result")[0].getAttribute("resultCode") == "0") {
+                    var GID = parseInt(GetCookie("gid"));
+                    // alert('login me gid='+GID);
+
+                    if (GID == 5 || GID == 6) {
+
+                        /*var unamepop =$("#nick").val();
+
+                        if(unamepop.toLowerCase().indexOf("15b1") >= 0)
+                        {
+                           shineGID=GID;
+                          $('#shineelsegchid').modal('show');
+
+
+                       }else{*/
+
+      //                  var isreset = isresetpassword();
+      //                  if (isreset)
+						//{
+                            submitLogin(GID);
+                        //}else
+                        //    $('#resetPwdModal').modal('show');
+                        //}
+                    }
+                    else {
+					
+                       selecUsergroups();
+                    }
+                }
+                else {
+                    if (objDoc.getElementsByTagName("result")[0].getAttribute("resultCode") == "4") {
+                        //$("#alert").html("<div class='alert alert-danger'>" + objDoc.getElementsByTagName("result")[0].getAttribute("resultMsg") + "</div>");
+                        $("#alertBatal").html("<div class='alert alert-danger'>" + objDoc.getElementsByTagName("result")[0].getAttribute("resultMsg") + "</div>");
+                        $('#modalBatal').modal('show');
+                    }
+                    else
+                        $("#alert").html("<div class='alert alert-danger'>Та нэвтрэх боломжгүй байна.</div>");
+                    changeCapcha();
+                }
+            }
+            else {
+                $("#alert").html("<div class='alert alert-danger'>Шаардлагатай талбарыг бөглөнө үү!</div>");
+            }
+
+        }
+
+        function submitLogin(GID) {
+            $("#di1").val(GetCookie("SessionID"));
+            $("#di2").val(GetCookie("userid"));
+            $("#di3").val(GetCookie("gid"));
+            $("#di4").val(GetCookie("FNamem"));
+            $("#di5").val(GetCookie("LNamem"));
+            $("#di6").val(GetCookie("FName"));
+            $("#di7").val(GetCookie("LName"));
+            $("#di8").val(GetCookie("Cardnr"));
+            $("#di9").val(GetCookie("pid"));
+            $("#di10").val(GetCookie("pname"));
+            $("#di11").val(GetCookie("unit"));
+            $("#di13").val(GetCookie("userid"));
+
+            /*if (GetCookie("unit") == 1001001)
+                   {
+                       var xhReq = new XMLHttpRequest();
+                       xhReq.open("GET", "mts.ashx", false);
+                       xhReq.send(null);
+                       var serverResponse = xhReq.responseText;
+                       var random = Math.floor(Math.random() * 11);
+                       //alert(serverResponse);
+                       if (parseInt(serverResponse) < 6) {
+                           window.showModalDialog("http://sit.num.edu.mn/custom/best_student/promotion.php?random=" + random + "&di1=" + GetCookie("SessionID") + "&di2=" + GetCookie("userid"), "", "dialogWidth:800px; dialogHeight:600px; center:yes");
+                       }
+                       if(GID == 5 || GID == 6  ){
+                           window.location = "/sisi_v4/modules/menu/menu.ashx";
+                       }else{
+                           window.location = "/xml/menu/temptest/menu.ashx";
+                       }
+                   }
+           else {*/
+
+            if (getArg("redir") != "" && getArg("redir") != null) {
+                if (getArg("type") != "" && getArg("type") != null) {
+                    window.location.href = getArg("redir");
+                }
+                else {
+                    document.auth.action = getArg("redir");
+                    if (getArg("redir").split('foru')[1] != null) {
+                        if (GetCookie("SessionID") != null) {
+                            var tempSessionID = GetCookie("SessionID");
+                            var tempDate = new Date();
+                            tempDate.setTime(((new Date()).getTime() + ((-1) * 24 * 60 * 60 * 1000)));
+                            document.cookie = 'SessionID=;' + 'expires=' + tempDate.toGMTString().toString() + ';';
+                        }
+
+                        var fUrl = '';
+                        if (window.location.href.split("threadid")[0] != null || window.location.href.split("forumid") != null) {
+                            fUrl = window.location.href.split("redir=")[1];
+                        }
+
+                        var inputEl = document.createElement("input");
+                        inputEl.setAttribute("type", "hidden");
+                        inputEl.setAttribute("name", 'redirect');
+                        inputEl.setAttribute("value", escape(fUrl).replace(/\57/gi, "%2F")); //.replace("?"/gi, "zxcv")
+                        inputEl.setAttribute("id", 'fUrl');
+                        document.auth.insertBefore(inputEl, document.auth.childNodes[0]);
+
+                    }
+                    document.auth.submit();
+                }
+
+            }
+            else {
+                if (GID == 5 || GID == 6 || GID == 8) {
+
+                    //window.location = "/sisi_v4/modules/menu/menu.ashx";
+                    if (GID == 8) {
+                        teacherikon();
+                    } else {
+                        studikon();
+                        //window.location = "/sisi_v4/modules/menu/menu.ashx";
+                    }
+
+                   
+
+                } else {
+                    window.location = "../../../index.html";
+                }
+            }
+        }
+
+        function isresetpassword() {
+            //alert(GetCookie("userid"));
+            var isresetpwd = loadXMLDoc("isresetpasswd.ashx?sid=" + GetCookie("userid"));
+            //alert(isresetpwd.getElementsByTagName("result")[0].getAttribute("resultCode"));
+            if (isresetpwd.getElementsByTagName("result")[0].getAttribute("resultCode") == "0") {
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        $(function () {
+		
+		  
+		
+            $("#close_resetpwd").click(function () {
+                window.location = "login.html";
+            });
+
+            $('.copyDate').text((new Date()).getFullYear());
+
+            $("#close_shineelsegchid").click(function () {
+                $('#shineelsegchid').modal('hide');
+                var isreset = isresetpassword();
+                if (isreset) {
+                    var GID = parseInt(GetCookie("gid"));
+                    submitLogin(GID);
+                }
+                else
+                    $('#resetPwdModal').modal('show');
+            });
+
+
+
+            $("#submit_resetpwd").click(function () {
+                var regex = /(?=.*[a-zA-Z_-])(?=.*[0-9])^[a-z0-9A-Z_-]{5,}$/;
+                var regex1 = /(?=.*[a-zA-Z_-])(?=.*[0-9])^[a-z0-9A-Z_-]{5,}$/;
+                var regex_old = /^[a-z0-9A-Z_-]{3,}$/;
+
+                // alert(regex.test($("#id_pass_new").val()) + " " + regex1.test($("#id_pass_new1").val()) + " " + regex_old.test($("#id_pass_old").val()));
+                if (regex.test($("#id_pass_new").val()) && regex1.test($("#id_pass_new1").val())) {
+
+                    if ($("#id_pass_new").val() == $("#id_pass_new1").val()) {
+                        // alert($("#id_pass_new").val() + "==" + $("#id_pass_new1").val());
+                        form.pass_old.value = MD5($("#id_pass_old").val()).toUpperCase();
+                        form.pass_new.value = MD5($("#id_pass_new").val()).toUpperCase();
+                        form.pass_new1.value = MD5($("#id_pass_new").val()).toUpperCase();
+
+                        $("#alert_resetpwd").html("");
+                        // alert('reset');
+                        $.ajax({
+                            url: '/sisi_v4/modules/configure/reset.ashx',
+                            type: 'post',
+                            // dataType: 'xml',
+                            data: $('form#id_form').serialize(),
+                            success: function (data) {
+                                if (data.toString() == "Амжилттай хадгалагдлаа.") {
+                                    $('#resetPwdModal').modal('hide');
+                                    //window.location = "/sisi_v4/modules/menu/menu.ashx";
+                                    var GID = parseInt(GetCookie("gid"));
+                                    submitLogin(GID);
+                                    alert(data.toString());
+                                }
+                                else {
+                                    $("#alert_resetpwd").html("<div class='alert alert-danger'>" + data + "</div>");
+                                }
+                                $("#id_pass_old").val("");
+                                $("#id_pass_new").val("");
+                                $("#id_pass_new1").val("");
+
+                            }
+                        });
+                    }
+                    else {
+                        $("#alert_resetpwd").html("<div class='alert alert-danger'>Шинэ нууц үг ба Шинэ нууц үг давт талбарууд ижил биш байх ёстой.</div>");
+                    }
+                }
+                else {
+
+                    $("#alert_resetpwd").html("<div class='alert alert-danger'><li>Нууц үг 5 аас дээш тэмдэгт байх ёстой.</li><li>Тоо болон латин үсэг орсон байх ёстой.</li></div>");
+                }
+
+            });
+
+        });
+
+
+        function changeCapcha() {
+            $("#id_capcha").html('<img id="imgpvc" src="getpvc.aspx?' + Math.random() + '" class="img" unselectable="on" title="Энэхүү кодыг оруулна уу" alt="Энэхүү кодыг оруулна уу" />');
+        }
+
+        $(function () {
+            $("#dialog").dialog({
+                autoOpen: false,
+                width: 450,
+                height: 350,
+                modal: true
+            });
+        });
+
+
+
+
+        function help() {
+            /*
+            var rv = window.showModelessDialog("/answer_question/getEmail.htm", 0, 'dialogHeight:220px; dialogWidth:400px; center: Yes; help: No; resizable: No; status: No;');
+            if (rv == 1)
+                document.location.reload();
+            */
+            $("#dialog").dialog("open");
+        }
+
+        function selecUsergroups() {
+            $.ajax({
+                type: "GET",
+                url: "group.ashx",
+                dataType: "xml",
+                cache: false,
+                async: false,
+                success: function (xml) {
+                    $(xml).find('ROOT').each(function () {
+                        var str = "";
+                        var gnum = $(this).find('row').length;
+                        if (gnum > 1) {    //olon groupt user bol
+                            $(this).find('row').each(function () {
+                                var unit = $(this).attr("un");
+                                var gid = $(this).attr("gid");
+                                var grname = $(this).attr("gname");
+                                var empid = $(this).attr("eid");
+                                var uid = $(this).attr("uid");
+                                var path = $(this).attr("imagePath");
+
+                                positionText = grname;
+                                unitText = unit;
+                                //str += '<div id="login-media" class="media"><button class="default-btn"><a class="pull-left media-object"><img src="../../static/image/login/icon1.png" /></a><div class="media-body"><h4 class="media-heading">' + positionText + '</h4><p>' + unitText + '</p></div></button></div>';
+                                str += '<div id="login-media" class="media"><a class="pull-left"><button type="button" class="media-object btn btn-primary ugroup"  gid="' + gid + '" unit="' + uid + '"><img src="../../static/image/login/' + path + '"/></button></a><div class="media-body"><h4 class="media-heading">' + positionText + '</h4><div class="school">' + '(' + unitText + ')' + '</div></div></div>';
+                            });
+
+                            $("#usergroups").html(str);
+                            $('#modal').modal('show')
+                            $(".ugroup").click(function () {
+                                var gid = $(this).attr("gid");
+                                var unit = $(this).attr("unit");
+                                SelectUserGroupStatus = completelogin(unit, gid);
+                                if (SelectUserGroupStatus == 1) {
+                               
+                                submitLogin(gid);
+                                }
+                            });
+                        }
+                        else {
+                            var unit = $(this).find('row').attr("uid");
+                            var gid = $(this).find('row').attr("gid");
+                            SelectUserGroupStatus = completelogin(unit, gid);
+                            if (SelectUserGroupStatus == 1) {
+                                
+                                submitLogin(gid);
+                            }
+                        }
+                    });
+                }
+            });
+        }
+
+        function completelogin(unit, gid) {
+            var ret = 0;
+            $.ajax({
+                type: "GET",
+                url: "completelogin.ashx?gid=" + gid + "&school=" + unit,
+                dataType: "xml",
+                cache: false,
+                async: false,
+                success: function (xml) {
+                    $(xml).find('result').each(function () {
+                        ret = $(this).attr("resultCode");
+                    });
+                }
+            });
+            return ret;
+        }
+
+
+
+
+
+        $(document).ready(function () {
+            $('#pvc').keyup(function (event) {
+                var keycode = event.keyCode || event.which;
+                if (keycode == 13) { //Enter keycode
+                    loginMe();
+                }
+            });
+
+            $('#pswd').keyup(function (event) {
+                var keycode = event.keyCode || event.which;
+                if (keycode == 13) { //Enter keycode
+                    loginMe();
+                }
+            });
+            $('.popovers').popover();
+        });
+
+        var clickedID = false;
+
+        $(document).ready(function () {
+
+            //$("#nick").focus(function () {
+
+            //    if (clickedID == false) {
+            //        $("#anime1").css("visibility", "visible");
+            //        $("#anime1").addClass("flip");
+
+            //        setTimeout(function () {
+            //            $("#anime2").css("visibility", "visible");
+            //            $("#anime2").addClass("slideInDown");
+            //        }, 1000);
+
+            //        setTimeout(function () {
+            //            $("#anime3").css("visibility", "visible");
+            //            $("#anime3").addClass("jackInTheBox");
+            //        }, 2000);
+                    
+            //        clickedID = true;
+            //    }
+            //});
+
+            if ($(window).width() < 992) {
+                $("#nick").focus();
+                $("#animSection").hide();
+            }
+            
+
+            //$("#showForm").click(function () {
+            //    $("#signin-form").show(function () {
+            //        $("#signin-form").animate({
+            //            duration: 'fast',
+            //            easing: '_default'
+            //        })
+            //    });
+
+            //    $("#animSection").hide();
+            //}
+            //);
+
+        });
+
+
+    </script>
+	<style>
+		#snow {
+            overflow: hidden;
+        }
+
+        .flake {
+            position: absolute;
+        }
+	</style>
+
+</head>
+
+<body>
+	<!--<div id="snow"></div>-->
+    <div id="dialog" title="Нууц үг сэргээх!">
+        <iframe src="../answer_question/getEmail.html" style="width: 95%; height: 95%"></iframe>
+    </div>
+    <form action="#" name="auth" method="post">
+        <input type="hidden" name="di1" id="di1" value="0" />
+        <input type="hidden" name="di2" id="di2" value="0" />
+        <input type="hidden" name="di3" id="di3" value="0" />
+        <input type="hidden" name="di4" id="di4" value="0" />
+        <input type="hidden" name="di5" id="di5" value="0" />
+        <input type="hidden" name="di6" id="di6" value="0" />
+        <input type="hidden" name="di7" id="di7" value="0" />
+        <input type="hidden" name="di8" id="di8" value="0" />
+        <input type="hidden" name="di9" id="di9" value="0" />
+        <input type="hidden" name="di10" id="di10" value="0" />
+        <input type="hidden" name="di11" id="di11" value="0" />
+        <input type="hidden" name="grant_type" id="di12" value="password" />
+        <input type="hidden" name="username" id="di13" value="0" />
+        <input type="hidden" name="password" id="di14" value="logging_from_sisi" />
+    </form>
+
+<!--NUM-75 Login-->
+<div id="login" >
+    <div class="col-md-12">
+        <div id="signin-form" class="col-md-4">
+            <div id="wrapper-left">
+                <div class="form-signin">
+                    <div class="form-group logo-img">
+                        <img src="Content-num75/logo-white.png" class="img-responsive" />
+                    </div>
+                    <div id="alert"></div>
+                    <div class="form-group logo-text">
+                        <h4 class="text-center">SISi мэдээллийн систем 4.0</h4>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="nick" class="form-control" placeholder="Хэрэглэгчийн нэр / Username">
+                    </div>
+
+                    <div class="form-group">
+                        <input id="pswd" type="password" class="form-control" placeholder="Нууц үг  / Password">
+                    </div>
+
+                    <h3 class="form-signin-heading">
+                        <div id="id_capcha">
+                            <img src="getpvc.png" unselectable="on" title="Энэхүү кодыг оруулна" alt="Энэхүү кодыг оруулна уу" />
+                        </div>
+                    </h3>
+
+                    <div class="form-group">
+                        <input id="pvc" type="text" class="form-control" placeholder="Дээрх кодыг оруулна уу / Enter code">
+                        <div class="pull-right" style="margin-top:8px;">
+                            <a href="javascript:void(0)" onclick="help();">Нууц үгээ мартсан уу? / Forgot Password?</a>
+                        </div>
+                    </div>
+
+                    <br />
+                    <button class="btn btn-primary pull-right" id="submit" onclick="return loginMe()" type="submit">Нэвтрэх / Sign in</button>
+                </div>
+                <div id="footer">
+                    <h5>Монгол Улсын Их сургууль © 2017</h5>
+                </div>
+            </div> <!--wrapper-left-->
+        </div>
+
+        <div id="animSection" class="col-md-8">
+            <div id="showForm" class="sign-small-desktop animated pulse infinite">
+                <button class="btn btn-primary"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+            </div>
+
+            <div id="main-wrap">
+                <div class="wrapper-right">
+                    <div id="anime2" class="animated" style="visibility:hidden">
+                        <img src="Content-num75/anime2.png" class="img-responsive" />
+                    </div>
+
+                    <div id="anime1" class="animated" style="visibility:hidden">
+                        <img src="Content-num75/anime1.png" class="img-responsive" />
+                    </div>
+
+                    <div id="anime3" class="animated " style="visibility:hidden">
+                        <h2>МОНГОЛ УЛСЫН ИХ СУРГУУЛЬ</h2>
+                        <h2>75 жилийн ойн баярын мэнд хүргэе.</h2>
+                    </div>
+                </div>
+            </div>wrapper-right
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- /.modal -->
+        <div class="modal fade" id="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title text-center">Та дараах хэрэглэгчийн эрхүүдээс сонгоно уу,</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id="usergroups">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /.modal BATALGAAJUULALT ALERT -->
+        <div class="modal fade" id="modalBatal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title text-center">Та түр хугацаанд нэвтрэх боломжгүй байна.</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div id="alertBatal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /.modal begin resetpassword -->
+        <div class="modal fade" id="resetPwdModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title text-center">Нууц үг өөрчлөх </h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <!--start modal body-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        Системийн аюулгүй байдлын үүднээс анхны нууц үгээ заавал солино уу!
+                                        <ul style="list-style:square;"><li style="list-style:initial;">Нууц үг 5 аас дээш тэмдэгт байх ёстой.</li><li style="list-style:initial;">Тоо болон латин үсэг орсон байх ёстой.</li></ul>
+                                    </div>
+                                    <div id="alert_resetpwd"></div>
+                                    <div class="panel-body">
+                                        <form class="form-horizontal" name="form" id="id_form" role="form">
+                                            <div class="form-group">
+                                                <label for="inputEmail1" class="col-lg-3 col-sm-3 control-label">Хуучин нууц үг</label>
+                                                <div class="col-lg-8">
+                                                    <input type="password" class="form-control" id="id_pass_old" name="pass_old" placeholder="Хуучин нууц үг" onkeypress="capLock(event)">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPassword1" class="col-lg-3 col-sm-3 control-label">Шинэ нууц үг</label>
+                                                <div class="col-lg-8">
+                                                    <input type="password" class="form-control" id="id_pass_new" name="pass_new" placeholder="Шинэ нууц үг" onkeypress="capLock(event)">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPassword1" class="col-lg-3 col-sm-3 control-label">Шинэ нууц үг давт</label>
+                                                <div class="col-lg-8">
+                                                    <input type="password" class="form-control" id="id_pass_new1" name="pass_new1" placeholder="Шинэ нууц үг давт" onkeypress="capLock(event)">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end modal body-->
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" id="close_resetpwd">болих</button>
+                        <button type="button" class="btn btn-danger" id="submit_resetpwd">Өөрчлөх</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal end resetpassword -->
+
+
+
+
+    </div><!--/.col-md-12-->
+    </div><!--/.login-->
+
+    <!--<div id="login-footer">
+        <div class="container">
+            <p class="text-muted credit pull-right footer_text">
+                <a href="http://www.num.edu.mn/" target="_blank">Монгол Улсын Их сургууль</a> © <span class="copyDate"></span>&nbsp &nbsp
+                <a href="https://www.facebook.com/SISi.NUM" target="_blank"><img src="../../static/image/facebook_icon.png" height="20" width="20" /></a>
+                <a href="https://twitter.com/SISi_NUM" target="_blank"><img src="../../static/image/TwitterIcon.png" height="20" width="20" /></a>
+            </p>
+        </div>
+    </div>-->
+	
+</body>
+
+<!-- Mirrored from sisi.num.edu.mn/sisi_v4/modules/login/login.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 May 2020 14:53:59 GMT -->
+</html>
