@@ -1,13 +1,9 @@
 # depslib dependency file v1.0
-1589902747 source:e:\hicheel\6 season(17)\com graphic\lab\lab14\main.cpp
-	<GL/glu.h>
+1590329400 source:e:\hicheel\6 season(17)\com graphic\lab\lab14\main.cpp
 	<GL/glut.h>
+	<stdio.h>
+	<windows.h>
 	<math.h>
-	<string.h>
-	<iostream>
-	<vector>
-	"readFile.cpp"
-	"texture.cpp"
 
 1526093414 e:\program files\codeblocks\mingw\include\stdio.h
 	<crtdefs.h>
@@ -899,7 +895,7 @@
 1526093414 e:\program files\codeblocks\mingw\include\gl\glu.h
 	<GL/gl.h>
 
-1571448716 source:e:\hicheel\6 season(17)\com graphic\lab\lab14\readfile.cpp
+1589903677 source:e:\hicheel\6 season(17)\com graphic\lab\lab14\readfile.cpp
 	<GL/glu.h>
 	<GL/glut.h>
 	<string.h>

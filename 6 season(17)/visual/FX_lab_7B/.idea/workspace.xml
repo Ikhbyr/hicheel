@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reportsFile/underStudent.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/reportsFile/underStudent.jrxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../visualExam2/src/sample/People.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab10.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab11.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab12.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab14/lab14.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../../com graphic/lab/lab14/lab14.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab14/lab14.depend" beforeDir="false" afterPath="$PROJECT_DIR$/../../com graphic/lab/lab14/lab14.depend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab14/lab14.layout" beforeDir="false" afterPath="$PROJECT_DIR$/../../com graphic/lab/lab14/lab14.layout" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab14/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../com graphic/lab/lab14/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab14/obj/Debug/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../com graphic/lab/lab14/obj/Debug/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab2.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab6/com_graphic_Lab_6/com_graphic_Lab_6.layout" beforeDir="false" afterPath="$PROJECT_DIR$/../../com graphic/lab/lab6/com_graphic_Lab_6/com_graphic_Lab_6.layout" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab7/com_craphic_lab_7/com_craphic_lab_7.layout" beforeDir="false" afterPath="$PROJECT_DIR$/../../com graphic/lab/lab7/com_craphic_lab_7/com_craphic_lab_7.layout" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab9.rar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

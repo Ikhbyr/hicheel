@@ -43,9 +43,6 @@
 			<Add directory="E:/Program Files/CodeBlocks/MinGW/lib" />
 		</Linker>
 		<Unit filename="main.cpp" />
-		<Unit filename="readFile.cpp" />
-		<Unit filename="texture.cpp" />
-		<Unit filename="texture.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

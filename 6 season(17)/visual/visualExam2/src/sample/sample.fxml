@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="483.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TableView fx:id="vwTableView" layoutX="27.0" layoutY="20.0" prefHeight="290.0" prefWidth="432.0">
+        <columns>
+          <TableColumn fx:id="colEnglish" prefWidth="117.0" text="English" />
+          <TableColumn fx:id="colJapan" prefWidth="90.0" text="Japanese" />
+            <TableColumn fx:id="colBoolean" prefWidth="95.0" text="Boolean" />
+            <TableColumn fx:id="colColor" prefWidth="91.0" text="Color" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

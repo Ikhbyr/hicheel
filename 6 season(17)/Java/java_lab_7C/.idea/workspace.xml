@@ -19,7 +19,32 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49a0c6dc-c9a1-4ad3-b72b-a11d249a011c" name="Default Changelist" comment="" />
+    <list default="true" id="49a0c6dc-c9a1-4ad3-b72b-a11d249a011c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../visual/lastExam/src/sample/DBconnect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../visual/lastExam/src/sample/StudentGrade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab10.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab11.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab12.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab14/lab14.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../../com graphic/lab/lab14/lab14.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab14/lab14.depend" beforeDir="false" afterPath="$PROJECT_DIR$/../../com graphic/lab/lab14/lab14.depend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab14/lab14.layout" beforeDir="false" afterPath="$PROJECT_DIR$/../../com graphic/lab/lab14/lab14.layout" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab14/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../com graphic/lab/lab14/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab14/obj/Debug/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../com graphic/lab/lab14/obj/Debug/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab14/obj/Debug/readFile.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab14/obj/Debug/texture.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab14/readFile.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab14/texture.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab14/texture.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab2.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab6/com_graphic_Lab_6/com_graphic_Lab_6.layout" beforeDir="false" afterPath="$PROJECT_DIR$/../../com graphic/lab/lab6/com_graphic_Lab_6/com_graphic_Lab_6.layout" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab7/com_craphic_lab_7/com_craphic_lab_7.layout" beforeDir="false" afterPath="$PROJECT_DIR$/../../com graphic/lab/lab7/com_craphic_lab_7/com_craphic_lab_7.layout" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../com graphic/lab/lab9.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../visual/FX_LAB_8/src/sample/DBconnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/FX_LAB_8/src/sample/DBconnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../visual/FX_LAB_8/src/sample/exa.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/FX_LAB_8/src/sample/exa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../visual/FX_lab_7B/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/FX_lab_7B/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../visual/visualExam2/src/sample/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../visual/visualExam2/src/sample/Info.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
