@@ -1,0 +1,26 @@
+MERGE INTO ADM_PRIVILEGE a using dual on (a.priv_code='99990040') when matched then
+ update set a.name='Хичээлийн мэдээлэл лавлах' when not matched then
+ insert(priv_code, name, name2, sys_no) values('99990040', 'Хичээлийн мэдээлэл лавлах', 'Хичээлийн мэдээлэл лавлах', 9999);
+MERGE INTO ADM_PRIVILEGE a using dual on (a.priv_code='99990041') when matched then
+ update set a.name='Хичээлийн мэдээлэл өөрчлөх' when not matched then
+ insert(priv_code, name, name2, sys_no) values('99990041', 'Хичээлийн мэдээлэл өөрчлөх', 'Хичээлийн мэдээлэл өөрчлөх', 9999);
+MERGE INTO ADM_OPERATION a using dual on (a.oper_code='99990040') when matched then
+ update set a.name=upper('????????? ???????? ?????'), sys_no=9999, func_name='selectDemoLesson', lookup='java:global/nes/demo.school.EJB/DemoParamLesson!mn.grapecity.nes.demo.school.SchoolParamRemote', audit_level=1,log_req_data=1, log_res_data=1 when not matched then
+ insert(oper_code, name, name2, sys_no, func_name, lookup, audit_level, log_req_data, log_res_data) values('99990040', UPPER('????????? ???????? ?????'), UPPER('????????? ???????? ?????'), 9999, 'selectDemoLesson', 'java:global/nes/demo.school.EJB/DemoParamLesson!mn.grapecity.nes.demo.school.SchoolParamRemote', 1, 1, 0);
+MERGE INTO ADM_OPERATION a using dual on (a.oper_code='99990041') when matched then
+ update set a.name=upper('????????? ???????? ???????'), sys_no=9999, func_name='insertDemoLesson', lookup='java:global/nes/demo.school.EJB/DemoParamLesson!mn.grapecity.nes.demo.school.SchoolParamRemote', audit_level=1,log_req_data=1, log_res_data=1 when not matched then
+ insert(oper_code, name, name2, sys_no, func_name, lookup, audit_level, log_req_data, log_res_data) values('99990041', UPPER('????????? ???????? ???????'), UPPER('????????? ???????? ???????'), 9999, 'insertDemoLesson', 'java:global/nes/demo.school.EJB/DemoParamLesson!mn.grapecity.nes.demo.school.SchoolParamRemote', 1, 1, 0);
+MERGE INTO ADM_OPERATION a using dual on (a.oper_code='99990042') when matched then
+ update set a.name=upper('????????? ???????? ?????????'), sys_no=9999, func_name='updateDemoLesson', lookup='java:global/nes/demo.school.EJB/DemoParamLesson!mn.grapecity.nes.demo.school.SchoolParamRemote', audit_level=1,log_req_data=1, log_res_data=1 when not matched then
+ insert(oper_code, name, name2, sys_no, func_name, lookup, audit_level, log_req_data, log_res_data) values('99990042', UPPER('????????? ???????? ?????????'), UPPER('????????? ???????? ?????????'), 9999, 'updateDemoLesson', 'java:global/nes/demo.school.EJB/DemoParamLesson!mn.grapecity.nes.demo.school.SchoolParamRemote', 1, 1, 0);
+MERGE INTO ADM_OPERATION a using dual on (a.oper_code='99990043') when matched then
+ update set a.name=upper('?????? ??????'), sys_no=9999, func_name='deleteDemoLesson', lookup='java:global/nes/demo.school.EJB/DemoParamLesson!mn.grapecity.nes.demo.school.SchoolParamRemote', audit_level=1,log_req_data=1, log_res_data=1 when not matched
+ then insert(oper_code, name, name2, sys_no, func_name, lookup, audit_level, log_req_data, log_res_data) values('99990043', UPPER('????????? ???????? ??????'), UPPER('????????? ???????? ??????'), 9999, 'deleteDemoLesson', 'java:global/nes/demo.school.EJB/DemoParamLesson!mn.grapecity.nes.demo.school.SchoolParamRemote', 1, 1, 0);
+MERGE INTO ADM_OPERATION a using dual on (a.oper_code='99990044') when matched then
+ update set a.name=upper('????????? ???????????'), sys_no=9999, func_name='detailDemoLesson', lookup='java:global/nes/demo.school.EJB/DemoParamLesson!mn.grapecity.nes.demo.school.SchoolParamRemote', audit_level=1,log_req_data=1, log_res_data=1 when not matched then
+ insert(oper_code, name, name2, sys_no, func_name, lookup, audit_level, log_req_data, log_res_data) values('99990044', UPPER('????????? ???????????'), UPPER('????????? ???????????'), 9999, 'detailDemoLesson', 'java:global/nes/demo.school.EJB/DemoParamLesson!mn.grapecity.nes.demo.school.SchoolParamRemote', 1, 1, 0);
+MERGE INTO ADM_OPER_PRIV a using dual on (a.oper_code='99990040' and a.priv_code='9999040') when not matched then insert(oper_code, priv_code) values('99990040', '99990040');
+MERGE INTO ADM_OPER_PRIV a using dual on (a.oper_code='99990041' and a.priv_code='9999041') when not matched then insert(oper_code, priv_code) values('99990041', '99990041');
+MERGE INTO ADM_OPER_PRIV a using dual on (a.oper_code='99990042' and a.priv_code='9999041') when not matched then insert(oper_code, priv_code) values('99990042', '99990041');
+MERGE INTO ADM_OPER_PRIV a using dual on (a.oper_code='99990043' and a.priv_code='9999041') when not matched then insert(oper_code, priv_code) values('99990043', '99990041');
+MERGE INTO ADM_OPER_PRIV a using dual on (a.oper_code='99990044' and a.priv_code='9999040') when not matched then insert(oper_code, priv_code) values('99990044', '99990040');

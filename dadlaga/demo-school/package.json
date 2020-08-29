@@ -1,0 +1,17 @@
+{
+  "name": "@nes/demo-school",
+  "version": "3.0.2",
+  "author": {
+    "name": "ikhbayar.o",
+    "email": "ikhbayar.o@grapecity.mn"
+  },
+  "keywords": [
+    "NES",
+    "ERP",
+    "demo-school module"
+  ],
+  "peerDependencies": {},
+  "publishConfig": {
+    "registry": "http://mngc-nexus:8081/nexus/repository/npm-internal/"
+  }
+}

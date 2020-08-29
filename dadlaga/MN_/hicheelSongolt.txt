@@ -1,0 +1,3 @@
+data-target="#myModal"
+https://sisi.num.edu.mn/schedsel/api/values/insert_sched
+[{"id":"131943","sid":"d883e570-9e31-4f11-add6-185660ea1834","curid":"2809","grid":"22668"},{"id":"132385","sid":"d883e570-9e31-4f11-add6-185660ea1834","curid":"2809","grid":"22668"}]

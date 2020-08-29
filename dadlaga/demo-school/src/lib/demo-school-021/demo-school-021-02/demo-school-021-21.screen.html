@@ -1,0 +1,59 @@
+
+  <nes-form-screen>
+    <form [formGroup]="formModel.formGroup" [nesFormModel]="formModel">
+      <div class="row">
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-5">
+              <nes-form-field field="lessonname">
+                <input
+                  nesFormControl
+                  [required]="'true'"
+                  formControlName="lessonname"
+                />
+              </nes-form-field>
+              <nes-form-field field="userid">
+                <input
+                  nesFormControl
+                  disabled = "'true'"
+                  [required]="'true'"
+                  [nesCyrillic2latin]="formModel.get('userid')"
+                  formControlName="userid"
+                />
+              </nes-form-field>
+            </div>
+            <div class="col-md-5">
+              <nes-form-field field="point">
+                <nes-numeric
+                  nesFormControl
+                  [required]="'true'"
+                  formControlName="point"
+                ></nes-numeric>
+              </nes-form-field>
+              <nes-form-field field="seendate">
+                <nes-date formControlName="seendate" [required]="'true'"></nes-date>
+              </nes-form-field>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+
+          <div class="row" *ngIf="!isPrivate">
+            <div class="col-md-10">
+              <hr style="margin-top: 2rem; margin-bottom: 2rem;" />
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <nes-screen-change-info
+            [collapsed]="false"
+            [model]="formModel.model"
+          ></nes-screen-change-info>
+        </div>
+      </div>
+    </form>
+  </nes-form-screen>
+

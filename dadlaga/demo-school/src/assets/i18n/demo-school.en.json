@@ -1,0 +1,36 @@
+﻿{
+  "ADM-I": {
+    "AdmOperation": {
+      "operCode": "Operation number",
+      "name": "Action name",
+      "name2": "",
+      "sysNo": "System",
+      "lookup": "",
+      "funcName": "",
+      "sysName": "System",
+      "sysName2": ""
+    },
+    "AdmUser": {
+      "userId": "",
+      "userType": "Type",
+      "userStatus": "",
+      "loginName": "Login name",
+      "firstName": "Name",
+      "lastName": "Family name",
+      "firstName2": "",
+      "lastName2": "",
+      "email": "",
+      "userLevel": "",
+      "userTypeName": "",
+      "userTypeName2": "",
+      "userStatusName": "",
+      "userStatusName2": "",
+      "createdDatetime": "",
+      "picture": "",
+      "registerCode": "Register",
+      "companyCode": "",
+      "companyName": "",
+      "companyName2": ""
+    }
+  }
+}

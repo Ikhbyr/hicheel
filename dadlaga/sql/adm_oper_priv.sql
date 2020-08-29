@@ -1,0 +1,5 @@
+MERGE INTO ADM_OPER_PRIV a using dual on (a.oper_code='99990040' and a.priv_code='9999040') when not matched then insert(oper_code, priv_code) values('99990040', '99990040');
+MERGE INTO ADM_OPER_PRIV a using dual on (a.oper_code='99990041' and a.priv_code='9999041') when not matched then insert(oper_code, priv_code) values('99990041', '99990041');
+MERGE INTO ADM_OPER_PRIV a using dual on (a.oper_code='99990042' and a.priv_code='9999041') when not matched then insert(oper_code, priv_code) values('99990042', '99990041');
+MERGE INTO ADM_OPER_PRIV a using dual on (a.oper_code='99990043' and a.priv_code='9999041') when not matched then insert(oper_code, priv_code) values('99990043', '99990041');
+MERGE INTO ADM_OPER_PRIV a using dual on (a.oper_code='99990044' and a.priv_code='9999040') when not matched then insert(oper_code, priv_code) values('99990044', '99990040');

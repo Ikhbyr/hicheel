@@ -1,0 +1,48 @@
+﻿{
+  "DEMO-SCHOOL": {
+    "COMMON": {
+      "operCode": "Үйлдлийн дугаар",
+      "name": "Үйлдлийн нэр",
+      "name2": "",
+      "sysNo": "Систем",
+      "lookup": "",
+      "funcName": "",
+      "sysName": "Систем",
+      "sysName2": "",
+      "main": "Хэрэглэгчийн төгссөн сургуулийн мэдээлэл",
+      "system":"Хэрэглэгчийн судалсан хичээл"
+    },
+    "DemoSchool": {
+      "userid": "Хэрэглэгчийн дугаар",
+      "usertype": "Төрөл",
+      "userStatus": "",
+      "loginName": "Нэвтрэх нэр",
+      "firstName": "Нэр",
+      "lastName": "Овог",
+      "firstName2": "",
+      "lastName2": "",
+      "email": "И-Мэйл",
+      "userLevel": "Зэрэг",
+      "seendate":"Судалсан огноо",
+      "demoid":"Бүртгэлийн дугаар",
+      "startdate":"Элссэн огноо",
+      "enddate":"Төгссөн огноо",
+      "schoolname":"Сургуулийн нэр",
+      "gradepoint":"Голч оноо",
+      "school_name":"Сургуулийн нэр"
+    },
+    "DemoLesson":{
+      "lessonname":"Хичээлийн нэр",
+      "userid":"Хэрэглэгчийн дугаар",
+      "point":"Авсан Дүн",
+      "seendate":"Судалсан огноо",
+      "lessonid":"Хичээлийн бүртгэлийн дугаар"
+    }
+  },
+  "DEMO-LESSON":{
+    "COMMON":{
+      "edit":"Судалсан хичээл нэмэх",
+      "info":"Судалсан хичээлийн мэдээллүүд"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+﻿<nes-list-screen>
+  <nes-list-view>
+    <kendo-grid
+      [data]="dataService.view$ | async"
+      [loading]="dataService.pending"
+      [selectable]="{ mode: 'single' }"
+      [kendoGridSelectBy]="selectionKeyBy"
+      [selectedKeys]="selectedItems"
+      [resizable]="true"
+      nesAutoHeight
+    >
+      <kendo-grid-column [nesField]="'demoid'">
+        <ng-template kendoGridCellTemplate let-dataItem>
+          <nes-list-detail-link [dataItem]="dataItem"></nes-list-detail-link>
+        </ng-template>
+      </kendo-grid-column>
+      <kendo-grid-column [nesField]="'school_name'"> </kendo-grid-column>
+      <kendo-grid-column [nesField]="'enddate'"> </kendo-grid-column>
+      <kendo-grid-column [nesField]="'startdate'"> </kendo-grid-column>
+      <kendo-grid-column [nesField]="'gradepoint'"> </kendo-grid-column>
+      <kendo-grid-column [nesField]="'userid'"> </kendo-grid-column>
+      <kendo-grid-pdf fileName="UserList.pdf"></kendo-grid-pdf>
+      <kendo-grid-excel fileName="UserList.xlsx"></kendo-grid-excel>
+      <nes-grid-row-menu>
+        <ng-template let-dataItem>
+          <button
+            class="btn nes-icon-btn btn-danger"
+            (click)="deleteItem(dataItem, $event)"
+          >
+            <i class="nes-i-delete"></i>
+          </button>
+        </ng-template>
+      </nes-grid-row-menu>
+    </kendo-grid>
+  </nes-list-view>
+</nes-list-screen>

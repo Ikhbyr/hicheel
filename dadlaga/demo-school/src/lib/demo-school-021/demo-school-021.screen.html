@@ -1,0 +1,92 @@
+<ng-template #main>
+  <nes-form-screen>
+    <form [formGroup]="formModel.formGroup" [nesFormModel]="formModel">
+      <div class="row">
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-5">
+              <nes-form-field field="schoolname">
+                <nes-dropdown
+                  formControlName="schoolname"
+                  [dictCode]="'DEMO002'"
+                  [valueField]="'id'"
+                  [textField]="'name'"
+                  [valuePrimitive]="true"
+                  (dictResponse)="responseDictSchoolName($event)"
+                >
+                </nes-dropdown>
+              </nes-form-field>
+              <nes-form-field field="gradepoint">
+                <nes-numeric
+                  formControlName="gradepoint"
+                ></nes-numeric>
+              </nes-form-field>
+              <nes-form-field field="userid">
+                <nes-numeric
+                  formControlName="userid"
+                ></nes-numeric>
+              </nes-form-field>
+            </div>
+
+            <div class="col-md-5">
+              <nes-form-field field="enddate">
+                <nes-date formControlName="enddate"></nes-date>
+              </nes-form-field>
+              <nes-form-field field="startdate">
+                <nes-date formControlName="startdate"></nes-date>
+              </nes-form-field>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+
+          <div class="row" *ngIf="!isPrivate">
+            <div class="col-md-10">
+              <hr style="margin-top: 2rem; margin-bottom: 2rem;" />
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+          <div class="row" *ngIf="!isPrivate">
+            <div class="col-md-5">
+              <nes-form-field field="companyCode">
+                <input
+                  nesFormControl
+                  formControlName="companyCode"
+                  [readOnly]="mode === 'update'"
+                />
+              </nes-form-field>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <nes-screen-change-info
+            [collapsed]="false"
+            [model]="formModel.model"
+          ></nes-screen-change-info>
+        </div>
+      </div>
+    </form>
+  </nes-form-screen>
+</ng-template>
+<nes-screen-tabstrip>
+  <nes-screen-tab
+    title="{{'DEMO-SCHOOL.COMMON.main' | translate}}"
+    [contentTemplate]="contentTab1"
+  >
+    <ng-template #contentTab1 let-tab>
+      <ng-container *ngTemplateOutlet="main"></ng-container>
+    </ng-template>
+  </nes-screen-tab>
+  <nes-screen-tab
+    title="{{'DEMO-SCHOOL.COMMON.system' | translate}}"
+    [contentTemplate]="contentTab2"
+    [disabled]="mode === 'create'"
+  >
+    <ng-template #contentTab2>
+      <demo-school-021-02></demo-school-021-02>
+    </ng-template>
+  </nes-screen-tab>
+</nes-screen-tabstrip>

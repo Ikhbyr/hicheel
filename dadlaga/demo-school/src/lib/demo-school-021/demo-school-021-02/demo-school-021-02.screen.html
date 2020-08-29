@@ -1,0 +1,54 @@
+<ng-template #main>
+<nes-list-screen>
+  <nes-list-view>
+    <kendo-grid
+      [data]="dataService.view$ | async"
+      [loading]="dataService.pending"
+      [selectable]="{ mode: 'single' }"
+      [kendoGridSelectBy]="selectionKeyBy"
+      [selectedKeys]="selectedItems"
+      [resizable]="true"
+      nesAutoHeight
+    >
+      <kendo-grid-column [nesField]="'lessonid'">
+        <ng-template kendoGridCellTemplate let-dataItem>
+          <nes-list-detail-link [dataItem]="dataItem"></nes-list-detail-link>
+        </ng-template>
+      </kendo-grid-column>
+      <kendo-grid-column [nesField]="'seendate'"> </kendo-grid-column>
+      <kendo-grid-column [nesField]="'lessonname'"> </kendo-grid-column>
+      <kendo-grid-column [nesField]="'point'"> </kendo-grid-column>
+      <kendo-grid-column [nesField]="'userid'"> </kendo-grid-column>
+      <nes-grid-row-menu>
+        <ng-template let-dataItem>
+          <button
+            class="btn nes-icon-btn btn-danger"
+            (click)="deleteItem(dataItem, $event)"
+          >
+            <i class="nes-i-delete"></i>
+          </button>
+        </ng-template>
+      </nes-grid-row-menu>
+    </kendo-grid>
+  </nes-list-view>
+</nes-list-screen>
+</ng-template>
+
+<nes-screen-tabstrip>
+  <nes-screen-tab
+    title="{{'DEMO-LESSON.COMMON.info' | translate}}"
+    [contentTemplate]="contentTab1"
+  >
+    <ng-template #contentTab1 let-tab>
+      <ng-container *ngTemplateOutlet="main"></ng-container>
+    </ng-template>
+  </nes-screen-tab>
+  <nes-screen-tab
+    title="{{'DEMO-LESSON.COMMON.edit' | translate}}"
+    [contentTemplate]="contentTab2"
+  >
+    <ng-template #contentTab2>
+      <demo-school-021-21></demo-school-021-21>
+    </ng-template>
+  </nes-screen-tab>
+</nes-screen-tabstrip>
