@@ -1,0 +1,1 @@
+﻿DECLARE BEGIN  IF (CHK_IX ('PK_DEMO_SCHOOL') <= 0) THEN EXECUTE IMMEDIATE 'CREATE UNIQUE INDEX PK_DEMO_SCHOOL ON DEMO_SCHOOL (DEMOID)   ';    END IF; END;~~                                                                                                                                                                                                     

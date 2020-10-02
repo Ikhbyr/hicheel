@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LAB2</string>
+    <string name="value_a">Value A:</string>
+    <string name="value_b">Value B:</string>
+    <string name="result">Result</string>
+    <string name="add">Add</string>
+    <string name="subtraction">Subtraction</string>
+    <string name="multiply">Multiply</string>
+    <string name="divide">Divide</string>
+</resources>
