@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/activity2"
+        android:title="Activity2"
+        app:showAsAction="never" />
+    <item android:id="@+id/activity3"
+        android:title="Activity3"
+        app:showAsAction="never" />
+    <item android:id="@+id/activity4"
+        android:title="Activity4"
+        app:showAsAction="never" />
+    <item android:id="@+id/activity5"
+        android:title="Activity5"
+        app:showAsAction="never" />
+
+</menu>

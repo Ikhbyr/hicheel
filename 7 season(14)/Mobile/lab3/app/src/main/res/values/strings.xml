@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lab3</string>
+    <string name="age">Нас</string>
+    <string name="user_name">Нэр</string>
+    <string name="btnOk">OK</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="checkbox1">Checkbox1</string>
+    <string name="checkbox2">Checkbox2</string>
+    <string name="checkbox3">Checkbox3</string>
+    <string name="radiobutton1">Эр</string>
+    <string name="radiobutton2">Эм</string>
+</resources>
