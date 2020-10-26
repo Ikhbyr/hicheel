@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+    <EditText
+        android:id="@+id/oldPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/oldPassword"
+        android:inputType="textPassword"/>
+    <EditText
+        android:id="@+id/newPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/newPassword"
+        android:layout_below="@id/oldPassword"
+        android:inputType="textPassword"/>
+    <EditText
+        android:id="@+id/reNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reNewPassword"
+        android:layout_below="@id/newPassword"
+        android:inputType="textPassword"/>
+    <TextView
+        android:id="@+id/info_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/info"
+        android:paddingLeft="16dp"
+        android:layout_below="@id/reNewPassword"/>
+    <Button
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_login"
+        android:layout_alignParentRight="true"
+        android:text="@string/change"
+        android:onClick="changePass"/>
+</RelativeLayout>

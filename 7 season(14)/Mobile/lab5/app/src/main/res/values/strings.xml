@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Lab5</string>
+    <string name="calndr">Calendar</string>
+    <string name="click">Click</string>
+    <string name="contact">Contact</string>
+    <string name="lab_4">LAB_4</string>
+    <string name="user_name">Нэвтрэх нэр</string>
+    <string name="password">Нууц үг</string>
+    <string name="login">Нэвтрэх</string>
+    <string name="sign_up">Бүртгүүлэх</string>
+    <string name="info"> </string>
+    <string name="age">Нас</string>
+    <string name="gender">Хүйс</string>
+    <string name="phone">Утас</string>
+    <string name="rePassword">Нууц үгээ дахин хийнэ үү.</string>
+    <string name="cancel">Буцах</string>
+    <string name="save">Хадгалах</string>
+    <string name="changePass">Нууц үг солих</string>
+    <string name="change">Солих</string>
+    <string name="reNewPassword">Шинэ нууц үгээ дахин хийнэ үү</string>
+    <string name="newPassword">Шинэ нууц үг</string>
+    <string name="oldPassword">Хуучин нууц үг</string>
+</resources>
