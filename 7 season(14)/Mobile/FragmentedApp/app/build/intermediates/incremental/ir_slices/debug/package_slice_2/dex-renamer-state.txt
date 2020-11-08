@@ -1,0 +1,4 @@
+#Fri Apr 26 07:40:18 ULAT 2019
+base.0=C\:\\Users\\user\\AndroidStudioProjects\\FragmentedApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\2
+path.0=classes.dex
+renamed.0=classes.dex

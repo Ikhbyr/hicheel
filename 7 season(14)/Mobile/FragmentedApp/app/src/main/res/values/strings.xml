@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FragmentedApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="age">age</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="gender">Gender</string>
+    <string name="teacher">Teacher</string>
+    <string name="student">Student</string>
+
+    <string name="next">Next</string>
+    <string name="teacher_fragment">teacher fragment</string>
+</resources>
