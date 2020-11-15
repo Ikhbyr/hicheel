@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">lab09</string>
+    <string name="m">Жагсаалт тоо</string>
+    <string name="n">N тоо</string>
+    <string name="k">K (сек)</string>
+    <string name="addList">Лист нэмэх</string>
+</resources>

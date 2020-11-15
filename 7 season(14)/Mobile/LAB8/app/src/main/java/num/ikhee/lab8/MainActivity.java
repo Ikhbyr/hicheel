@@ -9,6 +9,7 @@ import android.Manifest;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.location.Location;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -31,7 +32,12 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.tasks.Task;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback, GoogleMap.OnMapLongClickListener, GoogleMap.OnMarkerClickListener, GoogleMap.OnMyLocationChangeListener {
 
@@ -135,13 +141,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
         try {
             if (mLocationPermissionsGranted) {
-                Task location = mFusedLocationProviderClient.getLastLocation();
+                final Task location = mFusedLocationProviderClient.getLastLocation();
                 location.addOnCompleteListener(new OnCompleteListener() {
                     @Override
                     public void onComplete(@NonNull Task task) {
                         if (task.isSuccessful()) {
-                            Log.i(TAG, "onComplete: found location");
                             Location currentLocation = (Location) task.getResult();
+                            Log.i(TAG, "onComplete: found location ");
                             moveCamera(new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude()),
                                     DEFAULT_ZOOM);
 
@@ -169,17 +175,17 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         //Add marker on LongClick position
         MarkerOptions markerOptions =
-                new MarkerOptions().position(latLng).title(latLng.toString());
+                new MarkerOptions().position(latLng).title(latLng.toString()).snippet("Lab8");
         map.addMarker(markerOptions);
         markerPoints.add(latLng);
 
         if (markerPoints.size() >= 2) {
-            LatLng origin = (LatLng) markerPoints.get(0);
-            LatLng dest = (LatLng) markerPoints.get(1);
+            LatLng origin = (LatLng) markerPoints.get(markerPoints.size()-2);
+            LatLng dest = (LatLng) markerPoints.get(markerPoints.size()-1);
             calculateDistance(origin, dest);
         }
 
-        Log.i(TAG, "Marker count" + markerPoints.size());
+        Log.i(TAG, "Нийт marker болсон цэгүүд "+markerPoints.size());
     }
 
     private void calculateDistance(LatLng oldPosition, LatLng newPosition) {
@@ -213,8 +219,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void onMyLocationChange(Location location) {
         map.clear();
         myLocationList.add(location);
-        Log.e("onMyLocationChange: ", location.getLatitude() + "Longitude: " + location.getLongitude());
-
+        Log.e("onMyLocationChange: ", location.getAltitude() + "Longitude: " + location.getLongitude());
+        Log.e(TAG, "Шилжилт хийгдлээ. ");
         PolylineOptions p = new PolylineOptions().width(10).color(Color.RED).geodesic(true);
         if (myLocationList.size() > 1) {
             for (int i = 1; i < myLocationList.size(); i++) {
